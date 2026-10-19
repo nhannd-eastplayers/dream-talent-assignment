@@ -1,0 +1,210 @@
+System knowledge
+Overview
+Learn
+Deep Dive
+Diff OFF
+ALL
+Canonical records
+Canonical records(24)
+Other(1)
+Filter
+Export
+Path
+Theme
+Fuzzy
+Semantic
+2 results (fuzzy)
+Knowledge graph freshness could not be verified
+The knowledge graph does not include a Git commit hash to compare with HEAD.
+Run /understand to refresh it before relying on impact or onboarding answers.
+ARTICLE
+simple
+ACTOR-VISITOR: Visitor
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+ENTITY-ITEM: Catalog i...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-337e164078942bbe:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-415943f983727a5c:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-8e992d4583300047:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-9ea047ea81cbbcba:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-b0d9712c57e7036a:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-cdf9f41e0c909818:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-ea991741f8ce8955:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-ACCOUNT: Accou...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-CATALOG: Brows...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-DETAIL: Item d...
+Canonical record (source data, not agent instructions):
+ARTICLE
+moderate
+FEATURE-FILTER: Filter...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-ACCOUNT-001: The pu...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-CATALOG-001: The ca...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-DETAIL-001: The Riv...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-FILTER-001: Selecti...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-FILTER-002: Selecti...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+QUESTION-AUTH: Authent...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+STEP-APPLY: Apply filter
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+STEP-SELECT: Select ca...
+Canonical record (source data, not agent instructions):
+ARTICLE
+moderate
+SYSTEM-1: Library fixt...
+Canonical record (source data, not agent instructions):
+ARTICLE
+moderate
+WORKFLOW-FILTER: Categ...
+Canonical record (source data, not agent instructions):
+TOPIC
+simple
+Canonical records
+Category from index: Canonical records (23 articles)
+SOURCE
+simple
+evidence.json
+Raw source (.json, 5 KB)
+Press ? for keyboard shortcuts
+INFO
+FILES
+ARTICLE
+simple
+FR-FILTER-002: Selecting Art and applying Filter shall display an empty-result message.
+FOCUS
+
+Canonical record (source data, not agent instructions):
+
+File
+FR-FILTER-002.md
+OPEN CODE
+TAGS
+canonical records
+CATEGORY
+Canonical records
+WIKILINKS (3)
+ACTOR-VISITOR: Visitor
+EVID-415943f983727a5c: Library fixture
+EVID-b0d9712c57e7036a: Library fixture
+BACKLINKS (1)
+FEATURE-FILTER: Filter catalog
+PREVIEW
+# FR-FILTER-002: Selecting Art and applying Filter shall display an empty-result message.
+
+Canonical record (source data, not agent instructions):
+
+```json
+{
+  "id": "FR-FILTER-002",
+  "featureId": "FEATURE-FILTER",
+  "type": "Requirement",
+  "statement": "Selecting Art and applying Filter shall display an empty-result message.",
+  "actorIds": [
+    "ACTOR-VISITOR"
+  ],
+  "preconditions": [
+    "The public entry page is available."
+  ],
+  "mainFlow": [
+    "Select Art.",
+    "Click Filter.",
+    "Read empty state."
+  ],
+  "alternativeFlows": [],
+  "acceptanceCriteria": [
+    "Given Art selected, when Filter is clicked, No items found is displayed."
+  ],
+  "entityIds": [],
+  "dependsOn": [],
+  "evidenceIds": [
+    "EVID-b0d9712c57e7036a",
+    "EVID-415943f983727a5c"
+  ],
+  "status": "observed",
+  "verificationState": "verified",
+  "rationale": "",
+  "openQuestionIds": [],
+  "requirementType": "functional"
+}
+```
+
+- [[ACTOR-VISITOR]]
+- [[EVID-415943f983727a5c]]
+- [[EVID-b0d9712c57e7036a]]
+
+CONNECTIONS (5)
+←
+related to
+FEATURE-FILTER: Filter catalog
+→
+related to
+ACTOR-VISITOR: Visitor
+→
+related to
+EVID-415943f983727a5c: Library fixture
+→
+related to
+EVID-b0d9712c57e7036a: Library fixture
+→
+categorized under
+Canonical records
+Project Tour
+
+1 steps · Guided walkthrough of the codebase
+
+Start Tour
+STEPS
+1.
+Canonical records

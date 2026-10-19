@@ -1,0 +1,74 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceType": {
+        "enum": [
+          "browser",
+          "document",
+          "fixture",
+          "http",
+          "search"
+        ]
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "capturedAt": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "pageTitle": {
+        "type": "string"
+      },
+      "excerpt": {
+        "type": "string",
+        "minLength": 1
+      },
+      "locator": {
+        "type": "string",
+        "minLength": 1
+      },
+      "snapshotPath": {
+        "type": "string",
+        "minLength": 1
+      },
+      "screenshotPath": {
+        "type": "string",
+        "minLength": 1
+      },
+      "action": {
+        "type": "string",
+        "minLength": 1
+      },
+      "result": {
+        "type": "string",
+        "minLength": 1
+      },
+      "contentHash": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "required": [
+      "id",
+      "sourceType",
+      "url",
+      "capturedAt",
+      "pageTitle",
+      "excerpt",
+      "locator",
+      "action",
+      "result",
+      "contentHash"
+    ],
+    "additionalProperties": false
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

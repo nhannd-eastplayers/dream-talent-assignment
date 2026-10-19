@@ -1,0 +1,14 @@
+# Reproducible demo and recorded execution
+
+This is a written, executed-artifact walkthrough; no video is claimed. Setup commands live in setup.md. Actual case studies are already curated, so no live recrawl is required to review them.
+
+1. Open `.claude/skills/analyze-system/SKILL.md`, generic config/default.json and examples/moso/config.json. Show that case URLs/selectors live in examples, not reusable scripts. Show integrations/manifest.json pins.
+2. In authenticated Claude Code, the documented entry is `/analyze-system examples/moso/config.json`. **Native start remains untested here.** For the actually executed deterministic path, inspect output/preflight.json, page inventory, evidence/action snapshots and feature-analysis.md. A fresh browser capture can use README commands and a unique run ID; never fabricate reasoning between capture and canonical models.
+3. Open examples/moso/output/planning/bmad/execution.json, brief.md, adapted-SPEC.md and .memlog.md. Show actual upstream asset hashes and real script commands. State adaptation mode plainly; native BMAD did not run.
+4. Open examples/moso/output/SRS.md and find FR-COMPARE-001. Read its acceptance criterion and partial verification state. Then inspect matching row in traceability.csv and graph/id-mapping.json.
+5. Launch official viewer per setup.md, with GRAPH_DIR pointing to examples/moso/output/wiki. Use the printed token URL. Search FR-COMPARE-001, click the result, show FEATURE-COMPARE backlink, EVID-c16fccba79807428 wikilink, open evidence. Its exact excerpt shows 1/2 tray state. Full typed edge semantics remain in graph/canonical.json. Actual screenshots/text of this sequence are under graph/inspection/.
+6. Run `python scripts/planning.py validate-artifacts examples/moso/output --derived` and `python scripts/check_upstream_schema.py examples/moso/output`. Show quality-report.md and native integration blockers. Do not hide the graph freshness warning or describe blocked map/auth workflows as tested.
+7. Show examples/fixture/site and manually authored expected.json, then its five requirements and UA graph. Run real browser acceptance with `PLANNING_BROWSER_TESTS=1` and unittest; navigation/filter/empty/account boundary should pass. No real-estate assumptions are needed.
+8. For resume, copy a curated output into a new ignored runs/ directory, call `planning.py resume`, then change a requirement or evidence file and call resume again. Changed dependency invalidates stage and downstream states. Regenerate exports before relying on stale files. Do not edit curated submission artifacts during a demo.
+
+Recorded run dates/timestamps and source URLs are in each evidence record. Test logs: docs/test-results.txt. Run reports distinguish actual browser/script/viewer actions, adapted planning, native blocked stages and pending independent review.

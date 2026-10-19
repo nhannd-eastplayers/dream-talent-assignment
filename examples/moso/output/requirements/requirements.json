@@ -1,0 +1,410 @@
+[
+  {
+    "id": "FR-BROWSE-001",
+    "featureId": "FEATURE-BROWSE",
+    "type": "functional",
+    "statement": "The public sale route shall render listing cards containing title, price, area and location when those values are supplied.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given the sampled sale page, at least one card displays title, price, area and location."
+    ],
+    "entityIds": [
+      "ENTITY-LISTING"
+    ],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-2ed3453878954246"
+    ],
+    "status": "observed",
+    "verificationState": "verified",
+    "rationale": "",
+    "openQuestionIds": []
+  },
+  {
+    "id": "FR-BROWSE-002",
+    "featureId": "FEATURE-BROWSE",
+    "type": "functional",
+    "statement": "The public rental route shall render rental listing cards.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given the rental route, rental cards and displayed rental prices are visible."
+    ],
+    "entityIds": [
+      "ENTITY-LISTING"
+    ],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-b99f369160410cdc"
+    ],
+    "status": "observed",
+    "verificationState": "verified",
+    "rationale": "",
+    "openQuestionIds": []
+  },
+  {
+    "id": "FR-SEARCH-001",
+    "featureId": "FEATURE-SEARCH",
+    "type": "functional",
+    "statement": "Submitting the sampled keyword shall navigate to a results state with the keyword encoded in q.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Enter Quận 1.",
+      "Click Tìm kiếm.",
+      "Inspect URL and results."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given Quận 1 entered, when Tìm kiếm is clicked, URL q decodes to Quận 1 and result cards are rendered."
+    ],
+    "entityIds": [],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-d7638348983a20d4"
+    ],
+    "status": "observed",
+    "verificationState": "partial",
+    "rationale": "",
+    "openQuestionIds": [
+      "QUESTION-SEARCH"
+    ]
+  },
+  {
+    "id": "FR-FILTER-001",
+    "featureId": "FEATURE-FILTER",
+    "type": "functional",
+    "statement": "The listing page shall expose price, area and room filter entry controls.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given sale results, Khoảng giá, Diện tích and Phòng ngủ controls are visible."
+    ],
+    "entityIds": [],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-2ed3453878954246"
+    ],
+    "status": "observed",
+    "verificationState": "partial",
+    "rationale": "",
+    "openQuestionIds": [
+      "QUESTION-FILTERS"
+    ]
+  },
+  {
+    "id": "FR-DETAIL-001",
+    "featureId": "FEATURE-DETAIL",
+    "type": "functional",
+    "statement": "The sampled property detail shall display listing identifier, price, area and description.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given listing 1dk006, identifier, Mức giá, Diện tích and Mô tả chi tiết are displayed."
+    ],
+    "entityIds": [
+      "ENTITY-LISTING"
+    ],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-c53cea185200b355"
+    ],
+    "status": "observed",
+    "verificationState": "verified",
+    "rationale": "",
+    "openQuestionIds": []
+  },
+  {
+    "id": "FR-COMPARE-001",
+    "featureId": "FEATURE-COMPARE",
+    "type": "functional",
+    "statement": "Selecting a listing for comparison shall show that item in the comparison tray.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given no selected items, clicking comparison on one card displays So sánh tin đăng and 1/2."
+    ],
+    "entityIds": [
+      "ENTITY-LISTING"
+    ],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-c16fccba79807428"
+    ],
+    "status": "observed",
+    "verificationState": "partial",
+    "rationale": "",
+    "openQuestionIds": [
+      "QUESTION-COMPARE"
+    ]
+  },
+  {
+    "id": "FR-COMPARE-002",
+    "featureId": "FEATURE-COMPARE",
+    "type": "functional",
+    "statement": "Selecting another listing shall show two items in the comparison tray.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given one selected item, selecting another displays 2/2 and two titles in the tray."
+    ],
+    "entityIds": [
+      "ENTITY-LISTING"
+    ],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-6b424827ef3bc21f"
+    ],
+    "status": "observed",
+    "verificationState": "partial",
+    "rationale": "",
+    "openQuestionIds": [
+      "QUESTION-COMPARE"
+    ]
+  },
+  {
+    "id": "FR-MAP-001",
+    "featureId": "FEATURE-MAP",
+    "type": "functional",
+    "statement": "The map entry shall open a map/list shell containing a listing panel.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given the observed map route, Danh sách, Bản đồ and listing cards are visible; tile rendering is outside this verified criterion."
+    ],
+    "entityIds": [],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-bfd8734194d79384"
+    ],
+    "status": "observed",
+    "verificationState": "partial",
+    "rationale": "",
+    "openQuestionIds": [
+      "QUESTION-MAP"
+    ]
+  },
+  {
+    "id": "FR-PROJECT-001",
+    "featureId": "FEATURE-PROJECT",
+    "type": "functional",
+    "statement": "The public project catalog shall show project names, locations and displayed starting prices.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given project catalog, at least one sampled project shows name, location and Giá từ."
+    ],
+    "entityIds": [
+      "ENTITY-PROJECT"
+    ],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-9e2f8dc3ceced3a0"
+    ],
+    "status": "observed",
+    "verificationState": "verified",
+    "rationale": "",
+    "openQuestionIds": []
+  },
+  {
+    "id": "FR-WIKI-001",
+    "featureId": "FEATURE-WIKI",
+    "type": "functional",
+    "statement": "The Wiki BĐS catalog shall display article titles, excerpts and dates.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given Wiki BĐS, sampled article title, excerpt and date are visible."
+    ],
+    "entityIds": [
+      "ENTITY-ARTICLE"
+    ],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-2dd9a5356fef9d2a"
+    ],
+    "status": "observed",
+    "verificationState": "verified",
+    "rationale": "",
+    "openQuestionIds": []
+  },
+  {
+    "id": "FR-ACCOUNT-001",
+    "featureId": "FEATURE-ACCOUNT",
+    "type": "functional",
+    "statement": "The public login page shall expose phone/password inputs and a Google sign-in entry.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given login route, Số điện thoại, Mật khẩu and Tiếp tục với Google are visible; successful authentication remains unverified."
+    ],
+    "entityIds": [],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-bfc607d5c14c32ab"
+    ],
+    "status": "observed",
+    "verificationState": "partial",
+    "rationale": "",
+    "openQuestionIds": [
+      "QUESTION-AUTH"
+    ]
+  },
+  {
+    "id": "FR-POST-001",
+    "featureId": "FEATURE-POST",
+    "type": "functional",
+    "statement": "Opening the posting route without authentication shall redirect this visitor to login preserving the posting callback.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given a fresh unauthenticated context, opening /dang-tin ends at login with callbackUrl decoding to /dang-tin."
+    ],
+    "entityIds": [],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-34527de780364f37"
+    ],
+    "status": "observed",
+    "verificationState": "partial",
+    "rationale": "",
+    "openQuestionIds": [
+      "QUESTION-AUTH"
+    ]
+  },
+  {
+    "id": "FR-AI-001",
+    "featureId": "FEATURE-AI",
+    "type": "functional",
+    "statement": "The homepage shall expose an AI search entry label.",
+    "actorIds": [
+      "ACTOR-VISITOR"
+    ],
+    "preconditions": [
+      "The public entry page is available."
+    ],
+    "mainFlow": [
+      "Open the entry page.",
+      "Inspect the described state."
+    ],
+    "alternativeFlows": [],
+    "acceptanceCriteria": [
+      "Given homepage, Tìm với AI is visible; no result-quality claim follows."
+    ],
+    "entityIds": [],
+    "dependsOn": [],
+    "evidenceIds": [
+      "EVID-d1cff2806ca77add"
+    ],
+    "status": "observed",
+    "verificationState": "partial",
+    "rationale": "",
+    "openQuestionIds": [
+      "QUESTION-AI"
+    ]
+  }
+]

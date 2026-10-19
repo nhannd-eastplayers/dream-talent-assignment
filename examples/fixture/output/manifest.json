@@ -1,0 +1,203 @@
+{
+  "id": "fixture-20261019",
+  "status": "partial",
+  "createdAt": "2026-10-19T07:45:46.671239+00:00",
+  "updatedAt": "2026-10-19T08:08:36.074909+00:00",
+  "inputHash": "0eda197002f1c987a2b2a3d769c0546fcf6f74d2479a7bbe55191bd97e4c4e24",
+  "upstreamVersions": {
+    "bmad": {
+      "repository": "https://github.com/bmad-code-org/BMAD-METHOD",
+      "version": "6.12.4",
+      "commit": "bab9082c3e884e0d72c759bcd1a6d90bcc01be84",
+      "license": "MIT",
+      "mode": "upstream assets adapted; native Claude skill execution blocked",
+      "assets": [
+        "src/bmm-skills/plan/bmad-product-brief/assets/brief-template.md",
+        "src/bmm-skills/plan/bmad-spec/SKILL.md"
+      ],
+      "status": "tested adaptation and upstream memlog; native Claude execution blocked"
+    },
+    "understandAnything": {
+      "repository": "https://github.com/Egonex-AI/Understand-Anything",
+      "version": "2.9.7",
+      "commit": "f2d0164f72fe678805c34245a6df36acededfebd",
+      "license": "MIT",
+      "mode": "real knowledge parser and merger; native semantic skill execution pending",
+      "status": "tested parser, merger, exact schema and official viewer; native semantic phase blocked"
+    }
+  },
+  "stopReason": "Native Claude skill activation and UA semantic phase not executed; independent artifacts, browser evidence, adapted BMAD, real UA deterministic phases and both viewers verified.",
+  "errors": [],
+  "stages": {
+    "preflight": {
+      "state": "partial",
+      "inputHash": "91a17f4735d03d63dfe77b4e73add53fe2ccc48e83269810db3308499b23c806",
+      "inputFiles": {
+        "./config.json": "747e75380677a5ca3d754fc42a77ad73cbc2e7efaea2cc1c66b0a10f18a761b4",
+        "repo:integrations/manifest.json": "b923bb63cc46049630e5c83fa69594e8a397aec43ee80cdb31ee311708206487",
+        "repo:scripts/preflight.py": "a8a8d2803fb2156235735b3c24167ae103b7fd187ebb6c3f1ab36fa801247616",
+        "repo:config/schema.json": "c5baef5d7bcb9420bdf45aa7722a9c3c3a673c8097b74c05a5e204c6768c49ed"
+      },
+      "artifacts": {
+        "./config.json": "747e75380677a5ca3d754fc42a77ad73cbc2e7efaea2cc1c66b0a10f18a761b4"
+      },
+      "updatedAt": "2026-10-19T08:08:35.479418+00:00",
+      "errors": [
+        "Native Claude dispatch/semantic integration or independent review remains unverified"
+      ]
+    },
+    "discover": {
+      "state": "completed",
+      "inputHash": "999ef70d7ee089a7d4e349cbe48dd82d79a43bdb3a236dcc0e992aba15750572",
+      "inputFiles": {
+        "./config.json": "747e75380677a5ca3d754fc42a77ad73cbc2e7efaea2cc1c66b0a10f18a761b4",
+        "repo:integrations/manifest.json": "b923bb63cc46049630e5c83fa69594e8a397aec43ee80cdb31ee311708206487",
+        "repo:scripts/browser.py": "17bea76760aad445e366f03f69947bf8f46af4b359008bb98eb4d507fcb4a1ba"
+      },
+      "artifacts": {
+        "./discovery/pages.json": "5b9a8fe4a6623e2c8dce11139c1fe5d0df3c44dad4c9cc61605238c690be147e",
+        "./discovery/coverage-plan.md": "2ed7245e4935282e86ebb1d7aed1e2897fe5ce5e917bce5ced374002967cf4e1"
+      },
+      "updatedAt": "2026-10-19T08:08:35.557518+00:00",
+      "errors": []
+    },
+    "explore": {
+      "state": "completed",
+      "inputHash": "5662afcb8a6f096fdafb220d30bf856502fb110c43f40ca1990e62afb3713ce1",
+      "inputFiles": {
+        "./discovery/pages.json": "5b9a8fe4a6623e2c8dce11139c1fe5d0df3c44dad4c9cc61605238c690be147e",
+        "repo:integrations/manifest.json": "b923bb63cc46049630e5c83fa69594e8a397aec43ee80cdb31ee311708206487",
+        "repo:scripts/browser.py": "17bea76760aad445e366f03f69947bf8f46af4b359008bb98eb4d507fcb4a1ba"
+      },
+      "artifacts": {
+        "./evidence/evidence.json": "752e00882388f26fe850fee959824d5eb3b9a2fd9e0ef5307fc0129e77e56400",
+        "./evidence/snapshots/EVID-9ea047ea81cbbcba.txt": "55ff82f1854a80cc47145e33d9071444196f524293614debba8b468b93ef389f",
+        "./evidence/snapshots/EVID-8e992d4583300047.txt": "99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+        "./evidence/snapshots/EVID-cdf9f41e0c909818.txt": "9fb953d9ecca18d2f8608c56f2252fb29de63f2f989ae3178e0ac90871560ae9",
+        "./evidence/snapshots/EVID-b0d9712c57e7036a.txt": "99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+        "./evidence/snapshots/EVID-415943f983727a5c.txt": "949da6a3278e2d66078bda0e06f569110d872e46548e354c508af456e3c18715",
+        "./evidence/snapshots/EVID-337e164078942bbe.txt": "b36bd111e53b3bbf36a282bd4b53f65ae31277df09a6e4be9bdc239cab7be6ad",
+        "./evidence/snapshots/EVID-ea991741f8ce8955.txt": "c924ce4f305640b6d2be4a82e1fb0e6aeb243c015be9f2adf2a2bcba71721c88"
+      },
+      "updatedAt": "2026-10-19T08:08:35.606512+00:00",
+      "errors": []
+    },
+    "analyze": {
+      "state": "completed",
+      "inputHash": "156b6cb979c23434ec02fcd66807c917c107b6b715b2da73f83a40d3e3ee7acb",
+      "inputFiles": {
+        "./evidence/evidence.json": "752e00882388f26fe850fee959824d5eb3b9a2fd9e0ef5307fc0129e77e56400",
+        "repo:integrations/manifest.json": "b923bb63cc46049630e5c83fa69594e8a397aec43ee80cdb31ee311708206487",
+        "repo:schemas/knowledge.schema.json": "d957ad145b006f2291f9a39113f8790917de86c70dab86b7ecbc02ec9b01afdc",
+        "repo:schemas/requirements.schema.json": "f08364219c37cb65d108ed69bbb7925bbc65935c79288e5e1dac8a94a422a248"
+      },
+      "artifacts": {
+        "./knowledge/system.json": "b428b4f48b0dc3463d063114aebabf6367c9aff4064645e82bb1539779e41f1c",
+        "./requirements/requirements.json": "ed87fec3bc6ece08336c371233e31b6b703a6932dc59c44de1fa149be3fc69cc",
+        "./review.json": "e24aff72539f6c640d5e0cfdcdeda1f2a9be2c80d4f4343cfa731692aa823f0b"
+      },
+      "updatedAt": "2026-10-19T08:08:35.653513+00:00",
+      "errors": []
+    },
+    "bmad": {
+      "state": "partial",
+      "inputHash": "9e3b12d4597536d6baa82601292ac1fe8fe7e4f9913fef808934513bad887d1a",
+      "inputFiles": {
+        "./knowledge/system.json": "b428b4f48b0dc3463d063114aebabf6367c9aff4064645e82bb1539779e41f1c",
+        "./requirements/requirements.json": "ed87fec3bc6ece08336c371233e31b6b703a6932dc59c44de1fa149be3fc69cc",
+        "repo:integrations/manifest.json": "b923bb63cc46049630e5c83fa69594e8a397aec43ee80cdb31ee311708206487",
+        "repo:scripts/integrate.py": "86b209cd64a55b04e090293d3d07694876bd57e315c3c15d775b070b45897cfd"
+      },
+      "artifacts": {
+        "./planning/bmad/execution.json": "ef747c583562339848cd5ff544432c738e94c6ca798fc0a0067ef092ff68347e",
+        "./planning/bmad/brief.md": "6291688adff504fb274a5bd5078401062867db884fd91df8b9a65c311d386232",
+        "./planning/bmad/adapted-SPEC.md": "a74802d889af92b182d7f29fbdd858f88437cb444e689eb90015553106dca840"
+      },
+      "updatedAt": "2026-10-19T08:08:35.697513+00:00",
+      "errors": [
+        "Native Claude dispatch/semantic integration or independent review remains unverified"
+      ]
+    },
+    "srs": {
+      "state": "completed",
+      "inputHash": "318b58721c3452a58c405240833d20d261a02983e137db77bcf958a83cc8ddd1",
+      "inputFiles": {
+        "./knowledge/system.json": "b428b4f48b0dc3463d063114aebabf6367c9aff4064645e82bb1539779e41f1c",
+        "./requirements/requirements.json": "ed87fec3bc6ece08336c371233e31b6b703a6932dc59c44de1fa149be3fc69cc",
+        "repo:integrations/manifest.json": "b923bb63cc46049630e5c83fa69594e8a397aec43ee80cdb31ee311708206487",
+        "repo:scripts/core.py": "53658b0bfc4ee067d5d226957a02eef081d7dfc142495582a228119ea8566e16",
+        "repo:templates/srs-template.md": "f98b9731baa89070d403b19c80250fe20f0f08e8cc4b62d9d0f281d91c893322"
+      },
+      "artifacts": {
+        "./SRS.md": "892e5fb0d7c5492b9e4ad566728eed6c09bfd6325c259e632bdea585ddbb783b",
+        "./feature-analysis.md": "da1425639c77bc996458cca5294b3ca5f61ac5e68e9bf5c583d30d2715c1416e"
+      },
+      "updatedAt": "2026-10-19T08:08:35.765514+00:00",
+      "errors": []
+    },
+    "graph": {
+      "state": "partial",
+      "inputHash": "a7abedbb17769ed95c241e9de9acc468d6a79699d8f46d938b3884d705c56860",
+      "inputFiles": {
+        "./knowledge/system.json": "b428b4f48b0dc3463d063114aebabf6367c9aff4064645e82bb1539779e41f1c",
+        "./requirements/requirements.json": "ed87fec3bc6ece08336c371233e31b6b703a6932dc59c44de1fa149be3fc69cc",
+        "./evidence/evidence.json": "752e00882388f26fe850fee959824d5eb3b9a2fd9e0ef5307fc0129e77e56400",
+        "repo:integrations/manifest.json": "b923bb63cc46049630e5c83fa69594e8a397aec43ee80cdb31ee311708206487",
+        "repo:scripts/core.py": "53658b0bfc4ee067d5d226957a02eef081d7dfc142495582a228119ea8566e16",
+        "repo:scripts/integrate.py": "86b209cd64a55b04e090293d3d07694876bd57e315c3c15d775b070b45897cfd"
+      },
+      "artifacts": {
+        "./graph/canonical.json": "7b93736e7c9184d5da1e3356e9705441fc41874f4b69a01ad02c27e9dcb52c5f",
+        "./graph/id-mapping.json": "7389cc3b2433197adf5da2eef779cfc75f93f3505359813bfc60dc7c068813ff",
+        "./wiki/.ua/knowledge-graph.json": "70987cfe7c7ff8e00ac7284aa2775846bfa6dc21b45295350ec7f334b798da38",
+        "./traceability.csv": "055618bd1766a376799fb20e077606836cdd559040981423f2c9d53fc5a571dd",
+        "./graph/upstream-execution.json": "955cb7b9cae07a3a0c1cf36b69851baf75e4671ffc9740da8d4e200f1ba71a72",
+        "./graph/inspection/evidence-inspection.json": "eee37a620aab331d4061789c6cae0205926ce65e91fde0a5c008d8ea4b4d92be",
+        "./graph/inspection/evidence-node.png": "281e6709806f542a7221ea2c74aed2678aed8f961e8389eefb336a58885c5a9a",
+        "./graph/inspection/evidence-node.txt": "eb430efd508ecfe38aa97ce05d9ded7c1db6f2352272968b93f778187fc7de01",
+        "./graph/inspection/viewer-inspection.json": "3318700aa98d6f6c3ce3a0370eadd012211c28a3163195cba3c2414ce0b6d7ec",
+        "./graph/inspection/viewer-text.txt": "89fcad35b7f107eff427681fd3f279043098ea0573eb289638bc9bc90d364975",
+        "./graph/inspection/viewer.png": "95dccb06c70bf96db8a508b78c898c7f4f1d9fba06b24cf37aa8e9ab524ef1d3"
+      },
+      "updatedAt": "2026-10-19T08:08:35.889908+00:00",
+      "errors": [
+        "Native Claude dispatch/semantic integration or independent review remains unverified"
+      ]
+    },
+    "validate": {
+      "state": "completed",
+      "inputHash": "cbc1cf1d43506cb1c6d0cd2b4cf42d6f1b2a3f3f66a02c6e7983e160186dfd45",
+      "inputFiles": {
+        "./SRS.md": "892e5fb0d7c5492b9e4ad566728eed6c09bfd6325c259e632bdea585ddbb783b",
+        "./graph/canonical.json": "7b93736e7c9184d5da1e3356e9705441fc41874f4b69a01ad02c27e9dcb52c5f",
+        "./traceability.csv": "055618bd1766a376799fb20e077606836cdd559040981423f2c9d53fc5a571dd",
+        "repo:integrations/manifest.json": "b923bb63cc46049630e5c83fa69594e8a397aec43ee80cdb31ee311708206487",
+        "repo:scripts/core.py": "53658b0bfc4ee067d5d226957a02eef081d7dfc142495582a228119ea8566e16",
+        "repo:docs/test-results.txt": "a9c770c68217da2114098d566ea9c8ec43eef05d15ad450b2aaa13bcb9f1a129"
+      },
+      "artifacts": {
+        "./validation.json": "8e11b89c82896aaf7afed8394ca692452815288c566304abad6019cc5d1839fe",
+        "./quality-report.md": "a8f6e101837b5794b4aedb8ec67f54f195fa054cbcde720307fa7d6e8b7162d1"
+      },
+      "updatedAt": "2026-10-19T08:08:35.955939+00:00",
+      "errors": []
+    },
+    "package": {
+      "state": "partial",
+      "inputHash": "dad3d107661e5187840700f711ffbedf2d7ebc23522b4cb842ff93daa4992b1c",
+      "inputFiles": {
+        "./quality-report.md": "a8f6e101837b5794b4aedb8ec67f54f195fa054cbcde720307fa7d6e8b7162d1",
+        "./validation.json": "8e11b89c82896aaf7afed8394ca692452815288c566304abad6019cc5d1839fe",
+        "repo:integrations/manifest.json": "b923bb63cc46049630e5c83fa69594e8a397aec43ee80cdb31ee311708206487",
+        "repo:scripts/package_run.py": "4bed30562f94cbeac80d166ff5df0f6ae9e5cd8f7ff2938f5e9b38971eaf6b14"
+      },
+      "artifacts": {
+        "./run-report.md": "08198ef7f8f19d00fff69a3dcf3662de3ea17949b8b12640b4ed2486bc7561b5"
+      },
+      "updatedAt": "2026-10-19T08:08:36.005910+00:00",
+      "errors": [
+        "Native Claude dispatch/semantic integration or independent review remains unverified"
+      ]
+    }
+  }
+}

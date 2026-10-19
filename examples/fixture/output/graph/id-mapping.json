@@ -1,0 +1,117 @@
+{
+  "SYSTEM-1": {
+    "file": "SYSTEM-1.md",
+    "upstreamId": "article:SYSTEM-1",
+    "canonicalType": "System"
+  },
+  "ACTOR-VISITOR": {
+    "file": "ACTOR-VISITOR.md",
+    "upstreamId": "article:ACTOR-VISITOR",
+    "canonicalType": "Actor"
+  },
+  "FEATURE-CATALOG": {
+    "file": "FEATURE-CATALOG.md",
+    "upstreamId": "article:FEATURE-CATALOG",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-FILTER": {
+    "file": "FEATURE-FILTER.md",
+    "upstreamId": "article:FEATURE-FILTER",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-DETAIL": {
+    "file": "FEATURE-DETAIL.md",
+    "upstreamId": "article:FEATURE-DETAIL",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-ACCOUNT": {
+    "file": "FEATURE-ACCOUNT.md",
+    "upstreamId": "article:FEATURE-ACCOUNT",
+    "canonicalType": "Feature"
+  },
+  "WORKFLOW-FILTER": {
+    "file": "WORKFLOW-FILTER.md",
+    "upstreamId": "article:WORKFLOW-FILTER",
+    "canonicalType": "Workflow"
+  },
+  "STEP-SELECT": {
+    "file": "STEP-SELECT.md",
+    "upstreamId": "article:STEP-SELECT",
+    "canonicalType": "Step"
+  },
+  "STEP-APPLY": {
+    "file": "STEP-APPLY.md",
+    "upstreamId": "article:STEP-APPLY",
+    "canonicalType": "Step"
+  },
+  "ENTITY-ITEM": {
+    "file": "ENTITY-ITEM.md",
+    "upstreamId": "article:ENTITY-ITEM",
+    "canonicalType": "Entity"
+  },
+  "QUESTION-AUTH": {
+    "file": "QUESTION-AUTH.md",
+    "upstreamId": "article:QUESTION-AUTH",
+    "canonicalType": "OpenQuestion"
+  },
+  "FR-CATALOG-001": {
+    "file": "FR-CATALOG-001.md",
+    "upstreamId": "article:FR-CATALOG-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-FILTER-001": {
+    "file": "FR-FILTER-001.md",
+    "upstreamId": "article:FR-FILTER-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-FILTER-002": {
+    "file": "FR-FILTER-002.md",
+    "upstreamId": "article:FR-FILTER-002",
+    "canonicalType": "Requirement"
+  },
+  "FR-DETAIL-001": {
+    "file": "FR-DETAIL-001.md",
+    "upstreamId": "article:FR-DETAIL-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-ACCOUNT-001": {
+    "file": "FR-ACCOUNT-001.md",
+    "upstreamId": "article:FR-ACCOUNT-001",
+    "canonicalType": "Requirement"
+  },
+  "EVID-9ea047ea81cbbcba": {
+    "file": "EVID-9ea047ea81cbbcba.md",
+    "upstreamId": "article:EVID-9ea047ea81cbbcba",
+    "canonicalType": "Evidence"
+  },
+  "EVID-8e992d4583300047": {
+    "file": "EVID-8e992d4583300047.md",
+    "upstreamId": "article:EVID-8e992d4583300047",
+    "canonicalType": "Evidence"
+  },
+  "EVID-cdf9f41e0c909818": {
+    "file": "EVID-cdf9f41e0c909818.md",
+    "upstreamId": "article:EVID-cdf9f41e0c909818",
+    "canonicalType": "Evidence"
+  },
+  "EVID-b0d9712c57e7036a": {
+    "file": "EVID-b0d9712c57e7036a.md",
+    "upstreamId": "article:EVID-b0d9712c57e7036a",
+    "canonicalType": "Evidence"
+  },
+  "EVID-415943f983727a5c": {
+    "file": "EVID-415943f983727a5c.md",
+    "upstreamId": "article:EVID-415943f983727a5c",
+    "canonicalType": "Evidence"
+  },
+  "EVID-337e164078942bbe": {
+    "file": "EVID-337e164078942bbe.md",
+    "upstreamId": "article:EVID-337e164078942bbe",
+    "canonicalType": "Evidence"
+  },
+  "EVID-ea991741f8ce8955": {
+    "file": "EVID-ea991741f8ce8955.md",
+    "upstreamId": "article:EVID-ea991741f8ce8955",
+    "canonicalType": "Evidence"
+  }
+}

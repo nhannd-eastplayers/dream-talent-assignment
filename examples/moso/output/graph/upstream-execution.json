@@ -1,0 +1,48 @@
+{
+  "status": "partial",
+  "phases": {
+    "detect": "tested",
+    "scan": "tested",
+    "analyze": "blocked: native Claude article-analyzer unavailable; no fabricated batches",
+    "merge": "tested",
+    "save": "tested",
+    "viewer": "tested: requirement selected and evidence resolved in official upstream viewer"
+  },
+  "version": {
+    "repository": "https://github.com/Egonex-AI/Understand-Anything",
+    "version": "2.9.7",
+    "commit": "f2d0164f72fe678805c34245a6df36acededfebd",
+    "license": "MIT",
+    "mode": "real knowledge parser and merger; native semantic skill execution pending",
+    "status": "tested parser, merger, exact schema and official viewer; native semantic phase blocked"
+  },
+  "commands": [
+    {
+      "argv": [
+        "D:\\projects\\assignment\\.venv\\Scripts\\python.exe",
+        "D:\\projects\\assignment\\integrations\\upstream\\understand-anything\\understand-anything-plugin\\skills\\understand-knowledge\\parse-knowledge-base.py",
+        "D:\\projects\\assignment\\examples\\moso\\output\\wiki"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "[parse] Karpathy wiki: 57 articles, 1 sources, 1 topics, 158 wikilinks (0 unresolved)\n[parse] Output: D:\\projects\\assignment\\examples\\moso\\output\\wiki\\.ua\\intermediate\\scan-manifest.json\n",
+      "at": "2026-10-19T08:02:23.053494+00:00"
+    },
+    {
+      "argv": [
+        "D:\\projects\\assignment\\.venv\\Scripts\\python.exe",
+        "D:\\projects\\assignment\\integrations\\upstream\\understand-anything\\understand-anything-plugin\\skills\\understand-knowledge\\merge-knowledge-graph.py",
+        "D:\\projects\\assignment\\examples\\moso\\output\\wiki"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "[merge] Input: 59 scan nodes, 215 scan edges, 0 analysis batches\n[merge] Added: 0 entities, 0 claims, 0 edges (0 deduped entities, 0 dropped dangling edges)\n[merge] Output: 59 nodes, 215 edges, 2 layers, 1 tour steps\n[merge] Written: D:\\projects\\assignment\\examples\\moso\\output\\wiki\\.ua\\intermediate\\assembled-graph.json\n",
+      "at": "2026-10-19T08:02:23.168623+00:00"
+    }
+  ],
+  "graphPath": "wiki/.ua/knowledge-graph.json",
+  "nodes": 59,
+  "edges": 215,
+  "loss": "Canonical business types map to article pages; relation types collapse to related wikilinks. Full types/provenance retained in graph/canonical.json and linked detail JSON.",
+  "inspectionNote": "Final curated graph inspected; screenshots and text retained under graph/inspection/."
+}

@@ -1,0 +1,19 @@
+{
+  "bmad": {
+    "repository": "https://github.com/bmad-code-org/BMAD-METHOD",
+    "version": "6.12.4",
+    "commit": "bab9082c3e884e0d72c759bcd1a6d90bcc01be84",
+    "license": "MIT",
+    "mode": "upstream assets adapted; native Claude skill execution blocked",
+    "assets": ["src/bmm-skills/plan/bmad-product-brief/assets/brief-template.md", "src/bmm-skills/plan/bmad-spec/SKILL.md"],
+    "status": "tested adaptation and upstream memlog; native Claude execution blocked"
+  },
+  "understandAnything": {
+    "repository": "https://github.com/Egonex-AI/Understand-Anything",
+    "version": "2.9.7",
+    "commit": "f2d0164f72fe678805c34245a6df36acededfebd",
+    "license": "MIT",
+    "mode": "real knowledge parser and merger; native semantic skill execution pending",
+    "status": "tested parser, merger, exact schema and official viewer; native semantic phase blocked"
+  }
+}

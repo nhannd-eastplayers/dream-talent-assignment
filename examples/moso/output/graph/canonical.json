@@ -1,0 +1,2609 @@
+{
+  "nodes": [
+    {
+      "id": "SYSTEM-1",
+      "name": "MOSO public property website",
+      "description": "Evidence-limited reconstruction of public property discovery, project catalog, detail, comparison selection, editorial content and account entry.",
+      "evidenceIds": [
+        "EVID-d1cff2806ca77add",
+        "EVID-2ed3453878954246"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "System"
+    },
+    {
+      "id": "ACTOR-VISITOR",
+      "name": "Khách truy cập",
+      "description": "Anonymous visitor navigating public pages.",
+      "evidenceIds": [
+        "EVID-d1cff2806ca77add",
+        "EVID-2ed3453878954246"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "Actor"
+    },
+    {
+      "id": "ACTOR-POSTER",
+      "name": "Người đăng tin",
+      "description": "Potential authenticated poster; only unauthenticated boundary observed.",
+      "evidenceIds": [
+        "EVID-34527de780364f37"
+      ],
+      "status": "inferred",
+      "verificationState": "blocked",
+      "rationale": "Đăng tin entry redirects to login. Authenticated role permissions not established.",
+      "type": "Actor"
+    },
+    {
+      "id": "FEATURE-BROWSE",
+      "name": "Sale/rental browsing",
+      "description": "Inspect public listing cards.",
+      "evidenceIds": [
+        "EVID-2ed3453878954246",
+        "EVID-b99f369160410cdc"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/mua-ban-nha-dat"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open sale or rental route.",
+        "Inspect rendered listing cards."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-SEARCH",
+      "name": "Keyword search",
+      "description": "Submit public query; search semantics remain unknown.",
+      "evidenceIds": [
+        "EVID-2ed3453878954246",
+        "EVID-d7638348983a20d4"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/mua-ban-nha-dat"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Fill q with Quận 1.",
+        "Click Tìm kiếm.",
+        "Observe q URL and changed results."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-SEARCH"
+      ],
+      "workflowIds": [
+        "WORKFLOW-SEARCH"
+      ],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-FILTER",
+      "name": "Listing filters",
+      "description": "Discover price, area, rooms, date and sorting controls.",
+      "evidenceIds": [
+        "EVID-2ed3453878954246"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/mua-ban-nha-dat"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open listing results.",
+        "Inspect filter controls without asserting their behavior."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-FILTERS"
+      ],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-DETAIL",
+      "name": "Property detail",
+      "description": "Read one listing’s visible descriptive fields.",
+      "evidenceIds": [
+        "EVID-c53cea185200b355"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/ban-nha-mat-tien-thach-thi-thanh-quan-1-tphcm-6-phong-ngu-gia-125-ty-1dk006"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Follow listing link.",
+        "Inspect identifier, price, area and description."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-COMPARE",
+      "name": "Comparison selection",
+      "description": "Select two properties into comparison tray.",
+      "evidenceIds": [
+        "EVID-c16fccba79807428",
+        "EVID-6b424827ef3bc21f"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/mua-ban-nha-dat"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Click first comparison control.",
+        "Observe 1/2 tray.",
+        "Click another comparison control.",
+        "Observe 2/2 tray."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-COMPARE"
+      ],
+      "workflowIds": [
+        "WORKFLOW-COMPARE"
+      ],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-MAP",
+      "name": "Map entry",
+      "description": "Open map/list route; map loading unverified.",
+      "evidenceIds": [
+        "EVID-bfd8734194d79384"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/mua-ban-nha-dat?xem=ban-do"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open map link.",
+        "Observe map shell and listing panel."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-MAP"
+      ],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-PROJECT",
+      "name": "Project catalog",
+      "description": "Browse public project cards.",
+      "evidenceIds": [
+        "EVID-9e2f8dc3ceced3a0"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/tim-kiem-du-an"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open project catalog.",
+        "Inspect cards and pagination text."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-PROJECT"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-WIKI",
+      "name": "Wiki BĐS catalog",
+      "description": "Browse editorial titles and excerpts; content truth not assessed.",
+      "evidenceIds": [
+        "EVID-2dd9a5356fef9d2a"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/wiki-bds"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open Wiki BĐS.",
+        "Inspect article catalog."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-ARTICLE"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-ACCOUNT",
+      "name": "Account entry",
+      "description": "Inspect phone/password and Google entry controls.",
+      "evidenceIds": [
+        "EVID-bfc607d5c14c32ab"
+      ],
+      "status": "observed",
+      "verificationState": "blocked",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/login?callbackUrl=%2F"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open login page.",
+        "Inspect controls; submit no credentials."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-AUTH"
+      ],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-POST",
+      "name": "Posting entry",
+      "description": "Observe unauthenticated posting redirect.",
+      "evidenceIds": [
+        "EVID-34527de780364f37"
+      ],
+      "status": "observed",
+      "verificationState": "blocked",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/dang-tin"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open Đăng tin.",
+        "Observe login redirect preserving callback."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [
+        "RULE-POST-ENTRY"
+      ],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-AUTH"
+      ],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-AI",
+      "name": "AI search entry",
+      "description": "Discover AI search option only.",
+      "evidenceIds": [
+        "EVID-d1cff2806ca77add"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Inspect Tìm với AI entry text."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-AI"
+      ],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "WORKFLOW-SEARCH",
+      "name": "Keyword submission",
+      "description": "Observed read-only query submission.",
+      "evidenceIds": [
+        "EVID-2ed3453878954246",
+        "EVID-d7638348983a20d4"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "stepIds": [
+        "STEP-QUERY",
+        "STEP-SUBMIT"
+      ],
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "openQuestionIds": [
+        "QUESTION-SEARCH"
+      ],
+      "type": "Workflow"
+    },
+    {
+      "id": "WORKFLOW-COMPARE",
+      "name": "Select comparison items",
+      "description": "Tray changes from one to two selected items; comparison table not opened.",
+      "evidenceIds": [
+        "EVID-c16fccba79807428",
+        "EVID-6b424827ef3bc21f"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "stepIds": [
+        "STEP-COMPARE-ONE",
+        "STEP-COMPARE-TWO"
+      ],
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "type": "Workflow"
+    },
+    {
+      "id": "STEP-QUERY",
+      "name": "Enter keyword",
+      "description": "Fill search input with Quận 1.",
+      "evidenceIds": [
+        "EVID-d7638348983a20d4"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "type": "Step"
+    },
+    {
+      "id": "STEP-SUBMIT",
+      "name": "Submit query",
+      "description": "Search URL contains q parameter and rendered cards change.",
+      "evidenceIds": [
+        "EVID-d7638348983a20d4"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "Step"
+    },
+    {
+      "id": "STEP-COMPARE-ONE",
+      "name": "Select first item",
+      "description": "Tray shows 1/2.",
+      "evidenceIds": [
+        "EVID-c16fccba79807428"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "Step"
+    },
+    {
+      "id": "STEP-COMPARE-TWO",
+      "name": "Select second item",
+      "description": "Tray shows 2/2.",
+      "evidenceIds": [
+        "EVID-6b424827ef3bc21f"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "Step"
+    },
+    {
+      "id": "ENTITY-LISTING",
+      "name": "Tin bất động sản",
+      "description": "Visible title, price, area, location and optional room attributes. No internal persistence schema inferred.",
+      "evidenceIds": [
+        "EVID-2ed3453878954246",
+        "EVID-c53cea185200b355"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "Entity"
+    },
+    {
+      "id": "ENTITY-PROJECT",
+      "name": "Dự án",
+      "description": "Visible project title, locality, price and sample developer/area attributes.",
+      "evidenceIds": [
+        "EVID-9e2f8dc3ceced3a0"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "Entity"
+    },
+    {
+      "id": "ENTITY-ARTICLE",
+      "name": "Bài viết",
+      "description": "Editorial article title, excerpt and publication date shown on Wiki BĐS.",
+      "evidenceIds": [
+        "EVID-2dd9a5356fef9d2a"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "Entity"
+    },
+    {
+      "id": "RULE-POST-ENTRY",
+      "name": "Unauthenticated posting boundary",
+      "description": "This unauthenticated /dang-tin visit redirects to login with callbackUrl for posting. Backend authorization not established.",
+      "evidenceIds": [
+        "EVID-34527de780364f37"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "type": "BusinessRule"
+    },
+    {
+      "id": "QUESTION-SEARCH",
+      "name": "Search semantics",
+      "description": "Does keyword matching normalize accents, tokenize, rank or constrain district? Search for Quận 1 also returned other districts.",
+      "evidenceIds": [
+        "EVID-d7638348983a20d4"
+      ],
+      "status": "proposed",
+      "verificationState": "unverified",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "type": "OpenQuestion"
+    },
+    {
+      "id": "QUESTION-MAP",
+      "name": "Map loading",
+      "description": "Does the map finish loading with third-party resources allowed? Current guarded run shows Đang tải bản đồ….",
+      "evidenceIds": [
+        "EVID-bfd8734194d79384"
+      ],
+      "status": "proposed",
+      "verificationState": "blocked",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "type": "OpenQuestion"
+    },
+    {
+      "id": "QUESTION-COMPARE",
+      "name": "Comparison result",
+      "description": "What columns, limits and persistence apply after opening comparison? Only selection tray tested.",
+      "evidenceIds": [
+        "EVID-6b424827ef3bc21f"
+      ],
+      "status": "proposed",
+      "verificationState": "unverified",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "type": "OpenQuestion"
+    },
+    {
+      "id": "QUESTION-AUTH",
+      "name": "Authenticated flows",
+      "description": "What permissions, posting validation, moderation and account recovery behavior apply?",
+      "evidenceIds": [
+        "EVID-34527de780364f37"
+      ],
+      "status": "proposed",
+      "verificationState": "blocked",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "type": "OpenQuestion"
+    },
+    {
+      "id": "QUESTION-FILTERS",
+      "name": "Filter combinations",
+      "description": "How do price, area, rooms and sorting combine, reset and handle empty states?",
+      "evidenceIds": [
+        "EVID-2ed3453878954246"
+      ],
+      "status": "proposed",
+      "verificationState": "unverified",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "type": "OpenQuestion"
+    },
+    {
+      "id": "QUESTION-AI",
+      "name": "AI search",
+      "description": "What does Tìm với AI do? Entry text observed; behavior not tested.",
+      "evidenceIds": [
+        "EVID-d1cff2806ca77add"
+      ],
+      "status": "proposed",
+      "verificationState": "unverified",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "type": "OpenQuestion"
+    },
+    {
+      "id": "FR-BROWSE-001",
+      "featureId": "FEATURE-BROWSE",
+      "type": "Requirement",
+      "statement": "The public sale route shall render listing cards containing title, price, area and location when those values are supplied.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given the sampled sale page, at least one card displays title, price, area and location."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-2ed3453878954246"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "openQuestionIds": [],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-BROWSE-002",
+      "featureId": "FEATURE-BROWSE",
+      "type": "Requirement",
+      "statement": "The public rental route shall render rental listing cards.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given the rental route, rental cards and displayed rental prices are visible."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-b99f369160410cdc"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "openQuestionIds": [],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-SEARCH-001",
+      "featureId": "FEATURE-SEARCH",
+      "type": "Requirement",
+      "statement": "Submitting the sampled keyword shall navigate to a results state with the keyword encoded in q.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Enter Quận 1.",
+        "Click Tìm kiếm.",
+        "Inspect URL and results."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given Quận 1 entered, when Tìm kiếm is clicked, URL q decodes to Quận 1 and result cards are rendered."
+      ],
+      "entityIds": [],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-d7638348983a20d4"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "openQuestionIds": [
+        "QUESTION-SEARCH"
+      ],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-FILTER-001",
+      "featureId": "FEATURE-FILTER",
+      "type": "Requirement",
+      "statement": "The listing page shall expose price, area and room filter entry controls.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given sale results, Khoảng giá, Diện tích and Phòng ngủ controls are visible."
+      ],
+      "entityIds": [],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-2ed3453878954246"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "openQuestionIds": [
+        "QUESTION-FILTERS"
+      ],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-DETAIL-001",
+      "featureId": "FEATURE-DETAIL",
+      "type": "Requirement",
+      "statement": "The sampled property detail shall display listing identifier, price, area and description.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given listing 1dk006, identifier, Mức giá, Diện tích and Mô tả chi tiết are displayed."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-c53cea185200b355"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "openQuestionIds": [],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-COMPARE-001",
+      "featureId": "FEATURE-COMPARE",
+      "type": "Requirement",
+      "statement": "Selecting a listing for comparison shall show that item in the comparison tray.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given no selected items, clicking comparison on one card displays So sánh tin đăng and 1/2."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-c16fccba79807428"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "openQuestionIds": [
+        "QUESTION-COMPARE"
+      ],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-COMPARE-002",
+      "featureId": "FEATURE-COMPARE",
+      "type": "Requirement",
+      "statement": "Selecting another listing shall show two items in the comparison tray.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given one selected item, selecting another displays 2/2 and two titles in the tray."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-6b424827ef3bc21f"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "openQuestionIds": [
+        "QUESTION-COMPARE"
+      ],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-MAP-001",
+      "featureId": "FEATURE-MAP",
+      "type": "Requirement",
+      "statement": "The map entry shall open a map/list shell containing a listing panel.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given the observed map route, Danh sách, Bản đồ and listing cards are visible; tile rendering is outside this verified criterion."
+      ],
+      "entityIds": [],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-bfd8734194d79384"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "openQuestionIds": [
+        "QUESTION-MAP"
+      ],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-PROJECT-001",
+      "featureId": "FEATURE-PROJECT",
+      "type": "Requirement",
+      "statement": "The public project catalog shall show project names, locations and displayed starting prices.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given project catalog, at least one sampled project shows name, location and Giá từ."
+      ],
+      "entityIds": [
+        "ENTITY-PROJECT"
+      ],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-9e2f8dc3ceced3a0"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "openQuestionIds": [],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-WIKI-001",
+      "featureId": "FEATURE-WIKI",
+      "type": "Requirement",
+      "statement": "The Wiki BĐS catalog shall display article titles, excerpts and dates.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given Wiki BĐS, sampled article title, excerpt and date are visible."
+      ],
+      "entityIds": [
+        "ENTITY-ARTICLE"
+      ],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-2dd9a5356fef9d2a"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "openQuestionIds": [],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-ACCOUNT-001",
+      "featureId": "FEATURE-ACCOUNT",
+      "type": "Requirement",
+      "statement": "The public login page shall expose phone/password inputs and a Google sign-in entry.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given login route, Số điện thoại, Mật khẩu and Tiếp tục với Google are visible; successful authentication remains unverified."
+      ],
+      "entityIds": [],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-bfc607d5c14c32ab"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "openQuestionIds": [
+        "QUESTION-AUTH"
+      ],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-POST-001",
+      "featureId": "FEATURE-POST",
+      "type": "Requirement",
+      "statement": "Opening the posting route without authentication shall redirect this visitor to login preserving the posting callback.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given a fresh unauthenticated context, opening /dang-tin ends at login with callbackUrl decoding to /dang-tin."
+      ],
+      "entityIds": [],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-34527de780364f37"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "openQuestionIds": [
+        "QUESTION-AUTH"
+      ],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-AI-001",
+      "featureId": "FEATURE-AI",
+      "type": "Requirement",
+      "statement": "The homepage shall expose an AI search entry label.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given homepage, Tìm với AI is visible; no result-quality claim follows."
+      ],
+      "entityIds": [],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-d1cff2806ca77add"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "openQuestionIds": [
+        "QUESTION-AI"
+      ],
+      "requirementType": "functional"
+    },
+    {
+      "id": "EVID-d1cff2806ca77add",
+      "sourceType": "browser",
+      "url": "https://moso.vn/",
+      "capturedAt": "2026-10-19T07:46:18.947844+00:00",
+      "pageTitle": "MOSO - AI Proptech Mua Bán Nhà Đất & Đăng Tin Bất Động Sản",
+      "excerpt": "Bỏ qua tới nội dung\nNhà đất bán\nNhà đất cho thuê\nDự án\nVideo nhà đất\nWiki BĐS\nĐăng tin\nĐăng nhập\nTìm nhà thấy địa chỉ và giá\n\nđăng dễ, bán nhanh, tìm nhà ưng ý\n\nNhà đất bán\nNhà đất cho thuê\nDự án\nCơ bản\nTìm với AI\nTìm bất động sản\nChọn khu vực\nTìm nhà\nBất động sản theo khu vực\nTP HCM\nHà Nội\nĐà Nẵng\nHải Phòng\nCần Thơ\nĐồng Nai\nQuận 1\nQuận 3\nQuận 5\nBình Thạnh\nGò Vấp\nPhú Nhuận\nKhu vực khác:\nTân Bình\nQuận 10\nQuận 11\nQuận 8\nQuận 7\nQuận 4\nBình Tân\nHóc Môn\nCủ Chi\nTrải nghiệm xem nhà kiểu mới\nBản đồ Bất động sản\nXem nhà qua Video\nNhà đất bán mới nhất\nNhà mặt tiền\nxác thực\n3 ngày trước\n13\nBán nhà mặt tiền Thạch Thị Thanh Quận 1, TP.HCM – 6 phòng ngủ, giá 125 tỷ\n\n125 tỷ\n535,79 triệu/m²\n\nThạch Thị Thanh, Quận 1, TPHCM\n\n3 tầng\n6PN\n6WC\n233.3m²\nSo sánh\nNhà mặt tiền\nxác thực\n3 ngày trước\n9\nBán nhà mặt tiền Trần Hưng Đạo Quận 1, TP.HCM – 6 phòng ngủ, giá 60 tỷ\n\n60 tỷ\n750 triệu/m²\n\nTrần Hưng Đạo, Quận 1, TPHCM\n\n6 tầng\n6PN\n5WC\n80m²\nSo sánh\nNhà mặt tiền\nxác thực\n3 ngày trước\n8\nBán nhà mặt tiền Lê Văn Sỹ Quận 3, TP.HCM – 4 phòng ngủ, giá 165 tỷ\n\n165 tỷ\n669,09 triệu/m²\n\nLê Văn Sỹ, Quận 3, TPHCM\n\n4 tầng\n4PN\n4WC\n246.6m²\nSo sánh\nNhà hẻm\nxác thực\n4 ngày trước\n9\nBán nhà hẻm Nguyễn Thị Minh Khai Quận 3, TP.HC",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-d1cff2806ca77add.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"https://moso.vn/\"}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 978a69ec236986cb9cdc34eefcc26f51f60fab82e7e4f1e8ae435d7d910cc09f",
+      "contentHash": "ffee1a5040fd7f585adc62b673b0b737490d0b8c716898d340453fe9cbf84dcf",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-2ed3453878954246",
+      "sourceType": "browser",
+      "url": "https://moso.vn/mua-ban-nha-dat",
+      "capturedAt": "2026-10-19T07:46:53.527245+00:00",
+      "pageTitle": "Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "excerpt": "Bỏ qua tới nội dung\nNhà đất bán\nNhà đất cho thuê\nDự án\nVideo nhà đất\nWiki BĐS\nĐăng tin\nĐăng nhập\nToàn quốc\nTìm theo tên đường, dự án, tiện ích, từ khóa...\nTìm kiếm\nXem bản đồ\nTrang chủ\nMua bán nhà đất\nMua bán nhà đất toàn quốc\n\nCập nhật 19/10/2026\n\nTất cả\nCăn hộ chung cư\nNhà hẻm\nNhà mặt tiền\nĐất\nKhoảng giá\nDiện tích\nPhòng ngủ\nPhòng tắm\nSố tầng\nHướng nhà\nĐường trước nhà\nNgày đăng\nHàng thanh lý\nTất cả\nChính chủ\nMôi giới\nTin mới nhất\nTin xác thực\nTin có video\n\nNhà mặt tiền Quận 1 - 72.2 m²\n\n3\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\n\n50 tỷ\n692,52 triệu/m²\n72.2 m²\n\n101 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\n\nvừa đăng\nSo sánh\n\nNhà mặt tiền Quận 1 - 130 m²\n\n3\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 130 tỷ\n\n130 tỷ\n1 tỷ/m²\n130 m²\n\n152-154 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\n\nvừa đăng\nSo sánh\n\nNhà hẻm Huyện Cần Giuộc - 2 tầng - 3PN - 114.6 m²\n\nxác thực\n3\nBán nhà hẻm Ấp Thanh Ba Huyện Cần Giuộc, Long An – 3 phòng ngủ, giá 2.5 tỷ\n\n2,5 tỷ\n21,81 triệu/m²\n114.6 m²\n2 tầng\n3PN\n2WC\n\nẤp Thanh Ba, Xã Mỹ Lộc, H.Cần Giuộc, Long An\n\nvừa đăng\nSo sánh\n\nNhà mặt tiền Quận 1 - 2 tầng - 70 m²\n\n3\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá ",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-2ed3453878954246.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"https://moso.vn/mua-ban-nha-dat\", \"depth\": 1}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 d8ae7d4e904ebdd64a7da84203351019e1f4aecd7b1a5a0914dea3b51ea16f32",
+      "contentHash": "598fb7fcc906ba50fb4c20726bd84e6b9b6770b2cc9a3ed676493c9973350ece",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-b99f369160410cdc",
+      "sourceType": "browser",
+      "url": "https://moso.vn/cho-thue-nha-dat",
+      "capturedAt": "2026-10-19T07:46:54.888739+00:00",
+      "pageTitle": "Cho Thuê Nhà Đất, Mặt Bằng, Căn Hộ | MOSO VN AI Proptech",
+      "excerpt": "Bỏ qua tới nội dung\nNhà đất bán\nNhà đất cho thuê\nDự án\nVideo nhà đất\nWiki BĐS\nĐăng tin\nĐăng nhập\nToàn quốc\nTìm theo tên đường, dự án, tiện ích, từ khóa...\nTìm kiếm\nXem bản đồ\nTrang chủ\nCho thuê nhà đất\nCho thuê nhà đất toàn quốc\n\nCập nhật 19/10/2026\n\nTất cả\nPhòng trọ\nCăn hộ chung cư\nNhà\nCăn hộ dịch vụ\nMặt bằng\nVăn phòng\nKho, nhà xưởng\nĐất\nKhoảng giá\nDiện tích\nPhòng ngủ\nPhòng tắm\nSố tầng\nHướng nhà\nĐường trước nhà\nNgày đăng\nTất cả\nChính chủ\nMôi giới\nTin mới nhất\nTin xác thực\nTin có video\n\nPhòng trọ Quận 4 - 1PN - 20 m²\n\n3\nCho thuê phòng trọ Đường số 34, phường Khánh Hội Quận 4, TP.HCM – 1 phòng ngủ, giá 3.1 triệu\n\n3,1 triệu/tháng\n20 m²\n1PN\n1WC\n\n15 số 34, phường Khánh Hội, P.9, Q.4, TP.HCM\n\n1 giờ trước\nSo sánh\n\nPhòng trọ Quận Tân Phú - 30 m²\n\n+4\n9\nCho thuê phòng trọ Đường Lê Trọng Tấn Quận Tân Phú, TP.HCM – giá 3 triệu\n\n3 triệu/tháng\n30 m²\n\nLê Trọng Tấn, P.Tây Thạnh, Q.Tân Phú, TP.HCM\n\n1 giờ trước\nSo sánh\n\nMặt bằng Quận 5\n\n3\nCho thuê nhà mặt tiền Lý Thường Kiệt Quận 5, TP.HCM – giá 230 tỷ\n\n230 tỷ/tháng\n\n8A Lý Thường Kiệt, P.5, Q.5, TP.HCM\n\n5 giờ trước\nSo sánh\n\nCăn hộ chung cư Thị xã Điện Bàn - 2PN - 45 m²\n\n+3\n8\nCho thuê căn hộ chung cư Điện Ngọc Thị xã Điện Bàn, Quảng Nam – 2 phòng ng",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-b99f369160410cdc.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"https://moso.vn/cho-thue-nha-dat\", \"depth\": 1}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 5cdc8038d4b6915f90c9142025446083c3ee30df65d95c694c1b5a950b8db67c",
+      "contentHash": "15cdd5d4306eedacc69f8687600cddd06f6a173b4db9e6a7f596626c782aca4e",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-9e2f8dc3ceced3a0",
+      "sourceType": "browser",
+      "url": "https://moso.vn/tim-kiem-du-an",
+      "capturedAt": "2026-10-19T07:46:56.501840+00:00",
+      "pageTitle": "Dự án bất động sản sơ cấp: bảng giá, tiến độ, so sánh dự án | MOSO",
+      "excerpt": "Bỏ qua tới nội dung\nNhà đất bán\nNhà đất cho thuê\nDự án\nVideo nhà đất\nWiki BĐS\nĐăng tin\nĐăng nhập\nTrang chủ\n›\nDự án BĐS\nKênh thông tin dự án bất động sản\n\nKhám phá, tìm kiếm và so sánh thông tin các dự án bất động sản theo nhu cầu.\n\n4.791 dự án · Trang 1/400\n\nĐang nhận booking\nCăn hộ\nDự án Arcadia At Lavila\n\nPhước Kiển, Huyện Nhà Bè, TP.HCM\n\n925 căn\n38 - 85 m²\nPierreVal (Pháp) & Kiến Á (Việt Nam)\n\nSở hữu lâu dài\n\nGiá từ\n\n4 tỷ\n\nSo sánh\nĐang mở bán\nCăn hộ\nDự án The Peak Garden\n\nPhú Mỹ, Quận 7, TP.HCM\n\n919 căn\n52,1 - 100,18 m²\nCông ty Cổ Phần đầu tư Bất động sản Hưng Lộc Phát\n\nGiá từ\n\n2,8 tỷ\n\nSo sánh\nĐang nhận booking\nCăn hộ\nDự án Vlasta Premier Phú Thuận\n\nPhú Thuận, TP.HCM\n\n783 căn\n44 - 91 m²\nVăn Phú – Invest (VPI)\n\nGiá từ\n\n4,5 tỷ\n\nSo sánh\nĐang nhận booking\nCăn hộ\nDự án The Emerald Boulevard\n\nBình Hòa, Thành phố Thuận An, Bình Dương\n\n45 - 112 m²\nLê Phong Group\n\nGiá từ\n\n3 tỷ\n\nSo sánh\nĐang nhận booking\nCăn hộ\nDự án Blanca City\n\nRạch Dừa, Thành phố Vũng Tàu, BRVT\n\n30,6 - 68,8 m²\nSun Group\n\nGiá từ\n\n2,5 tỷ\n\nSo sánh\nĐang nhận booking\nCăn hộ\nDự án Khải hoàn Imperial\n\nThành phố Thuận An, Bình Dương\n\nKhai Hoan Land\n\nGiá từ\n\n3 tỷ\n\nSo sánh\nĐang mở bán\nCăn hộ\nDự án The Emerald Golf View\n\nVĩnh Phú",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-9e2f8dc3ceced3a0.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"https://moso.vn/tim-kiem-du-an\", \"depth\": 1}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 e026347e1fda93f591594b55559c9f5fc1ecf790737bd6fb9abb9a78e8308d1e",
+      "contentHash": "7f9009c1f284f2fcf2f2e8cf1982b6b5f4b760f0e3e138fc6f7147cc8a969ce3",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-34527de780364f37",
+      "sourceType": "browser",
+      "url": "https://moso.vn/login?callbackUrl=%2Fdang-tin",
+      "capturedAt": "2026-10-19T07:46:58.170481+00:00",
+      "pageTitle": "Đăng Nhập Tài Khoản | MOSO",
+      "excerpt": "Bỏ qua tới nội dung\nNhà đất bán\nNhà đất cho thuê\nDự án\nVideo nhà đất\nWiki BĐS\nĐăng tin\nĐăng nhập\nQUYỀN LỢI MOSO\n\nTặng MP cho tin đầu tiên\n\nTài khoản mới được tặng MP, đủ đăng tin đầu tiên và tiếp cận hàng trăm nghìn khách mỗi ngày.\n\nẨN SỐ NHÀ bảo vệ tin đăng tuyệt đối\n\nChống sao chép, chống cướp khách — quyền lợi tin đăng luôn thuộc về bạn.\n\nTrợ lý AI định giá & tìm nhà 24/7\n\nAI MOSO hỗ trợ định giá chính xác và gợi ý nhà phù hợp mọi lúc.\n\nĐăng nhập\nBạn chưa có tài khoản? Đăng ký miễn phí\n\nSố điện thoại\n\nMật khẩu\nTiếp tục\nQuên mật khẩu?\n\nhoặc\n\nTiếp tục với Google\nBằng việc tiếp tục, bạn đồng ý với Chính sách bảo mật của chúng tôi\nNhận xét",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-34527de780364f37.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"https://moso.vn/dang-tin\", \"depth\": 1}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 fbfc6b2fa95ea82cd8b472732b26b8583b74b9e2aaa1d7cbb9e150c93c39faf9",
+      "contentHash": "fbfc6b2fa95ea82cd8b472732b26b8583b74b9e2aaa1d7cbb9e150c93c39faf9",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-bfc607d5c14c32ab",
+      "sourceType": "browser",
+      "url": "https://moso.vn/login?callbackUrl=%2F",
+      "capturedAt": "2026-10-19T07:46:59.667866+00:00",
+      "pageTitle": "Đăng Nhập Tài Khoản | MOSO",
+      "excerpt": "Bỏ qua tới nội dung\nNhà đất bán\nNhà đất cho thuê\nDự án\nVideo nhà đất\nWiki BĐS\nĐăng tin\nĐăng nhập\nQUYỀN LỢI MOSO\n\nTặng MP cho tin đầu tiên\n\nTài khoản mới được tặng MP, đủ đăng tin đầu tiên và tiếp cận hàng trăm nghìn khách mỗi ngày.\n\nẨN SỐ NHÀ bảo vệ tin đăng tuyệt đối\n\nChống sao chép, chống cướp khách — quyền lợi tin đăng luôn thuộc về bạn.\n\nTrợ lý AI định giá & tìm nhà 24/7\n\nAI MOSO hỗ trợ định giá chính xác và gợi ý nhà phù hợp mọi lúc.\n\nĐăng nhập\nBạn chưa có tài khoản? Đăng ký miễn phí\n\nSố điện thoại\n\nMật khẩu\nTiếp tục\nQuên mật khẩu?\n\nhoặc\n\nTiếp tục với Google\nBằng việc tiếp tục, bạn đồng ý với Chính sách bảo mật của chúng tôi\nNhận xét",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-bfc607d5c14c32ab.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"https://moso.vn/login?callbackUrl=%2F\", \"depth\": 1}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 fbfc6b2fa95ea82cd8b472732b26b8583b74b9e2aaa1d7cbb9e150c93c39faf9",
+      "contentHash": "fbfc6b2fa95ea82cd8b472732b26b8583b74b9e2aaa1d7cbb9e150c93c39faf9",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-2dd9a5356fef9d2a",
+      "sourceType": "browser",
+      "url": "https://moso.vn/wiki-bds",
+      "capturedAt": "2026-10-19T07:47:01.330235+00:00",
+      "pageTitle": "Wiki Bất Động Sản, Tra Cứu Kiến Thức BĐS | MOSO AI PROPTECH",
+      "excerpt": "Bỏ qua tới nội dung\nNhà đất bán\nNhà đất cho thuê\nDự án\nVideo nhà đất\nWiki BĐS\nĐăng tin\nĐăng nhập\nTất cả\nKiến Thức\nTin Tức\nPhong Thủy\nNội Thất\nGóc Nhìn MOSO\nBáo cáo thị trường\nWiki BĐS\nTrang chủ\n/\nTin tức bất động sản\n/\nWiki Bất Động Sản\n\nCHUYÊN MỤC\n\nWiki Bất Động Sản\n\nWiki Bất Động Sản - Chuyên trang tra cứu kiến thức bất động sản toàn diện. Cập nhật pháp lý nhà đất, kinh nghiệm mua bán, định giá và bí quyết đầu tư an toàn.\n\nWiki BĐS\nĐất ODT (Đất Ở Đô Thị) là gì? Quy định sử dụng và thuế phí năm 2026\n\nĐất ODT (đất ở đô thị) là loại đất được quy định sử dụng làm nhà ở tại các khu đô thị, thuộc nhóm đất phi nông nghiệp, được phép xây dựng nhà ở lâu dài theo luật đất đai hiện hành năm 2026.\n\n11/09/2026\n·\n160\nWiki BĐS\nLuật Quy hoạch đô thị và nông thôn 2026: Nội dung, quy trình mới nhất\n\nLuật Quy hoạch đô thị và nông thôn 2026 là bộ luật hợp nhất việc lập, thẩm định, phê duyệt và quản lý quy hoạch không gian phát triển trên cả nước, áp dụng từ 1/7/2025 theo Luật 47/2024/QH15 và sửa đổi 144/2025/QH15.\n\n09/09/2026\n·\n47\nWiki BĐS\nQuy hoạch 1/500 là gì? Quy trình thẩm định và tra cứu 2026\n\nQuy hoạch 1/500 là bản đồ quy hoạch chi tiết xây dựng ở tỷ lệ 1:500, xác định rõ ranh giới từng lô đất",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-2dd9a5356fef9d2a.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"https://moso.vn/wiki-bds\", \"depth\": 1}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 44ce289036b6a4d927961b5d16e84d70d95d0e55124620fb6421bf641ab883b4",
+      "contentHash": "40976f633b9a5ec39c78fb76febb8b7c5216eb40485c2db9edd0eca60dd45ee8",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-80a49be16993f01f",
+      "sourceType": "browser",
+      "url": "https://moso.vn/mua-ban-nha-dat",
+      "capturedAt": "2026-10-19T07:48:13.621568+00:00",
+      "pageTitle": "Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "excerpt": "Bỏ qua tới nội dung\nNhà đất bán\nNhà đất cho thuê\nDự án\nVideo nhà đất\nWiki BĐS\nĐăng tin\nĐăng nhập\nToàn quốc\nTìm theo tên đường, dự án, tiện ích, từ khóa...\nTìm kiếm\nXem bản đồ\nTrang chủ\nMua bán nhà đất\nMua bán nhà đất toàn quốc\n\nCập nhật 19/10/2026\n\nTất cả\nCăn hộ chung cư\nNhà hẻm\nNhà mặt tiền\nĐất\nKhoảng giá\nDiện tích\nPhòng ngủ\nPhòng tắm\nSố tầng\nHướng nhà\nĐường trước nhà\nNgày đăng\nHàng thanh lý\nTất cả\nChính chủ\nMôi giới\nTin mới nhất\nTin xác thực\nTin có video\n\nNhà mặt tiền Quận 1 - 72.2 m²\n\n3\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\n\n50 tỷ\n692,52 triệu/m²\n72.2 m²\n\n101 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\n\nvừa đăng\nSo sánh\n\nNhà mặt tiền Quận 1 - 130 m²\n\n3\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 130 tỷ\n\n130 tỷ\n1 tỷ/m²\n130 m²\n\n152-154 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\n\nvừa đăng\nSo sánh\n\nNhà hẻm Huyện Cần Giuộc - 2 tầng - 3PN - 114.6 m²\n\nxác thực\n3\nBán nhà hẻm Ấp Thanh Ba Huyện Cần Giuộc, Long An – 3 phòng ngủ, giá 2.5 tỷ\n\n2,5 tỷ\n21,81 triệu/m²\n114.6 m²\n2 tầng\n3PN\n2WC\n\nẤp Thanh Ba, Xã Mỹ Lộc, H.Cần Giuộc, Long An\n\nvừa đăng\nSo sánh\n\nNhà mặt tiền Quận 1 - 2 tầng - 70 m²\n\n3\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá ",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-80a49be16993f01f.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"https://moso.vn/mua-ban-nha-dat\", \"depth\": 1}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 a80316089a1a10ae0704d4e0f0af8f7b72986c5a8e6db2961544c742b727c5b1",
+      "contentHash": "598fb7fcc906ba50fb4c20726bd84e6b9b6770b2cc9a3ed676493c9973350ece",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-5d0c8ad364416269",
+      "sourceType": "browser",
+      "url": "https://moso.vn/mua-ban-nha-dat",
+      "capturedAt": "2026-10-19T07:48:14.505486+00:00",
+      "pageTitle": "Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "excerpt": "Bỏ qua tới nội dung\nNhà đất bán\nNhà đất cho thuê\nDự án\nVideo nhà đất\nWiki BĐS\nĐăng tin\nĐăng nhập\nToàn quốc\nTìm theo tên đường, dự án, tiện ích, từ khóa...\nTìm kiếm\nXem bản đồ\nTrang chủ\nMua bán nhà đất\nMua bán nhà đất toàn quốc\n\nCập nhật 19/10/2026\n\nTất cả\nCăn hộ chung cư\nNhà hẻm\nNhà mặt tiền\nĐất\nKhoảng giá\nDiện tích\nPhòng ngủ\nPhòng tắm\nSố tầng\nHướng nhà\nĐường trước nhà\nNgày đăng\nHàng thanh lý\nTất cả\nChính chủ\nMôi giới\nTin mới nhất\nTin xác thực\nTin có video\n\nNhà mặt tiền Quận 1 - 72.2 m²\n\n3\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\n\n50 tỷ\n692,52 triệu/m²\n72.2 m²\n\n101 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\n\nvừa đăng\nSo sánh\n\nNhà mặt tiền Quận 1 - 130 m²\n\n3\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 130 tỷ\n\n130 tỷ\n1 tỷ/m²\n130 m²\n\n152-154 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\n\nvừa đăng\nSo sánh\n\nNhà hẻm Huyện Cần Giuộc - 2 tầng - 3PN - 114.6 m²\n\nxác thực\n3\nBán nhà hẻm Ấp Thanh Ba Huyện Cần Giuộc, Long An – 3 phòng ngủ, giá 2.5 tỷ\n\n2,5 tỷ\n21,81 triệu/m²\n114.6 m²\n2 tầng\n3PN\n2WC\n\nẤp Thanh Ba, Xã Mỹ Lộc, H.Cần Giuộc, Long An\n\nvừa đăng\nSo sánh\n\nNhà mặt tiền Quận 1 - 2 tầng - 70 m²\n\n3\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá ",
+      "locator": "input[name=q]",
+      "snapshotPath": "evidence/snapshots/EVID-5d0c8ad364416269.txt",
+      "action": "{\"type\": \"fill\", \"selector\": \"input[name=q]\", \"value\": \"Quận 1\", \"readOnly\": true}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 326f6d44dabb996c07cf3e57abdd5f5e928869f260472d64d1c9e3b5804f14a6",
+      "contentHash": "598fb7fcc906ba50fb4c20726bd84e6b9b6770b2cc9a3ed676493c9973350ece",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-d7638348983a20d4",
+      "sourceType": "browser",
+      "url": "https://moso.vn/mua-ban-nha-dat?q=Qu%E1%BA%ADn+1",
+      "capturedAt": "2026-10-19T07:48:15.495522+00:00",
+      "pageTitle": "Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "excerpt": "Bỏ qua tới nội dung\nNhà đất bán\nNhà đất cho thuê\nDự án\nVideo nhà đất\nWiki BĐS\nĐăng tin\nĐăng nhập\nToàn quốc\nTìm theo tên đường, dự án, tiện ích, từ khóa...\nTìm kiếm\nXem bản đồ\nTrang chủ\nMua bán nhà đất\nMua bán nhà đất toàn quốc\n\nCập nhật 19/10/2026\n\nTất cả\nCăn hộ chung cư\nNhà hẻm\nNhà mặt tiền\nĐất\nKhoảng giá\nDiện tích\nPhòng ngủ\nPhòng tắm\nSố tầng\nHướng nhà\nĐường trước nhà\nNgày đăng\nHàng thanh lý\nTất cả\nChính chủ\nMôi giới\nTin mới nhất\nTin xác thực\nTin có video\n\nĐất Quận Ngũ Hành Sơn - 1 tầng - 169.2 m²\n\nxác thực\n3\nBán đất Bờ Quan 1 Quận Ngũ Hành Sơn, TP. Đà Nẵng – giá 12.8 tỷ\n\n12,8 tỷ\n75,65 triệu/m²\n169.2 m²\n1 tầng\n\nThửa 68 - tờ 9 Bờ Quan 1, P.Hoà Quý, Q.Ngũ Hành Sơn, TP. Đà Nẵng\n\n4 tháng trước\nSo sánh\n\nNhà hẻm Quận 1 - 3 tầng - 3PN - 132 m²\n\n3\nBán nhà hẻm Trần Đình Xu Quận 1, TP.HCM – 3 phòng ngủ, giá 22 tỷ\n\n22 tỷ\n166,66 triệu/m²\n132 m²\n3 tầng\n3PN\n3WC\n\n42/3 Trần Đình Xu, P.Cô Giang, Q.1, TP.HCM\n\nvừa đăng\nSo sánh\n\nNhà mặt tiền Quận 1 - 4 tầng - 6PN - 65.3 m²\n\nxác thực\n3\nBán nhà mặt tiền Nguyễn Thị Minh Khai Quận 1, TP.HCM – 6 phòng ngủ, giá 45 tỷ\n\n45 tỷ\n689,12 triệu/m²\n65.3 m²\n4 tầng\n6PN\n5WC\n\n137bis Nguyễn Thị Minh Khai, P.Bến Thành, Q.1, TP.HCM\n\n4 tháng trước\nSo sánh\n\nNhà mặt tiền Quậ",
+      "locator": "button[type=submit]:has-text('Tìm kiếm')",
+      "snapshotPath": "evidence/snapshots/EVID-d7638348983a20d4.txt",
+      "action": "{\"type\": \"click\", \"selector\": \"button[type=submit]:has-text('Tìm kiếm')\", \"readOnly\": true}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 3c035248176c7ee2f0ba646ed1661f58554ba57c160813c4e351acbe9f3e1fb1",
+      "contentHash": "0d7b2ad1e09f728906400fa92f01438c008314c1a71cde0dd42efd07168e239f",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-bfd8734194d79384",
+      "sourceType": "browser",
+      "url": "https://moso.vn/mua-ban-nha-dat?xem=ban-do",
+      "capturedAt": "2026-10-19T07:48:17.056565+00:00",
+      "pageTitle": "Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "excerpt": "Bỏ qua tới nội dung\nNhà đất bán\nNhà đất cho thuê\nDự án\nVideo nhà đất\nWiki BĐS\nĐăng tin\nĐăng nhập\nĐang bán\nCho thuê\nBộ lọc\nLưu tìm kiếm\nDanh sách\nBản đồ\nTin xác thực\nĐang tải bản đồ…\nMua Bán Nhà đất tại TP.HCM\nBán Nhà, Bán Đất và căn hộ chính chủ tại TP.HCM\n\n30 kết quả phù hợp · 9433 tin\n\nHiển thị tin Đã Bán\nNhà mặt tiền\nvừa đăng\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\n\n50 tỷ\n692,52 triệu/m²\n\nNguyễn Thái Bình, Quận 1, TPHCM\n\n72.2m²\nSo sánh\nNhà mặt tiền\nvừa đăng\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 130 tỷ\n\n130 tỷ\n1 tỷ/m²\n\nNguyễn Thái Bình, Quận 1, TPHCM\n\n130m²\nSo sánh\nNhà hẻm\nxác thực\nvừa đăng\nBán nhà hẻm Ấp Thanh Ba Huyện Cần Giuộc, Long An – 3 phòng ngủ, giá 2.5 tỷ\n\n2,5 tỷ\n21,81 triệu/m²\n\nẤp Thanh Ba, Huyện Cần Giuộc, Long An\n\n2 tầng\n3PN\n2WC\n114.6m²\nSo sánh\nNhà mặt tiền\nvừa đăng\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 42 tỷ\n\n42 tỷ\n600 triệu/m²\n\nNguyễn Thái Bình, Quận 1, TPHCM\n\n2 tầng\n70m²\nSo sánh\nNhà mặt tiền\nvừa đăng\nBán nhà mặt tiền Lê Thị Hồng Gấm Quận 1, TP.HCM – giá 60 tỷ\n\n60 tỷ\n759,49 triệu/m²\n\nLê Thị Hồng Gấm, Quận 1, TPHCM\n\n4 tầng\n79m²\nSo sánh\nNhà mặt tiền\nvừa đăng\nBán nhà mặt tiền Lê Thị Hồng Gấm Quận 1, TP.HCM – giá 60",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-bfd8734194d79384.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"https://moso.vn/mua-ban-nha-dat?xem=ban-do\", \"depth\": 1}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 4c87f04ed3f3df2f818f6f5301c675b8524bb8ed10d6cc0301299beebc4fef50",
+      "contentHash": "e9eb1483022b4b1ad9d8c95d896fa0ee0302b41bab774713bbdd8f1b22b159cb",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-c53cea185200b355",
+      "sourceType": "browser",
+      "url": "https://moso.vn/ban-nha-mat-tien-thach-thi-thanh-quan-1-tphcm-6-phong-ngu-gia-125-ty-1dk006",
+      "capturedAt": "2026-10-19T07:48:19.126251+00:00",
+      "pageTitle": "Bán nhà mặt tiền 233.3m2 Thạch Thị Thanh, Phường Tân Định,…",
+      "excerpt": "Mã tin: 1dk006\nĐăng 3 ngày trước\nXem bản đồ\nĐánh giá tin đăng\nBán nhà mặt tiền Thạch Thị Thanh Phường Tân Định, TP.HCM – 6 phòng ngủ, giá 125 tỷ\n27A Thạch Thị Thanh, P.Tân Định, Q.1, TP.HCM\nMức giá\n125 tỷ\n~535,79 triệu/m²\nDiện tích\n233.3 m²\nMô tả chi tiết\n🌟 QUẬN 1 – BIỆT THỰ PHÁP 27A THẠCH THỊ THANH – 9.83x22.38M – TRỆT + 2 LẦU + SÂN THƯỢNG – 6PN + HỒ BƠI – GIÁ 125 TỶ!\n💎 Diện tích: 9,83x22,38m, công nhận 233,3m² đất ở.\n💎 Hiện trạng: Biệt thự trệt + 2 lầu + sân thượng, gồm 6 phòng ngủ, hồ bơi, sân vườn, penthouse và hầm rượu.\n💎 Vị trí: 27A Thạch Thị Thanh, Phường Tân Định, Quận 1, nằm giữa khu vực trung tâm, thuận tiện di chuyển và sinh hoạt.\n",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-c53cea185200b355.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"https://moso.vn/ban-nha-mat-tien-thach-thi-thanh-quan-1-tphcm-6-phong-ngu-gia-125-ty-1dk006\", \"depth\": 1}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 ef754fbf800cdcb406a0d516caa9a028e87018e5dc8863693aee0f7d0bd3af0c",
+      "contentHash": "f2712965423a0030bf431ee38ac07ab6ced238fabff6516338ed17cb95cd6098",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-c16fccba79807428",
+      "sourceType": "browser",
+      "url": "https://moso.vn/mua-ban-nha-dat",
+      "capturedAt": "2026-10-19T07:48:21.869410+00:00",
+      "pageTitle": "Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "excerpt": "So sánh tin đăng\n1/2\n\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\n101 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\nXoá tất cả\nChọn thêm 1\nNhận xét",
+      "locator": "button[aria-label='So sánh tin này'] >> nth=0",
+      "snapshotPath": "evidence/snapshots/EVID-c16fccba79807428.txt",
+      "action": "{\"type\": \"click\", \"selector\": \"button[aria-label='So sánh tin này'] >> nth=0\", \"readOnly\": true}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 806fb1b3732900afa1f9f0d0ea0a5e6f445ef72ee14f68d74bf259dc18023d8c",
+      "contentHash": "b1cc711e98896fa02640fbac11485e5c64386665081fee67bed752874cdc6dd8",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-6b424827ef3bc21f",
+      "sourceType": "browser",
+      "url": "https://moso.vn/mua-ban-nha-dat",
+      "capturedAt": "2026-10-19T07:48:22.975064+00:00",
+      "pageTitle": "Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "excerpt": "So sánh tin đăng\n2/2\n\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\n101 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\nBán nhà hẻm Ấp Thanh Ba Huyện Cần Giuộc, Long An – 3 phòng ngủ, giá 2.5 tỷ\nẤp Thanh Ba, Xã Mỹ Lộc, H.Cần Giuộc, Long An\nXoá tất cả\nSo sánh\nNhận xét",
+      "locator": "button[aria-label='So sánh tin này'] >> nth=1",
+      "snapshotPath": "evidence/snapshots/EVID-6b424827ef3bc21f.txt",
+      "action": "{\"type\": \"click\", \"selector\": \"button[aria-label='So sánh tin này'] >> nth=1\", \"readOnly\": true}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 3c2c1f02efa8fb991c8b281a4876f7c7eb60f75c2300ae58a6043d40b3bf436c",
+      "contentHash": "d79bc78b23f415fe9d53e61a7bd17ec5681fc62c3277ea6c5396d51d4a01f563",
+      "type": "Evidence"
+    }
+  ],
+  "edges": [
+    {
+      "source": "SYSTEM-1",
+      "target": "ACTOR-VISITOR",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-6849bc64de97b2f8d21f"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "ACTOR-POSTER",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-6feb2324a1fc2bc27ba8"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-BROWSE",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-25cdf54195afbec547a6"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-SEARCH",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-7a3d05070d27fdf56b6b"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-FILTER",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-2926a1e8f91bd91afd98"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-DETAIL",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-02c909d70a81f3c55196"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-COMPARE",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-a9efe2e29d9ceaedc2c0"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-MAP",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-5a581aa2a1876aa8f2de"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-PROJECT",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-ba843dc70ac0bda0489f"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-WIKI",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-8cdd15458c3b8b798970"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-ACCOUNT",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-ec8c55e49a832713145d"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-POST",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-fe57a95639f8ec6b8043"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-AI",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-c9ee1469183ab5c0cc6e"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "WORKFLOW-SEARCH",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-a704e6278bce1c69ec86"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "WORKFLOW-COMPARE",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-c23897e9ad241c877918"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "STEP-QUERY",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-626417e9fca4030fc27c"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "STEP-SUBMIT",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-eb5c747331aeeed44bed"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "STEP-COMPARE-ONE",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-36f3eca1aa50ef2be9e3"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "STEP-COMPARE-TWO",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-be5ad4cc7cf505bea8ce"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "ENTITY-LISTING",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-0b289ae297960ab1865a"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "ENTITY-PROJECT",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-8606fa605b5d9f8df72f"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "ENTITY-ARTICLE",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-6e0116c7cd47d4820bc1"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "RULE-POST-ENTRY",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-33aa759498183489d30b"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "QUESTION-SEARCH",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-7cf274d93fe4ca8e5ec9"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "QUESTION-MAP",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-e98c0ce3aad83243f298"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "QUESTION-COMPARE",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-f69c670df49d7e576749"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "QUESTION-AUTH",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-d5f460aa5821ea23b6ec"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "QUESTION-FILTERS",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-5902c253d9f22a01132c"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "QUESTION-AI",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-ef81e3bc8da149b108f9"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "EVID-d1cff2806ca77add",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-a046af885b69c255be1f"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "EVID-2ed3453878954246",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-7d3eb5a256d758dbaafb"
+    },
+    {
+      "source": "ACTOR-VISITOR",
+      "target": "EVID-d1cff2806ca77add",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-3557615ed1d4dad2acae"
+    },
+    {
+      "source": "ACTOR-VISITOR",
+      "target": "EVID-2ed3453878954246",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-5ebada4b76e6404c1306"
+    },
+    {
+      "source": "ACTOR-POSTER",
+      "target": "EVID-34527de780364f37",
+      "type": "SUPPORTED_BY",
+      "status": "inferred",
+      "rationale": "Đăng tin entry redirects to login. Authenticated role permissions not established.",
+      "id": "EDGE-4d1099d177c3843e3f71"
+    },
+    {
+      "source": "FEATURE-BROWSE",
+      "target": "EVID-2ed3453878954246",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-b8c12e0f0cd0a5967187"
+    },
+    {
+      "source": "FEATURE-BROWSE",
+      "target": "EVID-b99f369160410cdc",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-530935211dff9180483a"
+    },
+    {
+      "source": "FEATURE-BROWSE",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-d206bfabae2e65c8f161"
+    },
+    {
+      "source": "FEATURE-BROWSE",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-8f19c60f79e15e175c1d"
+    },
+    {
+      "source": "FEATURE-SEARCH",
+      "target": "EVID-2ed3453878954246",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-72ab13fa594551297b17"
+    },
+    {
+      "source": "FEATURE-SEARCH",
+      "target": "EVID-d7638348983a20d4",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-85a2b21acbb4aab74955"
+    },
+    {
+      "source": "FEATURE-SEARCH",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-a53c6bc2c2608d4f16c6"
+    },
+    {
+      "source": "FEATURE-SEARCH",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-51a3bc436dccd574204a"
+    },
+    {
+      "source": "FEATURE-SEARCH",
+      "target": "WORKFLOW-SEARCH",
+      "type": "INCLUDES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-fd7453aa703e8d36c1d5"
+    },
+    {
+      "source": "FEATURE-SEARCH",
+      "target": "QUESTION-SEARCH",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-86640b4110c8d873241a"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "EVID-2ed3453878954246",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-f72438edef59151673f5"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-cc6962a720a7a8529cfa"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-6cb44ce57f96cc9b93fb"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "QUESTION-FILTERS",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-de7747ff62f26464e6c7"
+    },
+    {
+      "source": "FEATURE-DETAIL",
+      "target": "EVID-c53cea185200b355",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-d3fb8916728ac663220a"
+    },
+    {
+      "source": "FEATURE-DETAIL",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-f91334b6ea801b3c09df"
+    },
+    {
+      "source": "FEATURE-DETAIL",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-40e0683ec59352d5cd58"
+    },
+    {
+      "source": "FEATURE-COMPARE",
+      "target": "EVID-c16fccba79807428",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-c81d86f5f0371eb5ed26"
+    },
+    {
+      "source": "FEATURE-COMPARE",
+      "target": "EVID-6b424827ef3bc21f",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-7beed7e4dc2f2fae1ebf"
+    },
+    {
+      "source": "FEATURE-COMPARE",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-7101f2789448cf0a69d4"
+    },
+    {
+      "source": "FEATURE-COMPARE",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-a1bfd5476530d0d93de3"
+    },
+    {
+      "source": "FEATURE-COMPARE",
+      "target": "WORKFLOW-COMPARE",
+      "type": "INCLUDES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-b8fc99a4bf3a5c95ea50"
+    },
+    {
+      "source": "FEATURE-COMPARE",
+      "target": "QUESTION-COMPARE",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-7a208fa7842b45440919"
+    },
+    {
+      "source": "FEATURE-MAP",
+      "target": "EVID-bfd8734194d79384",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-ac8ec4fce5f1031bf4ba"
+    },
+    {
+      "source": "FEATURE-MAP",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-ead3311cdf0159ff0634"
+    },
+    {
+      "source": "FEATURE-MAP",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-91f9d6144163bf41e2b0"
+    },
+    {
+      "source": "FEATURE-MAP",
+      "target": "QUESTION-MAP",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-5670a4f894b12497f4bc"
+    },
+    {
+      "source": "FEATURE-PROJECT",
+      "target": "EVID-9e2f8dc3ceced3a0",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-7260d31fa1133d6fe151"
+    },
+    {
+      "source": "FEATURE-PROJECT",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-2abb731f13be695e8736"
+    },
+    {
+      "source": "FEATURE-PROJECT",
+      "target": "ENTITY-PROJECT",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-5d1ddd7ffd81b979e6ba"
+    },
+    {
+      "source": "FEATURE-WIKI",
+      "target": "EVID-2dd9a5356fef9d2a",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-738dee52120227be865a"
+    },
+    {
+      "source": "FEATURE-WIKI",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-096bf5f8c1ed686d5f91"
+    },
+    {
+      "source": "FEATURE-WIKI",
+      "target": "ENTITY-ARTICLE",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-31b0b08fdfd48ab229ff"
+    },
+    {
+      "source": "FEATURE-ACCOUNT",
+      "target": "EVID-bfc607d5c14c32ab",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-f855ce128ebb9fb22a82"
+    },
+    {
+      "source": "FEATURE-ACCOUNT",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-3ad8f9b71853963dabe7"
+    },
+    {
+      "source": "FEATURE-ACCOUNT",
+      "target": "QUESTION-AUTH",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-2aa3e3eb40260def99aa"
+    },
+    {
+      "source": "FEATURE-POST",
+      "target": "EVID-34527de780364f37",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-0713223e19810d5481ce"
+    },
+    {
+      "source": "FEATURE-POST",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-a701cb2c8ece1d1a25ac"
+    },
+    {
+      "source": "FEATURE-POST",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-485810779a726bc089be"
+    },
+    {
+      "source": "FEATURE-POST",
+      "target": "RULE-POST-ENTRY",
+      "type": "GOVERNED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-8384a67ba882e425cdd0"
+    },
+    {
+      "source": "FEATURE-POST",
+      "target": "QUESTION-AUTH",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-6e0b3d4bdead6de8195b"
+    },
+    {
+      "source": "FEATURE-AI",
+      "target": "EVID-d1cff2806ca77add",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-51290d74016b896ae4cd"
+    },
+    {
+      "source": "FEATURE-AI",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-145da1077fd28c284789"
+    },
+    {
+      "source": "FEATURE-AI",
+      "target": "QUESTION-AI",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-5e5a11a9c07684ae9549"
+    },
+    {
+      "source": "WORKFLOW-SEARCH",
+      "target": "EVID-2ed3453878954246",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-d8c8b191df06a7518929"
+    },
+    {
+      "source": "WORKFLOW-SEARCH",
+      "target": "EVID-d7638348983a20d4",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-01bb9243a5a2fffcee4d"
+    },
+    {
+      "source": "WORKFLOW-SEARCH",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-caf0b64651967d91b03b"
+    },
+    {
+      "source": "WORKFLOW-SEARCH",
+      "target": "STEP-QUERY",
+      "type": "INCLUDES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-cf6c3d978f8c6960a991"
+    },
+    {
+      "source": "WORKFLOW-SEARCH",
+      "target": "STEP-SUBMIT",
+      "type": "INCLUDES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-6c7f181063d28ddb7f31"
+    },
+    {
+      "source": "WORKFLOW-SEARCH",
+      "target": "QUESTION-SEARCH",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-600db23bf52bf42f1371"
+    },
+    {
+      "source": "WORKFLOW-COMPARE",
+      "target": "EVID-c16fccba79807428",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-0864ecc1ee7f4ceabf63"
+    },
+    {
+      "source": "WORKFLOW-COMPARE",
+      "target": "EVID-6b424827ef3bc21f",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-c8cae9c1b7aca761632d"
+    },
+    {
+      "source": "WORKFLOW-COMPARE",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-6fe843ba452bc8d87bcd"
+    },
+    {
+      "source": "WORKFLOW-COMPARE",
+      "target": "STEP-COMPARE-ONE",
+      "type": "INCLUDES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-c404b5902d9e85efd9e2"
+    },
+    {
+      "source": "WORKFLOW-COMPARE",
+      "target": "STEP-COMPARE-TWO",
+      "type": "INCLUDES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-f9522b33191da99b0e82"
+    },
+    {
+      "source": "STEP-QUERY",
+      "target": "EVID-d7638348983a20d4",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-9793232f9ecbac08c031"
+    },
+    {
+      "source": "STEP-SUBMIT",
+      "target": "EVID-d7638348983a20d4",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-963c6c59b1ff66d73bbe"
+    },
+    {
+      "source": "STEP-COMPARE-ONE",
+      "target": "EVID-c16fccba79807428",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-bba9a525fa3a9fea9b40"
+    },
+    {
+      "source": "STEP-COMPARE-TWO",
+      "target": "EVID-6b424827ef3bc21f",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-e4cfe7647a7ae6fd6262"
+    },
+    {
+      "source": "ENTITY-LISTING",
+      "target": "EVID-2ed3453878954246",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-372a7a5d7695bc3f4269"
+    },
+    {
+      "source": "ENTITY-LISTING",
+      "target": "EVID-c53cea185200b355",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-27e25acae80be05330a3"
+    },
+    {
+      "source": "ENTITY-PROJECT",
+      "target": "EVID-9e2f8dc3ceced3a0",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-e099fa425ff4384897eb"
+    },
+    {
+      "source": "ENTITY-ARTICLE",
+      "target": "EVID-2dd9a5356fef9d2a",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-4641dd3d6ce48241559b"
+    },
+    {
+      "source": "RULE-POST-ENTRY",
+      "target": "EVID-34527de780364f37",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-a17ce1f589d0ad1975dd"
+    },
+    {
+      "source": "QUESTION-SEARCH",
+      "target": "EVID-d7638348983a20d4",
+      "type": "SUPPORTED_BY",
+      "status": "proposed",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "id": "EDGE-11e788f2bfc34b30056e"
+    },
+    {
+      "source": "QUESTION-MAP",
+      "target": "EVID-bfd8734194d79384",
+      "type": "SUPPORTED_BY",
+      "status": "proposed",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "id": "EDGE-b26215360de82c0b0108"
+    },
+    {
+      "source": "QUESTION-COMPARE",
+      "target": "EVID-6b424827ef3bc21f",
+      "type": "SUPPORTED_BY",
+      "status": "proposed",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "id": "EDGE-a6f7da6c3ebd029b0ccf"
+    },
+    {
+      "source": "QUESTION-AUTH",
+      "target": "EVID-34527de780364f37",
+      "type": "SUPPORTED_BY",
+      "status": "proposed",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "id": "EDGE-f4b70e50cd5e687930ab"
+    },
+    {
+      "source": "QUESTION-FILTERS",
+      "target": "EVID-2ed3453878954246",
+      "type": "SUPPORTED_BY",
+      "status": "proposed",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "id": "EDGE-6461c123ef09f282524d"
+    },
+    {
+      "source": "QUESTION-AI",
+      "target": "EVID-d1cff2806ca77add",
+      "type": "SUPPORTED_BY",
+      "status": "proposed",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated.",
+      "id": "EDGE-3aa867646ace01b40216"
+    },
+    {
+      "source": "FEATURE-BROWSE",
+      "target": "FR-BROWSE-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-94712f6f296fc895b4c8"
+    },
+    {
+      "source": "FR-BROWSE-001",
+      "target": "EVID-2ed3453878954246",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-ce08d4e4c55eb9019b8d"
+    },
+    {
+      "source": "FR-BROWSE-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-878fdfa960881f8c3d43"
+    },
+    {
+      "source": "FR-BROWSE-001",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-f944b0d07608fbbfb452"
+    },
+    {
+      "source": "FEATURE-BROWSE",
+      "target": "FR-BROWSE-002",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-0daea93a5b8445333a66"
+    },
+    {
+      "source": "FR-BROWSE-002",
+      "target": "EVID-b99f369160410cdc",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-70916ac578304cb988ec"
+    },
+    {
+      "source": "FR-BROWSE-002",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-89db65b3c10d0635eab0"
+    },
+    {
+      "source": "FR-BROWSE-002",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-5a575d7110b45dce1359"
+    },
+    {
+      "source": "FEATURE-SEARCH",
+      "target": "FR-SEARCH-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-522345a9067ea7b3599a"
+    },
+    {
+      "source": "FR-SEARCH-001",
+      "target": "EVID-d7638348983a20d4",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-377fec019e5ecddc2e44"
+    },
+    {
+      "source": "FR-SEARCH-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-513176cefb25ef4806d5"
+    },
+    {
+      "source": "FR-SEARCH-001",
+      "target": "QUESTION-SEARCH",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-455562a75fd6667b2a98"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "FR-FILTER-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-24f19947ef0d3009a116"
+    },
+    {
+      "source": "FR-FILTER-001",
+      "target": "EVID-2ed3453878954246",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-00593c92e8368691772f"
+    },
+    {
+      "source": "FR-FILTER-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-053589fdb9497c84c6a4"
+    },
+    {
+      "source": "FR-FILTER-001",
+      "target": "QUESTION-FILTERS",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-2fb10ef73a83336eb531"
+    },
+    {
+      "source": "FEATURE-DETAIL",
+      "target": "FR-DETAIL-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-6d2b61f88cf16ab3a68c"
+    },
+    {
+      "source": "FR-DETAIL-001",
+      "target": "EVID-c53cea185200b355",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-b990a7231ab9ef34f170"
+    },
+    {
+      "source": "FR-DETAIL-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-1f7852d153acab9a331b"
+    },
+    {
+      "source": "FR-DETAIL-001",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-05405a54a1aefea2b16c"
+    },
+    {
+      "source": "FEATURE-COMPARE",
+      "target": "FR-COMPARE-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-57aeb975baf94fd9c2d1"
+    },
+    {
+      "source": "FR-COMPARE-001",
+      "target": "EVID-c16fccba79807428",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-9dfe755774cebfb71d38"
+    },
+    {
+      "source": "FR-COMPARE-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-63ddffb832c8aa2d9851"
+    },
+    {
+      "source": "FR-COMPARE-001",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-373a582f9fa938c902a3"
+    },
+    {
+      "source": "FR-COMPARE-001",
+      "target": "QUESTION-COMPARE",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-8e3ed62fcd57aa4ad150"
+    },
+    {
+      "source": "FEATURE-COMPARE",
+      "target": "FR-COMPARE-002",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-c3a987991977b2667620"
+    },
+    {
+      "source": "FR-COMPARE-002",
+      "target": "EVID-6b424827ef3bc21f",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-453eb33afabf94276d5a"
+    },
+    {
+      "source": "FR-COMPARE-002",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-492cb61024e9c574e73d"
+    },
+    {
+      "source": "FR-COMPARE-002",
+      "target": "ENTITY-LISTING",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-af7712b37b9f0f138586"
+    },
+    {
+      "source": "FR-COMPARE-002",
+      "target": "QUESTION-COMPARE",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-53227b7e05dc0747aad7"
+    },
+    {
+      "source": "FEATURE-MAP",
+      "target": "FR-MAP-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-b8c18a032588f437c34e"
+    },
+    {
+      "source": "FR-MAP-001",
+      "target": "EVID-bfd8734194d79384",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-6aa4668dc4064705b28e"
+    },
+    {
+      "source": "FR-MAP-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-ccc63833f6237ed3a663"
+    },
+    {
+      "source": "FR-MAP-001",
+      "target": "QUESTION-MAP",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-bd9324b09ff2f9c4c447"
+    },
+    {
+      "source": "FEATURE-PROJECT",
+      "target": "FR-PROJECT-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-4c4dfb93786eb1c6be49"
+    },
+    {
+      "source": "FR-PROJECT-001",
+      "target": "EVID-9e2f8dc3ceced3a0",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-c27443fe2382e935dbd8"
+    },
+    {
+      "source": "FR-PROJECT-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-264d4b5676ca72abf9db"
+    },
+    {
+      "source": "FR-PROJECT-001",
+      "target": "ENTITY-PROJECT",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-b156f5fb6abcbf8b0c79"
+    },
+    {
+      "source": "FEATURE-WIKI",
+      "target": "FR-WIKI-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-75999530be64d09e0827"
+    },
+    {
+      "source": "FR-WIKI-001",
+      "target": "EVID-2dd9a5356fef9d2a",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-3e318521424095472ef2"
+    },
+    {
+      "source": "FR-WIKI-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-b620b2ae4071a018e2bd"
+    },
+    {
+      "source": "FR-WIKI-001",
+      "target": "ENTITY-ARTICLE",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-ec4428994c407c2e0da9"
+    },
+    {
+      "source": "FEATURE-ACCOUNT",
+      "target": "FR-ACCOUNT-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-8494e6ca5a3a757f71a4"
+    },
+    {
+      "source": "FR-ACCOUNT-001",
+      "target": "EVID-bfc607d5c14c32ab",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-0272e6473fb1fe3f2088"
+    },
+    {
+      "source": "FR-ACCOUNT-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-b05c768f5f4c44821a41"
+    },
+    {
+      "source": "FR-ACCOUNT-001",
+      "target": "QUESTION-AUTH",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-3a7158497e92bac3357b"
+    },
+    {
+      "source": "FEATURE-POST",
+      "target": "FR-POST-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-5e76d7735a1e5f9296f1"
+    },
+    {
+      "source": "FR-POST-001",
+      "target": "EVID-34527de780364f37",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-61ccd8fdcda720bed4ef"
+    },
+    {
+      "source": "FR-POST-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-d7ed1911ce360d690b8a"
+    },
+    {
+      "source": "FR-POST-001",
+      "target": "QUESTION-AUTH",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-bca1b9717d6e5f880b0e"
+    },
+    {
+      "source": "FEATURE-AI",
+      "target": "FR-AI-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-d5aa71ec7b11efe342f8"
+    },
+    {
+      "source": "FR-AI-001",
+      "target": "EVID-d1cff2806ca77add",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-74c0d48c52c20917c3d1"
+    },
+    {
+      "source": "FR-AI-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-8b3ccf94222eb33a28df"
+    },
+    {
+      "source": "FR-AI-001",
+      "target": "QUESTION-AI",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-e4b62956dd50a56b6d05"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Sign in required. Authentication intentionally unavailable in fixture.

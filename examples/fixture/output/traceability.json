@@ -1,0 +1,51 @@
+[
+  {
+    "featureId": "FEATURE-CATALOG",
+    "requirementId": "FR-CATALOG-001",
+    "evidenceId": "EVID-9ea047ea81cbbcba",
+    "graphNodeId": "FR-CATALOG-001",
+    "upstreamId": "article:FR-CATALOG-001"
+  },
+  {
+    "featureId": "FEATURE-FILTER",
+    "requirementId": "FR-FILTER-001",
+    "evidenceId": "EVID-8e992d4583300047",
+    "graphNodeId": "FR-FILTER-001",
+    "upstreamId": "article:FR-FILTER-001"
+  },
+  {
+    "featureId": "FEATURE-FILTER",
+    "requirementId": "FR-FILTER-001",
+    "evidenceId": "EVID-cdf9f41e0c909818",
+    "graphNodeId": "FR-FILTER-001",
+    "upstreamId": "article:FR-FILTER-001"
+  },
+  {
+    "featureId": "FEATURE-FILTER",
+    "requirementId": "FR-FILTER-002",
+    "evidenceId": "EVID-b0d9712c57e7036a",
+    "graphNodeId": "FR-FILTER-002",
+    "upstreamId": "article:FR-FILTER-002"
+  },
+  {
+    "featureId": "FEATURE-FILTER",
+    "requirementId": "FR-FILTER-002",
+    "evidenceId": "EVID-415943f983727a5c",
+    "graphNodeId": "FR-FILTER-002",
+    "upstreamId": "article:FR-FILTER-002"
+  },
+  {
+    "featureId": "FEATURE-DETAIL",
+    "requirementId": "FR-DETAIL-001",
+    "evidenceId": "EVID-337e164078942bbe",
+    "graphNodeId": "FR-DETAIL-001",
+    "upstreamId": "article:FR-DETAIL-001"
+  },
+  {
+    "featureId": "FEATURE-ACCOUNT",
+    "requirementId": "FR-ACCOUNT-001",
+    "evidenceId": "EVID-ea991741f8ce8955",
+    "graphNodeId": "FR-ACCOUNT-001",
+    "upstreamId": "article:FR-ACCOUNT-001"
+  }
+]

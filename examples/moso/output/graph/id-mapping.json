@@ -1,0 +1,287 @@
+{
+  "SYSTEM-1": {
+    "file": "SYSTEM-1.md",
+    "upstreamId": "article:SYSTEM-1",
+    "canonicalType": "System"
+  },
+  "ACTOR-VISITOR": {
+    "file": "ACTOR-VISITOR.md",
+    "upstreamId": "article:ACTOR-VISITOR",
+    "canonicalType": "Actor"
+  },
+  "ACTOR-POSTER": {
+    "file": "ACTOR-POSTER.md",
+    "upstreamId": "article:ACTOR-POSTER",
+    "canonicalType": "Actor"
+  },
+  "FEATURE-BROWSE": {
+    "file": "FEATURE-BROWSE.md",
+    "upstreamId": "article:FEATURE-BROWSE",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-SEARCH": {
+    "file": "FEATURE-SEARCH.md",
+    "upstreamId": "article:FEATURE-SEARCH",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-FILTER": {
+    "file": "FEATURE-FILTER.md",
+    "upstreamId": "article:FEATURE-FILTER",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-DETAIL": {
+    "file": "FEATURE-DETAIL.md",
+    "upstreamId": "article:FEATURE-DETAIL",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-COMPARE": {
+    "file": "FEATURE-COMPARE.md",
+    "upstreamId": "article:FEATURE-COMPARE",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-MAP": {
+    "file": "FEATURE-MAP.md",
+    "upstreamId": "article:FEATURE-MAP",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-PROJECT": {
+    "file": "FEATURE-PROJECT.md",
+    "upstreamId": "article:FEATURE-PROJECT",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-WIKI": {
+    "file": "FEATURE-WIKI.md",
+    "upstreamId": "article:FEATURE-WIKI",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-ACCOUNT": {
+    "file": "FEATURE-ACCOUNT.md",
+    "upstreamId": "article:FEATURE-ACCOUNT",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-POST": {
+    "file": "FEATURE-POST.md",
+    "upstreamId": "article:FEATURE-POST",
+    "canonicalType": "Feature"
+  },
+  "FEATURE-AI": {
+    "file": "FEATURE-AI.md",
+    "upstreamId": "article:FEATURE-AI",
+    "canonicalType": "Feature"
+  },
+  "WORKFLOW-SEARCH": {
+    "file": "WORKFLOW-SEARCH.md",
+    "upstreamId": "article:WORKFLOW-SEARCH",
+    "canonicalType": "Workflow"
+  },
+  "WORKFLOW-COMPARE": {
+    "file": "WORKFLOW-COMPARE.md",
+    "upstreamId": "article:WORKFLOW-COMPARE",
+    "canonicalType": "Workflow"
+  },
+  "STEP-QUERY": {
+    "file": "STEP-QUERY.md",
+    "upstreamId": "article:STEP-QUERY",
+    "canonicalType": "Step"
+  },
+  "STEP-SUBMIT": {
+    "file": "STEP-SUBMIT.md",
+    "upstreamId": "article:STEP-SUBMIT",
+    "canonicalType": "Step"
+  },
+  "STEP-COMPARE-ONE": {
+    "file": "STEP-COMPARE-ONE.md",
+    "upstreamId": "article:STEP-COMPARE-ONE",
+    "canonicalType": "Step"
+  },
+  "STEP-COMPARE-TWO": {
+    "file": "STEP-COMPARE-TWO.md",
+    "upstreamId": "article:STEP-COMPARE-TWO",
+    "canonicalType": "Step"
+  },
+  "ENTITY-LISTING": {
+    "file": "ENTITY-LISTING.md",
+    "upstreamId": "article:ENTITY-LISTING",
+    "canonicalType": "Entity"
+  },
+  "ENTITY-PROJECT": {
+    "file": "ENTITY-PROJECT.md",
+    "upstreamId": "article:ENTITY-PROJECT",
+    "canonicalType": "Entity"
+  },
+  "ENTITY-ARTICLE": {
+    "file": "ENTITY-ARTICLE.md",
+    "upstreamId": "article:ENTITY-ARTICLE",
+    "canonicalType": "Entity"
+  },
+  "RULE-POST-ENTRY": {
+    "file": "RULE-POST-ENTRY.md",
+    "upstreamId": "article:RULE-POST-ENTRY",
+    "canonicalType": "BusinessRule"
+  },
+  "QUESTION-SEARCH": {
+    "file": "QUESTION-SEARCH.md",
+    "upstreamId": "article:QUESTION-SEARCH",
+    "canonicalType": "OpenQuestion"
+  },
+  "QUESTION-MAP": {
+    "file": "QUESTION-MAP.md",
+    "upstreamId": "article:QUESTION-MAP",
+    "canonicalType": "OpenQuestion"
+  },
+  "QUESTION-COMPARE": {
+    "file": "QUESTION-COMPARE.md",
+    "upstreamId": "article:QUESTION-COMPARE",
+    "canonicalType": "OpenQuestion"
+  },
+  "QUESTION-AUTH": {
+    "file": "QUESTION-AUTH.md",
+    "upstreamId": "article:QUESTION-AUTH",
+    "canonicalType": "OpenQuestion"
+  },
+  "QUESTION-FILTERS": {
+    "file": "QUESTION-FILTERS.md",
+    "upstreamId": "article:QUESTION-FILTERS",
+    "canonicalType": "OpenQuestion"
+  },
+  "QUESTION-AI": {
+    "file": "QUESTION-AI.md",
+    "upstreamId": "article:QUESTION-AI",
+    "canonicalType": "OpenQuestion"
+  },
+  "FR-BROWSE-001": {
+    "file": "FR-BROWSE-001.md",
+    "upstreamId": "article:FR-BROWSE-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-BROWSE-002": {
+    "file": "FR-BROWSE-002.md",
+    "upstreamId": "article:FR-BROWSE-002",
+    "canonicalType": "Requirement"
+  },
+  "FR-SEARCH-001": {
+    "file": "FR-SEARCH-001.md",
+    "upstreamId": "article:FR-SEARCH-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-FILTER-001": {
+    "file": "FR-FILTER-001.md",
+    "upstreamId": "article:FR-FILTER-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-DETAIL-001": {
+    "file": "FR-DETAIL-001.md",
+    "upstreamId": "article:FR-DETAIL-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-COMPARE-001": {
+    "file": "FR-COMPARE-001.md",
+    "upstreamId": "article:FR-COMPARE-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-COMPARE-002": {
+    "file": "FR-COMPARE-002.md",
+    "upstreamId": "article:FR-COMPARE-002",
+    "canonicalType": "Requirement"
+  },
+  "FR-MAP-001": {
+    "file": "FR-MAP-001.md",
+    "upstreamId": "article:FR-MAP-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-PROJECT-001": {
+    "file": "FR-PROJECT-001.md",
+    "upstreamId": "article:FR-PROJECT-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-WIKI-001": {
+    "file": "FR-WIKI-001.md",
+    "upstreamId": "article:FR-WIKI-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-ACCOUNT-001": {
+    "file": "FR-ACCOUNT-001.md",
+    "upstreamId": "article:FR-ACCOUNT-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-POST-001": {
+    "file": "FR-POST-001.md",
+    "upstreamId": "article:FR-POST-001",
+    "canonicalType": "Requirement"
+  },
+  "FR-AI-001": {
+    "file": "FR-AI-001.md",
+    "upstreamId": "article:FR-AI-001",
+    "canonicalType": "Requirement"
+  },
+  "EVID-d1cff2806ca77add": {
+    "file": "EVID-d1cff2806ca77add.md",
+    "upstreamId": "article:EVID-d1cff2806ca77add",
+    "canonicalType": "Evidence"
+  },
+  "EVID-2ed3453878954246": {
+    "file": "EVID-2ed3453878954246.md",
+    "upstreamId": "article:EVID-2ed3453878954246",
+    "canonicalType": "Evidence"
+  },
+  "EVID-b99f369160410cdc": {
+    "file": "EVID-b99f369160410cdc.md",
+    "upstreamId": "article:EVID-b99f369160410cdc",
+    "canonicalType": "Evidence"
+  },
+  "EVID-9e2f8dc3ceced3a0": {
+    "file": "EVID-9e2f8dc3ceced3a0.md",
+    "upstreamId": "article:EVID-9e2f8dc3ceced3a0",
+    "canonicalType": "Evidence"
+  },
+  "EVID-34527de780364f37": {
+    "file": "EVID-34527de780364f37.md",
+    "upstreamId": "article:EVID-34527de780364f37",
+    "canonicalType": "Evidence"
+  },
+  "EVID-bfc607d5c14c32ab": {
+    "file": "EVID-bfc607d5c14c32ab.md",
+    "upstreamId": "article:EVID-bfc607d5c14c32ab",
+    "canonicalType": "Evidence"
+  },
+  "EVID-2dd9a5356fef9d2a": {
+    "file": "EVID-2dd9a5356fef9d2a.md",
+    "upstreamId": "article:EVID-2dd9a5356fef9d2a",
+    "canonicalType": "Evidence"
+  },
+  "EVID-80a49be16993f01f": {
+    "file": "EVID-80a49be16993f01f.md",
+    "upstreamId": "article:EVID-80a49be16993f01f",
+    "canonicalType": "Evidence"
+  },
+  "EVID-5d0c8ad364416269": {
+    "file": "EVID-5d0c8ad364416269.md",
+    "upstreamId": "article:EVID-5d0c8ad364416269",
+    "canonicalType": "Evidence"
+  },
+  "EVID-d7638348983a20d4": {
+    "file": "EVID-d7638348983a20d4.md",
+    "upstreamId": "article:EVID-d7638348983a20d4",
+    "canonicalType": "Evidence"
+  },
+  "EVID-bfd8734194d79384": {
+    "file": "EVID-bfd8734194d79384.md",
+    "upstreamId": "article:EVID-bfd8734194d79384",
+    "canonicalType": "Evidence"
+  },
+  "EVID-c53cea185200b355": {
+    "file": "EVID-c53cea185200b355.md",
+    "upstreamId": "article:EVID-c53cea185200b355",
+    "canonicalType": "Evidence"
+  },
+  "EVID-c16fccba79807428": {
+    "file": "EVID-c16fccba79807428.md",
+    "upstreamId": "article:EVID-c16fccba79807428",
+    "canonicalType": "Evidence"
+  },
+  "EVID-6b424827ef3bc21f": {
+    "file": "EVID-6b424827ef3bc21f.md",
+    "upstreamId": "article:EVID-6b424827ef3bc21f",
+    "canonicalType": "Evidence"
+  }
+}

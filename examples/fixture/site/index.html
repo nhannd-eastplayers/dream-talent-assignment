@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Library fixture</title>
+<h1>Library catalog</h1><nav><a href="/">Catalog</a> <a href="/account.html">Account</a></nav>
+<label>Category <select id="category"><option value="all">All</option><option value="science">Science</option><option value="art">Art</option></select></label>
+<button id="filter">Filter</button>
+<div id="results" aria-live="polite">River atlas — Science</div>
+<a href="/detail.html">River atlas details</a>
+<script>
+document.querySelector('#filter').onclick = () => {
+  const category = document.querySelector('#category').value;
+  document.querySelector('#results').textContent = category === 'art' ? 'No items found' : 'River atlas — Science';
+};
+</script></html>

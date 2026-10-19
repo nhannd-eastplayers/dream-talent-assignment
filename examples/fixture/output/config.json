@@ -1,0 +1,16 @@
+{
+  "url": "http://127.0.0.1:8765/",
+  "language": "en",
+  "maxPages": 5,
+  "maxDepth": 2,
+  "maxActionsPerPage": 8,
+  "maxRuntimeMinutes": 3,
+  "maxRepairIterations": 2,
+  "allowedOrigins": [
+    "http://127.0.0.1:8765"
+  ],
+  "requestDelayMs": 100,
+  "allowMutations": false,
+  "allowLocalFixture": true,
+  "outputDirectory": "runs"
+}

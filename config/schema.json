@@ -1,0 +1,78 @@
+{
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1
+    },
+    "allowedOrigins": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "allowMutations": {
+      "const": false
+    },
+    "allowLocalFixture": {
+      "type": "boolean"
+    },
+    "outputDirectory": {
+      "type": "string",
+      "minLength": 1
+    },
+    "maxPages": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "maxDepth": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10
+    },
+    "maxActionsPerPage": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 30
+    },
+    "maxRuntimeMinutes": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 120
+    },
+    "maxRepairIterations": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2
+    },
+    "requestDelayMs": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000
+    }
+  },
+  "required": [
+    "url",
+    "language",
+    "allowedOrigins",
+    "allowMutations",
+    "allowLocalFixture",
+    "outputDirectory",
+    "maxPages",
+    "maxDepth",
+    "maxActionsPerPage",
+    "maxRuntimeMinutes",
+    "maxRepairIterations",
+    "requestDelayMs"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

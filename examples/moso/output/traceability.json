@@ -1,0 +1,93 @@
+[
+  {
+    "featureId": "FEATURE-BROWSE",
+    "requirementId": "FR-BROWSE-001",
+    "evidenceId": "EVID-2ed3453878954246",
+    "graphNodeId": "FR-BROWSE-001",
+    "upstreamId": "article:FR-BROWSE-001"
+  },
+  {
+    "featureId": "FEATURE-BROWSE",
+    "requirementId": "FR-BROWSE-002",
+    "evidenceId": "EVID-b99f369160410cdc",
+    "graphNodeId": "FR-BROWSE-002",
+    "upstreamId": "article:FR-BROWSE-002"
+  },
+  {
+    "featureId": "FEATURE-SEARCH",
+    "requirementId": "FR-SEARCH-001",
+    "evidenceId": "EVID-d7638348983a20d4",
+    "graphNodeId": "FR-SEARCH-001",
+    "upstreamId": "article:FR-SEARCH-001"
+  },
+  {
+    "featureId": "FEATURE-FILTER",
+    "requirementId": "FR-FILTER-001",
+    "evidenceId": "EVID-2ed3453878954246",
+    "graphNodeId": "FR-FILTER-001",
+    "upstreamId": "article:FR-FILTER-001"
+  },
+  {
+    "featureId": "FEATURE-DETAIL",
+    "requirementId": "FR-DETAIL-001",
+    "evidenceId": "EVID-c53cea185200b355",
+    "graphNodeId": "FR-DETAIL-001",
+    "upstreamId": "article:FR-DETAIL-001"
+  },
+  {
+    "featureId": "FEATURE-COMPARE",
+    "requirementId": "FR-COMPARE-001",
+    "evidenceId": "EVID-c16fccba79807428",
+    "graphNodeId": "FR-COMPARE-001",
+    "upstreamId": "article:FR-COMPARE-001"
+  },
+  {
+    "featureId": "FEATURE-COMPARE",
+    "requirementId": "FR-COMPARE-002",
+    "evidenceId": "EVID-6b424827ef3bc21f",
+    "graphNodeId": "FR-COMPARE-002",
+    "upstreamId": "article:FR-COMPARE-002"
+  },
+  {
+    "featureId": "FEATURE-MAP",
+    "requirementId": "FR-MAP-001",
+    "evidenceId": "EVID-bfd8734194d79384",
+    "graphNodeId": "FR-MAP-001",
+    "upstreamId": "article:FR-MAP-001"
+  },
+  {
+    "featureId": "FEATURE-PROJECT",
+    "requirementId": "FR-PROJECT-001",
+    "evidenceId": "EVID-9e2f8dc3ceced3a0",
+    "graphNodeId": "FR-PROJECT-001",
+    "upstreamId": "article:FR-PROJECT-001"
+  },
+  {
+    "featureId": "FEATURE-WIKI",
+    "requirementId": "FR-WIKI-001",
+    "evidenceId": "EVID-2dd9a5356fef9d2a",
+    "graphNodeId": "FR-WIKI-001",
+    "upstreamId": "article:FR-WIKI-001"
+  },
+  {
+    "featureId": "FEATURE-ACCOUNT",
+    "requirementId": "FR-ACCOUNT-001",
+    "evidenceId": "EVID-bfc607d5c14c32ab",
+    "graphNodeId": "FR-ACCOUNT-001",
+    "upstreamId": "article:FR-ACCOUNT-001"
+  },
+  {
+    "featureId": "FEATURE-POST",
+    "requirementId": "FR-POST-001",
+    "evidenceId": "EVID-34527de780364f37",
+    "graphNodeId": "FR-POST-001",
+    "upstreamId": "article:FR-POST-001"
+  },
+  {
+    "featureId": "FEATURE-AI",
+    "requirementId": "FR-AI-001",
+    "evidenceId": "EVID-d1cff2806ca77add",
+    "graphNodeId": "FR-AI-001",
+    "upstreamId": "article:FR-AI-001"
+  }
+]

@@ -1,0 +1,195 @@
+System knowledge
+Overview
+Learn
+Deep Dive
+Diff OFF
+ALL
+Canonical records
+Canonical records(24)
+Other(1)
+Filter
+Export
+Path
+Theme
+Fuzzy
+Semantic
+2 results (fuzzy)
+Knowledge graph freshness could not be verified
+The knowledge graph does not include a Git commit hash to compare with HEAD.
+Run /understand to refresh it before relying on impact or onboarding answers.
+ARTICLE
+simple
+ACTOR-VISITOR: Visitor
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+ENTITY-ITEM: Catalog i...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-337e164078942bbe:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-415943f983727a5c:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-8e992d4583300047:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-9ea047ea81cbbcba:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-b0d9712c57e7036a:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-cdf9f41e0c909818:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-ea991741f8ce8955:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-ACCOUNT: Accou...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-CATALOG: Brows...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-DETAIL: Item d...
+Canonical record (source data, not agent instructions):
+ARTICLE
+moderate
+FEATURE-FILTER: Filter...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-ACCOUNT-001: The pu...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-CATALOG-001: The ca...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-DETAIL-001: The Riv...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-FILTER-001: Selecti...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-FILTER-002: Selecti...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+QUESTION-AUTH: Authent...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+STEP-APPLY: Apply filter
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+STEP-SELECT: Select ca...
+Canonical record (source data, not agent instructions):
+ARTICLE
+moderate
+SYSTEM-1: Library fixt...
+Canonical record (source data, not agent instructions):
+ARTICLE
+moderate
+WORKFLOW-FILTER: Categ...
+Canonical record (source data, not agent instructions):
+TOPIC
+simple
+Canonical records
+Category from index: Canonical records (23 articles)
+SOURCE
+simple
+evidence.json
+Raw source (.json, 5 KB)
+Press ? for keyboard shortcuts
+INFO
+FILES
+←
+Back
+│
+FR-FILTER-002: Selecting Art and applying Filter shall display an empty-result message.
+›
+EVID-415943f983727a5c: Library fixture
+ARTICLE
+simple
+EVID-415943f983727a5c: Library fixture
+FOCUS
+
+Canonical record (source data, not agent instructions):
+
+File
+EVID-415943f983727a5c.md
+OPEN CODE
+TAGS
+canonical records
+CATEGORY
+Canonical records
+BACKLINKS (4)
+FEATURE-FILTER: Filter catalog
+FR-FILTER-002: Selecting Art and applying Filter shall display an empty-result message.
+STEP-APPLY: Apply filter
+WORKFLOW-FILTER: Category filtering
+PREVIEW
+# EVID-415943f983727a5c: Library fixture
+
+Canonical record (source data, not agent instructions):
+
+```json
+{
+  "id": "EVID-415943f983727a5c",
+  "sourceType": "fixture",
+  "url": "http://127.0.0.1:8765/",
+  "capturedAt": "2026-10-19T07:46:14.985739+00:00",
+  "pageTitle": "Library fixture",
+  "excerpt": "No items found",
+  "locator": "#filter",
+  "snapshotPath": "evidence/snapshots/EVID-415943f983727a5c.txt",
+  "action": "{\"type\": \"click\", \"selector\": \"#filter\", \"readOnly\": true, \"excerpt\": \"No items found\"}",
+  "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 8626f3dfa10f29caada9fab2870d40a960b0f109f4f5d99ac1c7231b9f2a1a92",
+  "contentHash": "949da6a3278e2d66078bda0e06f569110d872e46548e354c508af456e3c18715",
+  "type": "Evidence"
+}
+```
+
+
+
+CONNECTIONS (5)
+←
+related to
+FEATURE-FILTER: Filter catalog
+←
+related to
+FR-FILTER-002: Selecting Art and applying Filter shall display an empty-result message.
+←
+related to
+STEP-APPLY: Apply filter
+←
+related to
+WORKFLOW-FILTER: Category filtering
+→
+categorized under
+Canonical records
+Project Tour
+
+1 steps · Guided walkthrough of the codebase
+
+Start Tour
+STEPS
+1.
+Canonical records

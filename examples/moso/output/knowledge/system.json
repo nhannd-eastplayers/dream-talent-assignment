@@ -1,0 +1,709 @@
+{
+  "system": {
+    "id": "SYSTEM-1",
+    "name": "MOSO public property website",
+    "description": "Evidence-limited reconstruction of public property discovery, project catalog, detail, comparison selection, editorial content and account entry.",
+    "evidenceIds": [
+      "EVID-d1cff2806ca77add",
+      "EVID-2ed3453878954246"
+    ],
+    "status": "observed",
+    "verificationState": "verified",
+    "rationale": ""
+  },
+  "modules": [],
+  "actors": [
+    {
+      "id": "ACTOR-VISITOR",
+      "name": "Khách truy cập",
+      "description": "Anonymous visitor navigating public pages.",
+      "evidenceIds": [
+        "EVID-d1cff2806ca77add",
+        "EVID-2ed3453878954246"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": ""
+    },
+    {
+      "id": "ACTOR-POSTER",
+      "name": "Người đăng tin",
+      "description": "Potential authenticated poster; only unauthenticated boundary observed.",
+      "evidenceIds": [
+        "EVID-34527de780364f37"
+      ],
+      "status": "inferred",
+      "verificationState": "blocked",
+      "rationale": "Đăng tin entry redirects to login. Authenticated role permissions not established."
+    }
+  ],
+  "features": [
+    {
+      "id": "FEATURE-BROWSE",
+      "name": "Sale/rental browsing",
+      "description": "Inspect public listing cards.",
+      "evidenceIds": [
+        "EVID-2ed3453878954246",
+        "EVID-b99f369160410cdc"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/mua-ban-nha-dat"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open sale or rental route.",
+        "Inspect rendered listing cards."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": []
+    },
+    {
+      "id": "FEATURE-SEARCH",
+      "name": "Keyword search",
+      "description": "Submit public query; search semantics remain unknown.",
+      "evidenceIds": [
+        "EVID-2ed3453878954246",
+        "EVID-d7638348983a20d4"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/mua-ban-nha-dat"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Fill q with Quận 1.",
+        "Click Tìm kiếm.",
+        "Observe q URL and changed results."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-SEARCH"
+      ],
+      "workflowIds": [
+        "WORKFLOW-SEARCH"
+      ]
+    },
+    {
+      "id": "FEATURE-FILTER",
+      "name": "Listing filters",
+      "description": "Discover price, area, rooms, date and sorting controls.",
+      "evidenceIds": [
+        "EVID-2ed3453878954246"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/mua-ban-nha-dat"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open listing results.",
+        "Inspect filter controls without asserting their behavior."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-FILTERS"
+      ],
+      "workflowIds": []
+    },
+    {
+      "id": "FEATURE-DETAIL",
+      "name": "Property detail",
+      "description": "Read one listing’s visible descriptive fields.",
+      "evidenceIds": [
+        "EVID-c53cea185200b355"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/ban-nha-mat-tien-thach-thi-thanh-quan-1-tphcm-6-phong-ngu-gia-125-ty-1dk006"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Follow listing link.",
+        "Inspect identifier, price, area and description."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": []
+    },
+    {
+      "id": "FEATURE-COMPARE",
+      "name": "Comparison selection",
+      "description": "Select two properties into comparison tray.",
+      "evidenceIds": [
+        "EVID-c16fccba79807428",
+        "EVID-6b424827ef3bc21f"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/mua-ban-nha-dat"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Click first comparison control.",
+        "Observe 1/2 tray.",
+        "Click another comparison control.",
+        "Observe 2/2 tray."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-COMPARE"
+      ],
+      "workflowIds": [
+        "WORKFLOW-COMPARE"
+      ]
+    },
+    {
+      "id": "FEATURE-MAP",
+      "name": "Map entry",
+      "description": "Open map/list route; map loading unverified.",
+      "evidenceIds": [
+        "EVID-bfd8734194d79384"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/mua-ban-nha-dat?xem=ban-do"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open map link.",
+        "Observe map shell and listing panel."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-MAP"
+      ],
+      "workflowIds": []
+    },
+    {
+      "id": "FEATURE-PROJECT",
+      "name": "Project catalog",
+      "description": "Browse public project cards.",
+      "evidenceIds": [
+        "EVID-9e2f8dc3ceced3a0"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/tim-kiem-du-an"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open project catalog.",
+        "Inspect cards and pagination text."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-PROJECT"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": []
+    },
+    {
+      "id": "FEATURE-WIKI",
+      "name": "Wiki BĐS catalog",
+      "description": "Browse editorial titles and excerpts; content truth not assessed.",
+      "evidenceIds": [
+        "EVID-2dd9a5356fef9d2a"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/wiki-bds"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open Wiki BĐS.",
+        "Inspect article catalog."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-ARTICLE"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": []
+    },
+    {
+      "id": "FEATURE-ACCOUNT",
+      "name": "Account entry",
+      "description": "Inspect phone/password and Google entry controls.",
+      "evidenceIds": [
+        "EVID-bfc607d5c14c32ab"
+      ],
+      "status": "observed",
+      "verificationState": "blocked",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/login?callbackUrl=%2F"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open login page.",
+        "Inspect controls; submit no credentials."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-AUTH"
+      ],
+      "workflowIds": []
+    },
+    {
+      "id": "FEATURE-POST",
+      "name": "Posting entry",
+      "description": "Observe unauthenticated posting redirect.",
+      "evidenceIds": [
+        "EVID-34527de780364f37"
+      ],
+      "status": "observed",
+      "verificationState": "blocked",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/dang-tin"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open Đăng tin.",
+        "Observe login redirect preserving callback."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-LISTING"
+      ],
+      "businessRuleIds": [
+        "RULE-POST-ENTRY"
+      ],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-AUTH"
+      ],
+      "workflowIds": []
+    },
+    {
+      "id": "FEATURE-AI",
+      "name": "AI search entry",
+      "description": "Discover AI search option only.",
+      "evidenceIds": [
+        "EVID-d1cff2806ca77add"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "https://moso.vn/"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Inspect Tìm với AI entry text."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-AI"
+      ],
+      "workflowIds": []
+    }
+  ],
+  "workflows": [
+    {
+      "id": "WORKFLOW-SEARCH",
+      "name": "Keyword submission",
+      "description": "Observed read-only query submission.",
+      "evidenceIds": [
+        "EVID-2ed3453878954246",
+        "EVID-d7638348983a20d4"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "stepIds": [
+        "STEP-QUERY",
+        "STEP-SUBMIT"
+      ],
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "openQuestionIds": [
+        "QUESTION-SEARCH"
+      ]
+    },
+    {
+      "id": "WORKFLOW-COMPARE",
+      "name": "Select comparison items",
+      "description": "Tray changes from one to two selected items; comparison table not opened.",
+      "evidenceIds": [
+        "EVID-c16fccba79807428",
+        "EVID-6b424827ef3bc21f"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "stepIds": [
+        "STEP-COMPARE-ONE",
+        "STEP-COMPARE-TWO"
+      ],
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "STEP-QUERY",
+      "name": "Enter keyword",
+      "description": "Fill search input with Quận 1.",
+      "evidenceIds": [
+        "EVID-d7638348983a20d4"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": ""
+    },
+    {
+      "id": "STEP-SUBMIT",
+      "name": "Submit query",
+      "description": "Search URL contains q parameter and rendered cards change.",
+      "evidenceIds": [
+        "EVID-d7638348983a20d4"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": ""
+    },
+    {
+      "id": "STEP-COMPARE-ONE",
+      "name": "Select first item",
+      "description": "Tray shows 1/2.",
+      "evidenceIds": [
+        "EVID-c16fccba79807428"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": ""
+    },
+    {
+      "id": "STEP-COMPARE-TWO",
+      "name": "Select second item",
+      "description": "Tray shows 2/2.",
+      "evidenceIds": [
+        "EVID-6b424827ef3bc21f"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": ""
+    }
+  ],
+  "entities": [
+    {
+      "id": "ENTITY-LISTING",
+      "name": "Tin bất động sản",
+      "description": "Visible title, price, area, location and optional room attributes. No internal persistence schema inferred.",
+      "evidenceIds": [
+        "EVID-2ed3453878954246",
+        "EVID-c53cea185200b355"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": ""
+    },
+    {
+      "id": "ENTITY-PROJECT",
+      "name": "Dự án",
+      "description": "Visible project title, locality, price and sample developer/area attributes.",
+      "evidenceIds": [
+        "EVID-9e2f8dc3ceced3a0"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": ""
+    },
+    {
+      "id": "ENTITY-ARTICLE",
+      "name": "Bài viết",
+      "description": "Editorial article title, excerpt and publication date shown on Wiki BĐS.",
+      "evidenceIds": [
+        "EVID-2dd9a5356fef9d2a"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": ""
+    }
+  ],
+  "businessRules": [
+    {
+      "id": "RULE-POST-ENTRY",
+      "name": "Unauthenticated posting boundary",
+      "description": "This unauthenticated /dang-tin visit redirects to login with callbackUrl for posting. Backend authorization not established.",
+      "evidenceIds": [
+        "EVID-34527de780364f37"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": ""
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "QUESTION-SEARCH",
+      "name": "Search semantics",
+      "description": "Does keyword matching normalize accents, tokenize, rank or constrain district? Search for Quận 1 also returned other districts.",
+      "evidenceIds": [
+        "EVID-d7638348983a20d4"
+      ],
+      "status": "proposed",
+      "verificationState": "unverified",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated."
+    },
+    {
+      "id": "QUESTION-MAP",
+      "name": "Map loading",
+      "description": "Does the map finish loading with third-party resources allowed? Current guarded run shows Đang tải bản đồ….",
+      "evidenceIds": [
+        "EVID-bfd8734194d79384"
+      ],
+      "status": "proposed",
+      "verificationState": "blocked",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated."
+    },
+    {
+      "id": "QUESTION-COMPARE",
+      "name": "Comparison result",
+      "description": "What columns, limits and persistence apply after opening comparison? Only selection tray tested.",
+      "evidenceIds": [
+        "EVID-6b424827ef3bc21f"
+      ],
+      "status": "proposed",
+      "verificationState": "unverified",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated."
+    },
+    {
+      "id": "QUESTION-AUTH",
+      "name": "Authenticated flows",
+      "description": "What permissions, posting validation, moderation and account recovery behavior apply?",
+      "evidenceIds": [
+        "EVID-34527de780364f37"
+      ],
+      "status": "proposed",
+      "verificationState": "blocked",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated."
+    },
+    {
+      "id": "QUESTION-FILTERS",
+      "name": "Filter combinations",
+      "description": "How do price, area, rooms and sorting combine, reset and handle empty states?",
+      "evidenceIds": [
+        "EVID-2ed3453878954246"
+      ],
+      "status": "proposed",
+      "verificationState": "unverified",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated."
+    },
+    {
+      "id": "QUESTION-AI",
+      "name": "AI search",
+      "description": "What does Tìm với AI do? Entry text observed; behavior not tested.",
+      "evidenceIds": [
+        "EVID-d1cff2806ca77add"
+      ],
+      "status": "proposed",
+      "verificationState": "unverified",
+      "rationale": "Question raised by bounded public exploration; no stakeholder answer fabricated."
+    }
+  ]
+}

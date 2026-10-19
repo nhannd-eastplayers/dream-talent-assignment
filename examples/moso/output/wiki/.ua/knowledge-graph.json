@@ -1,0 +1,3016 @@
+{
+  "version": "1.0.0",
+  "kind": "knowledge",
+  "project": {
+    "name": "System knowledge",
+    "languages": [
+      "markdown"
+    ],
+    "frameworks": [
+      "karpathy-wiki"
+    ],
+    "description": "Knowledge graph for System knowledge",
+    "analyzedAt": "2026-10-19T08:02:23.128513+00:00",
+    "gitCommitHash": ""
+  },
+  "nodes": [
+    {
+      "id": "article:ACTOR-POSTER",
+      "type": "article",
+      "name": "ACTOR-POSTER: Người đăng tin",
+      "filePath": "ACTOR-POSTER.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-34527de780364f37"
+        ],
+        "category": "Canonical records",
+        "content": "# ACTOR-POSTER: Người đăng tin\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"ACTOR-POSTER\",\n  \"name\": \"Người đăng tin\",\n  \"description\": \"Potential authenticated poster; only unauthenticated boundary observed.\",\n  \"evidenceIds\": [\n    \"EVID-34527de780364f37\"\n  ],\n  \"status\": \"inferred\",\n  \"verificationState\": \"blocked\",\n  \"rationale\": \"Đăng tin entry redirects to login. Authenticated role permissions not established.\",\n  \"type\": \"Actor\"\n}\n```\n\n- [[EVID-34527de780364f37]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:ACTOR-VISITOR",
+      "type": "article",
+      "name": "ACTOR-VISITOR: Khách truy cập",
+      "filePath": "ACTOR-VISITOR.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-2ed3453878954246",
+          "EVID-d1cff2806ca77add"
+        ],
+        "category": "Canonical records",
+        "content": "# ACTOR-VISITOR: Khách truy cập\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"ACTOR-VISITOR\",\n  \"name\": \"Khách truy cập\",\n  \"description\": \"Anonymous visitor navigating public pages.\",\n  \"evidenceIds\": [\n    \"EVID-d1cff2806ca77add\",\n    \"EVID-2ed3453878954246\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"Actor\"\n}\n```\n\n- [[EVID-2ed3453878954246]]\n- [[EVID-d1cff2806ca77add]]\n",
+        "backlinks": [
+          "article:FEATURE-ACCOUNT",
+          "article:FEATURE-AI",
+          "article:FEATURE-BROWSE",
+          "article:FEATURE-COMPARE",
+          "article:FEATURE-DETAIL",
+          "article:FEATURE-FILTER",
+          "article:FEATURE-MAP",
+          "article:FEATURE-POST",
+          "article:FEATURE-PROJECT",
+          "article:FEATURE-SEARCH",
+          "article:FEATURE-WIKI",
+          "article:FR-ACCOUNT-001",
+          "article:FR-AI-001",
+          "article:FR-BROWSE-001",
+          "article:FR-BROWSE-002",
+          "article:FR-COMPARE-001",
+          "article:FR-COMPARE-002",
+          "article:FR-DETAIL-001",
+          "article:FR-FILTER-001",
+          "article:FR-MAP-001",
+          "article:FR-POST-001",
+          "article:FR-PROJECT-001",
+          "article:FR-SEARCH-001",
+          "article:FR-WIKI-001",
+          "article:SYSTEM-1",
+          "article:WORKFLOW-COMPARE",
+          "article:WORKFLOW-SEARCH"
+        ]
+      }
+    },
+    {
+      "id": "article:ENTITY-ARTICLE",
+      "type": "article",
+      "name": "ENTITY-ARTICLE: Bài viết",
+      "filePath": "ENTITY-ARTICLE.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-2dd9a5356fef9d2a"
+        ],
+        "category": "Canonical records",
+        "content": "# ENTITY-ARTICLE: Bài viết\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"ENTITY-ARTICLE\",\n  \"name\": \"Bài viết\",\n  \"description\": \"Editorial article title, excerpt and publication date shown on Wiki BĐS.\",\n  \"evidenceIds\": [\n    \"EVID-2dd9a5356fef9d2a\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"Entity\"\n}\n```\n\n- [[EVID-2dd9a5356fef9d2a]]\n",
+        "backlinks": [
+          "article:FEATURE-WIKI",
+          "article:FR-WIKI-001",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:ENTITY-LISTING",
+      "type": "article",
+      "name": "ENTITY-LISTING: Tin bất động sản",
+      "filePath": "ENTITY-LISTING.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-2ed3453878954246",
+          "EVID-c53cea185200b355"
+        ],
+        "category": "Canonical records",
+        "content": "# ENTITY-LISTING: Tin bất động sản\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"ENTITY-LISTING\",\n  \"name\": \"Tin bất động sản\",\n  \"description\": \"Visible title, price, area, location and optional room attributes. No internal persistence schema inferred.\",\n  \"evidenceIds\": [\n    \"EVID-2ed3453878954246\",\n    \"EVID-c53cea185200b355\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"Entity\"\n}\n```\n\n- [[EVID-2ed3453878954246]]\n- [[EVID-c53cea185200b355]]\n",
+        "backlinks": [
+          "article:FEATURE-BROWSE",
+          "article:FEATURE-COMPARE",
+          "article:FEATURE-DETAIL",
+          "article:FEATURE-FILTER",
+          "article:FEATURE-MAP",
+          "article:FEATURE-POST",
+          "article:FEATURE-SEARCH",
+          "article:FR-BROWSE-001",
+          "article:FR-BROWSE-002",
+          "article:FR-COMPARE-001",
+          "article:FR-COMPARE-002",
+          "article:FR-DETAIL-001",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:ENTITY-PROJECT",
+      "type": "article",
+      "name": "ENTITY-PROJECT: Dự án",
+      "filePath": "ENTITY-PROJECT.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-9e2f8dc3ceced3a0"
+        ],
+        "category": "Canonical records",
+        "content": "# ENTITY-PROJECT: Dự án\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"ENTITY-PROJECT\",\n  \"name\": \"Dự án\",\n  \"description\": \"Visible project title, locality, price and sample developer/area attributes.\",\n  \"evidenceIds\": [\n    \"EVID-9e2f8dc3ceced3a0\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"Entity\"\n}\n```\n\n- [[EVID-9e2f8dc3ceced3a0]]\n",
+        "backlinks": [
+          "article:FEATURE-PROJECT",
+          "article:FR-PROJECT-001",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-2dd9a5356fef9d2a",
+      "type": "article",
+      "name": "EVID-2dd9a5356fef9d2a: Wiki Bất Động Sản, Tra Cứu Kiến Thức BĐS | MOSO AI PROPTECH",
+      "filePath": "EVID-2dd9a5356fef9d2a.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-2dd9a5356fef9d2a: Wiki Bất Động Sản, Tra Cứu Kiến Thức BĐS | MOSO AI PROPTECH\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-2dd9a5356fef9d2a\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/wiki-bds\",\n  \"capturedAt\": \"2026-10-19T07:47:01.330235+00:00\",\n  \"pageTitle\": \"Wiki Bất Động Sản, Tra Cứu Kiến Thức BĐS | MOSO AI PROPTECH\",\n  \"excerpt\": \"Bỏ qua tới nội dung\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nVideo nhà đất\\nWiki BĐS\\nĐăng tin\\nĐăng nhập\\nTất cả\\nKiến Thức\\nTin Tức\\nPhong Thủy\\nNội Thất\\nGóc Nhìn MOSO\\nBáo cáo thị trường\\nWiki BĐS\\nTrang chủ\\n/\\nTin tức bất động sản\\n/\\nWiki Bất Động Sản\\n\\nCHUYÊN MỤC\\n\\nWiki Bất Động Sản\\n\\nWiki Bất Động Sản - Chuyên trang tra cứu kiến thức bất động sản toàn diện. Cập nhật pháp lý nhà đất, kinh nghiệm mua bán, định giá và bí quyết đầu tư an toàn.\\n\\nWiki BĐS\\nĐất ODT (Đất Ở Đô Thị) là gì? Quy định sử dụng và thuế phí năm 2026\\n\\nĐất ODT (đất ở đô thị) là loại đất được quy định sử dụng làm nhà ở tại các khu đô thị, thuộc nhóm đất phi nông nghiệp, được phép xây dựng nhà ở lâu dài theo luật đất đai hiện hành năm 2026.\\n\\n11/09/2026\\n·\\n160\\nWiki BĐS\\nLuật Quy hoạch đô thị và nông thôn 2026: Nội dung, quy trình mới nhất\\n\\nLuật Quy hoạch đô thị và nông thôn 2026 là bộ luật hợp nhất việc lập, thẩm định, phê duyệt và quản lý quy hoạch không gian phát triển trên cả nước, áp dụng từ 1/7/2025 theo Luật 47/2024/QH15 và sửa đổi 144/2025/QH15.\\n\\n09/09/2026\\n·\\n47\\nWiki BĐS\\nQuy hoạch 1/500 là gì? Quy trình thẩm định và tra cứu 2026\\n\\nQuy hoạch 1/500 là bản đồ quy hoạch chi tiết xây dựng ở tỷ lệ 1:500, xác định rõ ranh giới từng lô đất\",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-2dd9a5356fef9d2a.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"https://moso.vn/wiki-bds\\\", \\\"depth\\\": 1}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 44ce289036b6a4d927961b5d16e84d70d95d0e55124620fb6421bf641ab883b4\",\n  \"contentHash\": \"40976f633b9a5ec39c78fb76febb8b7c5216eb40485c2db9edd0eca60dd45ee8\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:ENTITY-ARTICLE",
+          "article:FEATURE-WIKI",
+          "article:FR-WIKI-001"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-2ed3453878954246",
+      "type": "article",
+      "name": "EVID-2ed3453878954246: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "filePath": "EVID-2ed3453878954246.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-2ed3453878954246: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-2ed3453878954246\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/mua-ban-nha-dat\",\n  \"capturedAt\": \"2026-10-19T07:46:53.527245+00:00\",\n  \"pageTitle\": \"Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\",\n  \"excerpt\": \"Bỏ qua tới nội dung\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nVideo nhà đất\\nWiki BĐS\\nĐăng tin\\nĐăng nhập\\nToàn quốc\\nTìm theo tên đường, dự án, tiện ích, từ khóa...\\nTìm kiếm\\nXem bản đồ\\nTrang chủ\\nMua bán nhà đất\\nMua bán nhà đất toàn quốc\\n\\nCập nhật 19/10/2026\\n\\nTất cả\\nCăn hộ chung cư\\nNhà hẻm\\nNhà mặt tiền\\nĐất\\nKhoảng giá\\nDiện tích\\nPhòng ngủ\\nPhòng tắm\\nSố tầng\\nHướng nhà\\nĐường trước nhà\\nNgày đăng\\nHàng thanh lý\\nTất cả\\nChính chủ\\nMôi giới\\nTin mới nhất\\nTin xác thực\\nTin có video\\n\\nNhà mặt tiền Quận 1 - 72.2 m²\\n\\n3\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\\n\\n50 tỷ\\n692,52 triệu/m²\\n72.2 m²\\n\\n101 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\\n\\nvừa đăng\\nSo sánh\\n\\nNhà mặt tiền Quận 1 - 130 m²\\n\\n3\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 130 tỷ\\n\\n130 tỷ\\n1 tỷ/m²\\n130 m²\\n\\n152-154 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\\n\\nvừa đăng\\nSo sánh\\n\\nNhà hẻm Huyện Cần Giuộc - 2 tầng - 3PN - 114.6 m²\\n\\nxác thực\\n3\\nBán nhà hẻm Ấp Thanh Ba Huyện Cần Giuộc, Long An – 3 phòng ngủ, giá 2.5 tỷ\\n\\n2,5 tỷ\\n21,81 triệu/m²\\n114.6 m²\\n2 tầng\\n3PN\\n2WC\\n\\nẤp Thanh Ba, Xã Mỹ Lộc, H.Cần Giuộc, Long An\\n\\nvừa đăng\\nSo sánh\\n\\nNhà mặt tiền Quận 1 - 2 tầng - 70 m²\\n\\n3\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá \",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-2ed3453878954246.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"https://moso.vn/mua-ban-nha-dat\\\", \\\"depth\\\": 1}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 d8ae7d4e904ebdd64a7da84203351019e1f4aecd7b1a5a0914dea3b51ea16f32\",\n  \"contentHash\": \"598fb7fcc906ba50fb4c20726bd84e6b9b6770b2cc9a3ed676493c9973350ece\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:ACTOR-VISITOR",
+          "article:ENTITY-LISTING",
+          "article:FEATURE-BROWSE",
+          "article:FEATURE-FILTER",
+          "article:FEATURE-SEARCH",
+          "article:FR-BROWSE-001",
+          "article:FR-FILTER-001",
+          "article:QUESTION-FILTERS",
+          "article:SYSTEM-1",
+          "article:WORKFLOW-SEARCH"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-34527de780364f37",
+      "type": "article",
+      "name": "EVID-34527de780364f37: Đăng Nhập Tài Khoản | MOSO",
+      "filePath": "EVID-34527de780364f37.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-34527de780364f37: Đăng Nhập Tài Khoản | MOSO\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-34527de780364f37\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/login?callbackUrl=%2Fdang-tin\",\n  \"capturedAt\": \"2026-10-19T07:46:58.170481+00:00\",\n  \"pageTitle\": \"Đăng Nhập Tài Khoản | MOSO\",\n  \"excerpt\": \"Bỏ qua tới nội dung\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nVideo nhà đất\\nWiki BĐS\\nĐăng tin\\nĐăng nhập\\nQUYỀN LỢI MOSO\\n\\nTặng MP cho tin đầu tiên\\n\\nTài khoản mới được tặng MP, đủ đăng tin đầu tiên và tiếp cận hàng trăm nghìn khách mỗi ngày.\\n\\nẨN SỐ NHÀ bảo vệ tin đăng tuyệt đối\\n\\nChống sao chép, chống cướp khách — quyền lợi tin đăng luôn thuộc về bạn.\\n\\nTrợ lý AI định giá & tìm nhà 24/7\\n\\nAI MOSO hỗ trợ định giá chính xác và gợi ý nhà phù hợp mọi lúc.\\n\\nĐăng nhập\\nBạn chưa có tài khoản? Đăng ký miễn phí\\n\\nSố điện thoại\\n\\nMật khẩu\\nTiếp tục\\nQuên mật khẩu?\\n\\nhoặc\\n\\nTiếp tục với Google\\nBằng việc tiếp tục, bạn đồng ý với Chính sách bảo mật của chúng tôi\\nNhận xét\",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-34527de780364f37.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"https://moso.vn/dang-tin\\\", \\\"depth\\\": 1}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 fbfc6b2fa95ea82cd8b472732b26b8583b74b9e2aaa1d7cbb9e150c93c39faf9\",\n  \"contentHash\": \"fbfc6b2fa95ea82cd8b472732b26b8583b74b9e2aaa1d7cbb9e150c93c39faf9\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:ACTOR-POSTER",
+          "article:FEATURE-POST",
+          "article:FR-POST-001",
+          "article:QUESTION-AUTH",
+          "article:RULE-POST-ENTRY"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-5d0c8ad364416269",
+      "type": "article",
+      "name": "EVID-5d0c8ad364416269: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "filePath": "EVID-5d0c8ad364416269.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-5d0c8ad364416269: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-5d0c8ad364416269\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/mua-ban-nha-dat\",\n  \"capturedAt\": \"2026-10-19T07:48:14.505486+00:00\",\n  \"pageTitle\": \"Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\",\n  \"excerpt\": \"Bỏ qua tới nội dung\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nVideo nhà đất\\nWiki BĐS\\nĐăng tin\\nĐăng nhập\\nToàn quốc\\nTìm theo tên đường, dự án, tiện ích, từ khóa...\\nTìm kiếm\\nXem bản đồ\\nTrang chủ\\nMua bán nhà đất\\nMua bán nhà đất toàn quốc\\n\\nCập nhật 19/10/2026\\n\\nTất cả\\nCăn hộ chung cư\\nNhà hẻm\\nNhà mặt tiền\\nĐất\\nKhoảng giá\\nDiện tích\\nPhòng ngủ\\nPhòng tắm\\nSố tầng\\nHướng nhà\\nĐường trước nhà\\nNgày đăng\\nHàng thanh lý\\nTất cả\\nChính chủ\\nMôi giới\\nTin mới nhất\\nTin xác thực\\nTin có video\\n\\nNhà mặt tiền Quận 1 - 72.2 m²\\n\\n3\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\\n\\n50 tỷ\\n692,52 triệu/m²\\n72.2 m²\\n\\n101 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\\n\\nvừa đăng\\nSo sánh\\n\\nNhà mặt tiền Quận 1 - 130 m²\\n\\n3\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 130 tỷ\\n\\n130 tỷ\\n1 tỷ/m²\\n130 m²\\n\\n152-154 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\\n\\nvừa đăng\\nSo sánh\\n\\nNhà hẻm Huyện Cần Giuộc - 2 tầng - 3PN - 114.6 m²\\n\\nxác thực\\n3\\nBán nhà hẻm Ấp Thanh Ba Huyện Cần Giuộc, Long An – 3 phòng ngủ, giá 2.5 tỷ\\n\\n2,5 tỷ\\n21,81 triệu/m²\\n114.6 m²\\n2 tầng\\n3PN\\n2WC\\n\\nẤp Thanh Ba, Xã Mỹ Lộc, H.Cần Giuộc, Long An\\n\\nvừa đăng\\nSo sánh\\n\\nNhà mặt tiền Quận 1 - 2 tầng - 70 m²\\n\\n3\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá \",\n  \"locator\": \"input[name=q]\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-5d0c8ad364416269.txt\",\n  \"action\": \"{\\\"type\\\": \\\"fill\\\", \\\"selector\\\": \\\"input[name=q]\\\", \\\"value\\\": \\\"Quận 1\\\", \\\"readOnly\\\": true}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 326f6d44dabb996c07cf3e57abdd5f5e928869f260472d64d1c9e3b5804f14a6\",\n  \"contentHash\": \"598fb7fcc906ba50fb4c20726bd84e6b9b6770b2cc9a3ed676493c9973350ece\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": []
+      }
+    },
+    {
+      "id": "article:EVID-6b424827ef3bc21f",
+      "type": "article",
+      "name": "EVID-6b424827ef3bc21f: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "filePath": "EVID-6b424827ef3bc21f.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-6b424827ef3bc21f: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-6b424827ef3bc21f\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/mua-ban-nha-dat\",\n  \"capturedAt\": \"2026-10-19T07:48:22.975064+00:00\",\n  \"pageTitle\": \"Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\",\n  \"excerpt\": \"So sánh tin đăng\\n2/2\\n\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\\n101 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\\nBán nhà hẻm Ấp Thanh Ba Huyện Cần Giuộc, Long An – 3 phòng ngủ, giá 2.5 tỷ\\nẤp Thanh Ba, Xã Mỹ Lộc, H.Cần Giuộc, Long An\\nXoá tất cả\\nSo sánh\\nNhận xét\",\n  \"locator\": \"button[aria-label='So sánh tin này'] >> nth=1\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-6b424827ef3bc21f.txt\",\n  \"action\": \"{\\\"type\\\": \\\"click\\\", \\\"selector\\\": \\\"button[aria-label='So sánh tin này'] >> nth=1\\\", \\\"readOnly\\\": true}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 3c2c1f02efa8fb991c8b281a4876f7c7eb60f75c2300ae58a6043d40b3bf436c\",\n  \"contentHash\": \"d79bc78b23f415fe9d53e61a7bd17ec5681fc62c3277ea6c5396d51d4a01f563\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:FEATURE-COMPARE",
+          "article:FR-COMPARE-002",
+          "article:QUESTION-COMPARE",
+          "article:STEP-COMPARE-TWO",
+          "article:WORKFLOW-COMPARE"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-80a49be16993f01f",
+      "type": "article",
+      "name": "EVID-80a49be16993f01f: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "filePath": "EVID-80a49be16993f01f.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-80a49be16993f01f: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-80a49be16993f01f\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/mua-ban-nha-dat\",\n  \"capturedAt\": \"2026-10-19T07:48:13.621568+00:00\",\n  \"pageTitle\": \"Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\",\n  \"excerpt\": \"Bỏ qua tới nội dung\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nVideo nhà đất\\nWiki BĐS\\nĐăng tin\\nĐăng nhập\\nToàn quốc\\nTìm theo tên đường, dự án, tiện ích, từ khóa...\\nTìm kiếm\\nXem bản đồ\\nTrang chủ\\nMua bán nhà đất\\nMua bán nhà đất toàn quốc\\n\\nCập nhật 19/10/2026\\n\\nTất cả\\nCăn hộ chung cư\\nNhà hẻm\\nNhà mặt tiền\\nĐất\\nKhoảng giá\\nDiện tích\\nPhòng ngủ\\nPhòng tắm\\nSố tầng\\nHướng nhà\\nĐường trước nhà\\nNgày đăng\\nHàng thanh lý\\nTất cả\\nChính chủ\\nMôi giới\\nTin mới nhất\\nTin xác thực\\nTin có video\\n\\nNhà mặt tiền Quận 1 - 72.2 m²\\n\\n3\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\\n\\n50 tỷ\\n692,52 triệu/m²\\n72.2 m²\\n\\n101 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\\n\\nvừa đăng\\nSo sánh\\n\\nNhà mặt tiền Quận 1 - 130 m²\\n\\n3\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 130 tỷ\\n\\n130 tỷ\\n1 tỷ/m²\\n130 m²\\n\\n152-154 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\\n\\nvừa đăng\\nSo sánh\\n\\nNhà hẻm Huyện Cần Giuộc - 2 tầng - 3PN - 114.6 m²\\n\\nxác thực\\n3\\nBán nhà hẻm Ấp Thanh Ba Huyện Cần Giuộc, Long An – 3 phòng ngủ, giá 2.5 tỷ\\n\\n2,5 tỷ\\n21,81 triệu/m²\\n114.6 m²\\n2 tầng\\n3PN\\n2WC\\n\\nẤp Thanh Ba, Xã Mỹ Lộc, H.Cần Giuộc, Long An\\n\\nvừa đăng\\nSo sánh\\n\\nNhà mặt tiền Quận 1 - 2 tầng - 70 m²\\n\\n3\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá \",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-80a49be16993f01f.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"https://moso.vn/mua-ban-nha-dat\\\", \\\"depth\\\": 1}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 a80316089a1a10ae0704d4e0f0af8f7b72986c5a8e6db2961544c742b727c5b1\",\n  \"contentHash\": \"598fb7fcc906ba50fb4c20726bd84e6b9b6770b2cc9a3ed676493c9973350ece\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": []
+      }
+    },
+    {
+      "id": "article:EVID-9e2f8dc3ceced3a0",
+      "type": "article",
+      "name": "EVID-9e2f8dc3ceced3a0: Dự án bất động sản sơ cấp: bảng giá, tiến độ, so sánh dự án | MOSO",
+      "filePath": "EVID-9e2f8dc3ceced3a0.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-9e2f8dc3ceced3a0: Dự án bất động sản sơ cấp: bảng giá, tiến độ, so sánh dự án | MOSO\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-9e2f8dc3ceced3a0\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/tim-kiem-du-an\",\n  \"capturedAt\": \"2026-10-19T07:46:56.501840+00:00\",\n  \"pageTitle\": \"Dự án bất động sản sơ cấp: bảng giá, tiến độ, so sánh dự án | MOSO\",\n  \"excerpt\": \"Bỏ qua tới nội dung\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nVideo nhà đất\\nWiki BĐS\\nĐăng tin\\nĐăng nhập\\nTrang chủ\\n›\\nDự án BĐS\\nKênh thông tin dự án bất động sản\\n\\nKhám phá, tìm kiếm và so sánh thông tin các dự án bất động sản theo nhu cầu.\\n\\n4.791 dự án · Trang 1/400\\n\\nĐang nhận booking\\nCăn hộ\\nDự án Arcadia At Lavila\\n\\nPhước Kiển, Huyện Nhà Bè, TP.HCM\\n\\n925 căn\\n38 - 85 m²\\nPierreVal (Pháp) & Kiến Á (Việt Nam)\\n\\nSở hữu lâu dài\\n\\nGiá từ\\n\\n4 tỷ\\n\\nSo sánh\\nĐang mở bán\\nCăn hộ\\nDự án The Peak Garden\\n\\nPhú Mỹ, Quận 7, TP.HCM\\n\\n919 căn\\n52,1 - 100,18 m²\\nCông ty Cổ Phần đầu tư Bất động sản Hưng Lộc Phát\\n\\nGiá từ\\n\\n2,8 tỷ\\n\\nSo sánh\\nĐang nhận booking\\nCăn hộ\\nDự án Vlasta Premier Phú Thuận\\n\\nPhú Thuận, TP.HCM\\n\\n783 căn\\n44 - 91 m²\\nVăn Phú – Invest (VPI)\\n\\nGiá từ\\n\\n4,5 tỷ\\n\\nSo sánh\\nĐang nhận booking\\nCăn hộ\\nDự án The Emerald Boulevard\\n\\nBình Hòa, Thành phố Thuận An, Bình Dương\\n\\n45 - 112 m²\\nLê Phong Group\\n\\nGiá từ\\n\\n3 tỷ\\n\\nSo sánh\\nĐang nhận booking\\nCăn hộ\\nDự án Blanca City\\n\\nRạch Dừa, Thành phố Vũng Tàu, BRVT\\n\\n30,6 - 68,8 m²\\nSun Group\\n\\nGiá từ\\n\\n2,5 tỷ\\n\\nSo sánh\\nĐang nhận booking\\nCăn hộ\\nDự án Khải hoàn Imperial\\n\\nThành phố Thuận An, Bình Dương\\n\\nKhai Hoan Land\\n\\nGiá từ\\n\\n3 tỷ\\n\\nSo sánh\\nĐang mở bán\\nCăn hộ\\nDự án The Emerald Golf View\\n\\nVĩnh Phú\",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-9e2f8dc3ceced3a0.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"https://moso.vn/tim-kiem-du-an\\\", \\\"depth\\\": 1}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 e026347e1fda93f591594b55559c9f5fc1ecf790737bd6fb9abb9a78e8308d1e\",\n  \"contentHash\": \"7f9009c1f284f2fcf2f2e8cf1982b6b5f4b760f0e3e138fc6f7147cc8a969ce3\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:ENTITY-PROJECT",
+          "article:FEATURE-PROJECT",
+          "article:FR-PROJECT-001"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-b99f369160410cdc",
+      "type": "article",
+      "name": "EVID-b99f369160410cdc: Cho Thuê Nhà Đất, Mặt Bằng, Căn Hộ | MOSO VN AI Proptech",
+      "filePath": "EVID-b99f369160410cdc.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-b99f369160410cdc: Cho Thuê Nhà Đất, Mặt Bằng, Căn Hộ | MOSO VN AI Proptech\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-b99f369160410cdc\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/cho-thue-nha-dat\",\n  \"capturedAt\": \"2026-10-19T07:46:54.888739+00:00\",\n  \"pageTitle\": \"Cho Thuê Nhà Đất, Mặt Bằng, Căn Hộ | MOSO VN AI Proptech\",\n  \"excerpt\": \"Bỏ qua tới nội dung\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nVideo nhà đất\\nWiki BĐS\\nĐăng tin\\nĐăng nhập\\nToàn quốc\\nTìm theo tên đường, dự án, tiện ích, từ khóa...\\nTìm kiếm\\nXem bản đồ\\nTrang chủ\\nCho thuê nhà đất\\nCho thuê nhà đất toàn quốc\\n\\nCập nhật 19/10/2026\\n\\nTất cả\\nPhòng trọ\\nCăn hộ chung cư\\nNhà\\nCăn hộ dịch vụ\\nMặt bằng\\nVăn phòng\\nKho, nhà xưởng\\nĐất\\nKhoảng giá\\nDiện tích\\nPhòng ngủ\\nPhòng tắm\\nSố tầng\\nHướng nhà\\nĐường trước nhà\\nNgày đăng\\nTất cả\\nChính chủ\\nMôi giới\\nTin mới nhất\\nTin xác thực\\nTin có video\\n\\nPhòng trọ Quận 4 - 1PN - 20 m²\\n\\n3\\nCho thuê phòng trọ Đường số 34, phường Khánh Hội Quận 4, TP.HCM – 1 phòng ngủ, giá 3.1 triệu\\n\\n3,1 triệu/tháng\\n20 m²\\n1PN\\n1WC\\n\\n15 số 34, phường Khánh Hội, P.9, Q.4, TP.HCM\\n\\n1 giờ trước\\nSo sánh\\n\\nPhòng trọ Quận Tân Phú - 30 m²\\n\\n+4\\n9\\nCho thuê phòng trọ Đường Lê Trọng Tấn Quận Tân Phú, TP.HCM – giá 3 triệu\\n\\n3 triệu/tháng\\n30 m²\\n\\nLê Trọng Tấn, P.Tây Thạnh, Q.Tân Phú, TP.HCM\\n\\n1 giờ trước\\nSo sánh\\n\\nMặt bằng Quận 5\\n\\n3\\nCho thuê nhà mặt tiền Lý Thường Kiệt Quận 5, TP.HCM – giá 230 tỷ\\n\\n230 tỷ/tháng\\n\\n8A Lý Thường Kiệt, P.5, Q.5, TP.HCM\\n\\n5 giờ trước\\nSo sánh\\n\\nCăn hộ chung cư Thị xã Điện Bàn - 2PN - 45 m²\\n\\n+3\\n8\\nCho thuê căn hộ chung cư Điện Ngọc Thị xã Điện Bàn, Quảng Nam – 2 phòng ng\",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-b99f369160410cdc.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"https://moso.vn/cho-thue-nha-dat\\\", \\\"depth\\\": 1}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 5cdc8038d4b6915f90c9142025446083c3ee30df65d95c694c1b5a950b8db67c\",\n  \"contentHash\": \"15cdd5d4306eedacc69f8687600cddd06f6a173b4db9e6a7f596626c782aca4e\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:FEATURE-BROWSE",
+          "article:FR-BROWSE-002"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-bfc607d5c14c32ab",
+      "type": "article",
+      "name": "EVID-bfc607d5c14c32ab: Đăng Nhập Tài Khoản | MOSO",
+      "filePath": "EVID-bfc607d5c14c32ab.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-bfc607d5c14c32ab: Đăng Nhập Tài Khoản | MOSO\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-bfc607d5c14c32ab\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/login?callbackUrl=%2F\",\n  \"capturedAt\": \"2026-10-19T07:46:59.667866+00:00\",\n  \"pageTitle\": \"Đăng Nhập Tài Khoản | MOSO\",\n  \"excerpt\": \"Bỏ qua tới nội dung\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nVideo nhà đất\\nWiki BĐS\\nĐăng tin\\nĐăng nhập\\nQUYỀN LỢI MOSO\\n\\nTặng MP cho tin đầu tiên\\n\\nTài khoản mới được tặng MP, đủ đăng tin đầu tiên và tiếp cận hàng trăm nghìn khách mỗi ngày.\\n\\nẨN SỐ NHÀ bảo vệ tin đăng tuyệt đối\\n\\nChống sao chép, chống cướp khách — quyền lợi tin đăng luôn thuộc về bạn.\\n\\nTrợ lý AI định giá & tìm nhà 24/7\\n\\nAI MOSO hỗ trợ định giá chính xác và gợi ý nhà phù hợp mọi lúc.\\n\\nĐăng nhập\\nBạn chưa có tài khoản? Đăng ký miễn phí\\n\\nSố điện thoại\\n\\nMật khẩu\\nTiếp tục\\nQuên mật khẩu?\\n\\nhoặc\\n\\nTiếp tục với Google\\nBằng việc tiếp tục, bạn đồng ý với Chính sách bảo mật của chúng tôi\\nNhận xét\",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-bfc607d5c14c32ab.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"https://moso.vn/login?callbackUrl=%2F\\\", \\\"depth\\\": 1}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 fbfc6b2fa95ea82cd8b472732b26b8583b74b9e2aaa1d7cbb9e150c93c39faf9\",\n  \"contentHash\": \"fbfc6b2fa95ea82cd8b472732b26b8583b74b9e2aaa1d7cbb9e150c93c39faf9\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:FEATURE-ACCOUNT",
+          "article:FR-ACCOUNT-001"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-bfd8734194d79384",
+      "type": "article",
+      "name": "EVID-bfd8734194d79384: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "filePath": "EVID-bfd8734194d79384.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-bfd8734194d79384: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-bfd8734194d79384\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/mua-ban-nha-dat?xem=ban-do\",\n  \"capturedAt\": \"2026-10-19T07:48:17.056565+00:00\",\n  \"pageTitle\": \"Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\",\n  \"excerpt\": \"Bỏ qua tới nội dung\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nVideo nhà đất\\nWiki BĐS\\nĐăng tin\\nĐăng nhập\\nĐang bán\\nCho thuê\\nBộ lọc\\nLưu tìm kiếm\\nDanh sách\\nBản đồ\\nTin xác thực\\nĐang tải bản đồ…\\nMua Bán Nhà đất tại TP.HCM\\nBán Nhà, Bán Đất và căn hộ chính chủ tại TP.HCM\\n\\n30 kết quả phù hợp · 9433 tin\\n\\nHiển thị tin Đã Bán\\nNhà mặt tiền\\nvừa đăng\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\\n\\n50 tỷ\\n692,52 triệu/m²\\n\\nNguyễn Thái Bình, Quận 1, TPHCM\\n\\n72.2m²\\nSo sánh\\nNhà mặt tiền\\nvừa đăng\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 130 tỷ\\n\\n130 tỷ\\n1 tỷ/m²\\n\\nNguyễn Thái Bình, Quận 1, TPHCM\\n\\n130m²\\nSo sánh\\nNhà hẻm\\nxác thực\\nvừa đăng\\nBán nhà hẻm Ấp Thanh Ba Huyện Cần Giuộc, Long An – 3 phòng ngủ, giá 2.5 tỷ\\n\\n2,5 tỷ\\n21,81 triệu/m²\\n\\nẤp Thanh Ba, Huyện Cần Giuộc, Long An\\n\\n2 tầng\\n3PN\\n2WC\\n114.6m²\\nSo sánh\\nNhà mặt tiền\\nvừa đăng\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 42 tỷ\\n\\n42 tỷ\\n600 triệu/m²\\n\\nNguyễn Thái Bình, Quận 1, TPHCM\\n\\n2 tầng\\n70m²\\nSo sánh\\nNhà mặt tiền\\nvừa đăng\\nBán nhà mặt tiền Lê Thị Hồng Gấm Quận 1, TP.HCM – giá 60 tỷ\\n\\n60 tỷ\\n759,49 triệu/m²\\n\\nLê Thị Hồng Gấm, Quận 1, TPHCM\\n\\n4 tầng\\n79m²\\nSo sánh\\nNhà mặt tiền\\nvừa đăng\\nBán nhà mặt tiền Lê Thị Hồng Gấm Quận 1, TP.HCM – giá 60\",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-bfd8734194d79384.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"https://moso.vn/mua-ban-nha-dat?xem=ban-do\\\", \\\"depth\\\": 1}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 4c87f04ed3f3df2f818f6f5301c675b8524bb8ed10d6cc0301299beebc4fef50\",\n  \"contentHash\": \"e9eb1483022b4b1ad9d8c95d896fa0ee0302b41bab774713bbdd8f1b22b159cb\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:FEATURE-MAP",
+          "article:FR-MAP-001",
+          "article:QUESTION-MAP"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-c16fccba79807428",
+      "type": "article",
+      "name": "EVID-c16fccba79807428: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "filePath": "EVID-c16fccba79807428.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-c16fccba79807428: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-c16fccba79807428\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/mua-ban-nha-dat\",\n  \"capturedAt\": \"2026-10-19T07:48:21.869410+00:00\",\n  \"pageTitle\": \"Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\",\n  \"excerpt\": \"So sánh tin đăng\\n1/2\\n\\nBán nhà mặt tiền Nguyễn Thái Bình Quận 1, TP.HCM – giá 50 tỷ\\n101 Nguyễn Thái Bình, P.Nguyễn Thái Bình, Q.1, TP.HCM\\nXoá tất cả\\nChọn thêm 1\\nNhận xét\",\n  \"locator\": \"button[aria-label='So sánh tin này'] >> nth=0\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-c16fccba79807428.txt\",\n  \"action\": \"{\\\"type\\\": \\\"click\\\", \\\"selector\\\": \\\"button[aria-label='So sánh tin này'] >> nth=0\\\", \\\"readOnly\\\": true}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 806fb1b3732900afa1f9f0d0ea0a5e6f445ef72ee14f68d74bf259dc18023d8c\",\n  \"contentHash\": \"b1cc711e98896fa02640fbac11485e5c64386665081fee67bed752874cdc6dd8\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:FEATURE-COMPARE",
+          "article:FR-COMPARE-001",
+          "article:STEP-COMPARE-ONE",
+          "article:WORKFLOW-COMPARE"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-c53cea185200b355",
+      "type": "article",
+      "name": "EVID-c53cea185200b355: Bán nhà mặt tiền 233.3m2 Thạch Thị Thanh, Phường Tân Định,…",
+      "filePath": "EVID-c53cea185200b355.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-c53cea185200b355: Bán nhà mặt tiền 233.3m2 Thạch Thị Thanh, Phường Tân Định,…\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-c53cea185200b355\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/ban-nha-mat-tien-thach-thi-thanh-quan-1-tphcm-6-phong-ngu-gia-125-ty-1dk006\",\n  \"capturedAt\": \"2026-10-19T07:48:19.126251+00:00\",\n  \"pageTitle\": \"Bán nhà mặt tiền 233.3m2 Thạch Thị Thanh, Phường Tân Định,…\",\n  \"excerpt\": \"Mã tin: 1dk006\\nĐăng 3 ngày trước\\nXem bản đồ\\nĐánh giá tin đăng\\nBán nhà mặt tiền Thạch Thị Thanh Phường Tân Định, TP.HCM – 6 phòng ngủ, giá 125 tỷ\\n27A Thạch Thị Thanh, P.Tân Định, Q.1, TP.HCM\\nMức giá\\n125 tỷ\\n~535,79 triệu/m²\\nDiện tích\\n233.3 m²\\nMô tả chi tiết\\n🌟 QUẬN 1 – BIỆT THỰ PHÁP 27A THẠCH THỊ THANH – 9.83x22.38M – TRỆT + 2 LẦU + SÂN THƯỢNG – 6PN + HỒ BƠI – GIÁ 125 TỶ!\\n💎 Diện tích: 9,83x22,38m, công nhận 233,3m² đất ở.\\n💎 Hiện trạng: Biệt thự trệt + 2 lầu + sân thượng, gồm 6 phòng ngủ, hồ bơi, sân vườn, penthouse và hầm rượu.\\n💎 Vị trí: 27A Thạch Thị Thanh, Phường Tân Định, Quận 1, nằm giữa khu vực trung tâm, thuận tiện di chuyển và sinh hoạt.\\n\",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-c53cea185200b355.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"https://moso.vn/ban-nha-mat-tien-thach-thi-thanh-quan-1-tphcm-6-phong-ngu-gia-125-ty-1dk006\\\", \\\"depth\\\": 1}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 ef754fbf800cdcb406a0d516caa9a028e87018e5dc8863693aee0f7d0bd3af0c\",\n  \"contentHash\": \"f2712965423a0030bf431ee38ac07ab6ced238fabff6516338ed17cb95cd6098\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:ENTITY-LISTING",
+          "article:FEATURE-DETAIL",
+          "article:FR-DETAIL-001"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-d1cff2806ca77add",
+      "type": "article",
+      "name": "EVID-d1cff2806ca77add: MOSO - AI Proptech Mua Bán Nhà Đất & Đăng Tin Bất Động Sản",
+      "filePath": "EVID-d1cff2806ca77add.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-d1cff2806ca77add: MOSO - AI Proptech Mua Bán Nhà Đất & Đăng Tin Bất Động Sản\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-d1cff2806ca77add\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/\",\n  \"capturedAt\": \"2026-10-19T07:46:18.947844+00:00\",\n  \"pageTitle\": \"MOSO - AI Proptech Mua Bán Nhà Đất & Đăng Tin Bất Động Sản\",\n  \"excerpt\": \"Bỏ qua tới nội dung\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nVideo nhà đất\\nWiki BĐS\\nĐăng tin\\nĐăng nhập\\nTìm nhà thấy địa chỉ và giá\\n\\nđăng dễ, bán nhanh, tìm nhà ưng ý\\n\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nCơ bản\\nTìm với AI\\nTìm bất động sản\\nChọn khu vực\\nTìm nhà\\nBất động sản theo khu vực\\nTP HCM\\nHà Nội\\nĐà Nẵng\\nHải Phòng\\nCần Thơ\\nĐồng Nai\\nQuận 1\\nQuận 3\\nQuận 5\\nBình Thạnh\\nGò Vấp\\nPhú Nhuận\\nKhu vực khác:\\nTân Bình\\nQuận 10\\nQuận 11\\nQuận 8\\nQuận 7\\nQuận 4\\nBình Tân\\nHóc Môn\\nCủ Chi\\nTrải nghiệm xem nhà kiểu mới\\nBản đồ Bất động sản\\nXem nhà qua Video\\nNhà đất bán mới nhất\\nNhà mặt tiền\\nxác thực\\n3 ngày trước\\n13\\nBán nhà mặt tiền Thạch Thị Thanh Quận 1, TP.HCM – 6 phòng ngủ, giá 125 tỷ\\n\\n125 tỷ\\n535,79 triệu/m²\\n\\nThạch Thị Thanh, Quận 1, TPHCM\\n\\n3 tầng\\n6PN\\n6WC\\n233.3m²\\nSo sánh\\nNhà mặt tiền\\nxác thực\\n3 ngày trước\\n9\\nBán nhà mặt tiền Trần Hưng Đạo Quận 1, TP.HCM – 6 phòng ngủ, giá 60 tỷ\\n\\n60 tỷ\\n750 triệu/m²\\n\\nTrần Hưng Đạo, Quận 1, TPHCM\\n\\n6 tầng\\n6PN\\n5WC\\n80m²\\nSo sánh\\nNhà mặt tiền\\nxác thực\\n3 ngày trước\\n8\\nBán nhà mặt tiền Lê Văn Sỹ Quận 3, TP.HCM – 4 phòng ngủ, giá 165 tỷ\\n\\n165 tỷ\\n669,09 triệu/m²\\n\\nLê Văn Sỹ, Quận 3, TPHCM\\n\\n4 tầng\\n4PN\\n4WC\\n246.6m²\\nSo sánh\\nNhà hẻm\\nxác thực\\n4 ngày trước\\n9\\nBán nhà hẻm Nguyễn Thị Minh Khai Quận 3, TP.HC\",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-d1cff2806ca77add.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"https://moso.vn/\\\"}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 978a69ec236986cb9cdc34eefcc26f51f60fab82e7e4f1e8ae435d7d910cc09f\",\n  \"contentHash\": \"ffee1a5040fd7f585adc62b673b0b737490d0b8c716898d340453fe9cbf84dcf\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:ACTOR-VISITOR",
+          "article:FEATURE-AI",
+          "article:FR-AI-001",
+          "article:QUESTION-AI",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-d7638348983a20d4",
+      "type": "article",
+      "name": "EVID-d7638348983a20d4: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech",
+      "filePath": "EVID-d7638348983a20d4.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-d7638348983a20d4: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-d7638348983a20d4\",\n  \"sourceType\": \"browser\",\n  \"url\": \"https://moso.vn/mua-ban-nha-dat?q=Qu%E1%BA%ADn+1\",\n  \"capturedAt\": \"2026-10-19T07:48:15.495522+00:00\",\n  \"pageTitle\": \"Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech\",\n  \"excerpt\": \"Bỏ qua tới nội dung\\nNhà đất bán\\nNhà đất cho thuê\\nDự án\\nVideo nhà đất\\nWiki BĐS\\nĐăng tin\\nĐăng nhập\\nToàn quốc\\nTìm theo tên đường, dự án, tiện ích, từ khóa...\\nTìm kiếm\\nXem bản đồ\\nTrang chủ\\nMua bán nhà đất\\nMua bán nhà đất toàn quốc\\n\\nCập nhật 19/10/2026\\n\\nTất cả\\nCăn hộ chung cư\\nNhà hẻm\\nNhà mặt tiền\\nĐất\\nKhoảng giá\\nDiện tích\\nPhòng ngủ\\nPhòng tắm\\nSố tầng\\nHướng nhà\\nĐường trước nhà\\nNgày đăng\\nHàng thanh lý\\nTất cả\\nChính chủ\\nMôi giới\\nTin mới nhất\\nTin xác thực\\nTin có video\\n\\nĐất Quận Ngũ Hành Sơn - 1 tầng - 169.2 m²\\n\\nxác thực\\n3\\nBán đất Bờ Quan 1 Quận Ngũ Hành Sơn, TP. Đà Nẵng – giá 12.8 tỷ\\n\\n12,8 tỷ\\n75,65 triệu/m²\\n169.2 m²\\n1 tầng\\n\\nThửa 68 - tờ 9 Bờ Quan 1, P.Hoà Quý, Q.Ngũ Hành Sơn, TP. Đà Nẵng\\n\\n4 tháng trước\\nSo sánh\\n\\nNhà hẻm Quận 1 - 3 tầng - 3PN - 132 m²\\n\\n3\\nBán nhà hẻm Trần Đình Xu Quận 1, TP.HCM – 3 phòng ngủ, giá 22 tỷ\\n\\n22 tỷ\\n166,66 triệu/m²\\n132 m²\\n3 tầng\\n3PN\\n3WC\\n\\n42/3 Trần Đình Xu, P.Cô Giang, Q.1, TP.HCM\\n\\nvừa đăng\\nSo sánh\\n\\nNhà mặt tiền Quận 1 - 4 tầng - 6PN - 65.3 m²\\n\\nxác thực\\n3\\nBán nhà mặt tiền Nguyễn Thị Minh Khai Quận 1, TP.HCM – 6 phòng ngủ, giá 45 tỷ\\n\\n45 tỷ\\n689,12 triệu/m²\\n65.3 m²\\n4 tầng\\n6PN\\n5WC\\n\\n137bis Nguyễn Thị Minh Khai, P.Bến Thành, Q.1, TP.HCM\\n\\n4 tháng trước\\nSo sánh\\n\\nNhà mặt tiền Quậ\",\n  \"locator\": \"button[type=submit]:has-text('Tìm kiếm')\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-d7638348983a20d4.txt\",\n  \"action\": \"{\\\"type\\\": \\\"click\\\", \\\"selector\\\": \\\"button[type=submit]:has-text('Tìm kiếm')\\\", \\\"readOnly\\\": true}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 3c035248176c7ee2f0ba646ed1661f58554ba57c160813c4e351acbe9f3e1fb1\",\n  \"contentHash\": \"0d7b2ad1e09f728906400fa92f01438c008314c1a71cde0dd42efd07168e239f\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:FEATURE-SEARCH",
+          "article:FR-SEARCH-001",
+          "article:QUESTION-SEARCH",
+          "article:STEP-QUERY",
+          "article:STEP-SUBMIT",
+          "article:WORKFLOW-SEARCH"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-ACCOUNT",
+      "type": "article",
+      "name": "FEATURE-ACCOUNT: Account entry",
+      "filePath": "FEATURE-ACCOUNT.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-bfc607d5c14c32ab",
+          "FR-ACCOUNT-001",
+          "QUESTION-AUTH"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-ACCOUNT: Account entry\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-ACCOUNT\",\n  \"name\": \"Account entry\",\n  \"description\": \"Inspect phone/password and Google entry controls.\",\n  \"evidenceIds\": [\n    \"EVID-bfc607d5c14c32ab\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"blocked\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"https://moso.vn/login?callbackUrl=%2F\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Open login page.\",\n    \"Inspect controls; submit no credentials.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [\n    \"QUESTION-AUTH\"\n  ],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-bfc607d5c14c32ab]]\n- [[FR-ACCOUNT-001]]\n- [[QUESTION-AUTH]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-AI",
+      "type": "article",
+      "name": "FEATURE-AI: AI search entry",
+      "filePath": "FEATURE-AI.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-d1cff2806ca77add",
+          "FR-AI-001",
+          "QUESTION-AI"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-AI: AI search entry\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-AI\",\n  \"name\": \"AI search entry\",\n  \"description\": \"Discover AI search option only.\",\n  \"evidenceIds\": [\n    \"EVID-d1cff2806ca77add\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"https://moso.vn/\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Inspect Tìm với AI entry text.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [\n    \"QUESTION-AI\"\n  ],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-d1cff2806ca77add]]\n- [[FR-AI-001]]\n- [[QUESTION-AI]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-BROWSE",
+      "type": "article",
+      "name": "FEATURE-BROWSE: Sale/rental browsing",
+      "filePath": "FEATURE-BROWSE.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-2ed3453878954246",
+          "EVID-b99f369160410cdc",
+          "FR-BROWSE-001",
+          "FR-BROWSE-002"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-BROWSE: Sale/rental browsing\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-BROWSE\",\n  \"name\": \"Sale/rental browsing\",\n  \"description\": \"Inspect public listing cards.\",\n  \"evidenceIds\": [\n    \"EVID-2ed3453878954246\",\n    \"EVID-b99f369160410cdc\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"https://moso.vn/mua-ban-nha-dat\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Open sale or rental route.\",\n    \"Inspect rendered listing cards.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-2ed3453878954246]]\n- [[EVID-b99f369160410cdc]]\n- [[FR-BROWSE-001]]\n- [[FR-BROWSE-002]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-COMPARE",
+      "type": "article",
+      "name": "FEATURE-COMPARE: Comparison selection",
+      "filePath": "FEATURE-COMPARE.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-6b424827ef3bc21f",
+          "EVID-c16fccba79807428",
+          "FR-COMPARE-001",
+          "FR-COMPARE-002",
+          "QUESTION-COMPARE",
+          "WORKFLOW-COMPARE"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-COMPARE: Comparison selection\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-COMPARE\",\n  \"name\": \"Comparison selection\",\n  \"description\": \"Select two properties into comparison tray.\",\n  \"evidenceIds\": [\n    \"EVID-c16fccba79807428\",\n    \"EVID-6b424827ef3bc21f\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"https://moso.vn/mua-ban-nha-dat\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Click first comparison control.\",\n    \"Observe 1/2 tray.\",\n    \"Click another comparison control.\",\n    \"Observe 2/2 tray.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [\n    \"QUESTION-COMPARE\"\n  ],\n  \"workflowIds\": [\n    \"WORKFLOW-COMPARE\"\n  ],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-6b424827ef3bc21f]]\n- [[EVID-c16fccba79807428]]\n- [[FR-COMPARE-001]]\n- [[FR-COMPARE-002]]\n- [[QUESTION-COMPARE]]\n- [[WORKFLOW-COMPARE]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-DETAIL",
+      "type": "article",
+      "name": "FEATURE-DETAIL: Property detail",
+      "filePath": "FEATURE-DETAIL.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-c53cea185200b355",
+          "FR-DETAIL-001"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-DETAIL: Property detail\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-DETAIL\",\n  \"name\": \"Property detail\",\n  \"description\": \"Read one listing’s visible descriptive fields.\",\n  \"evidenceIds\": [\n    \"EVID-c53cea185200b355\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"https://moso.vn/ban-nha-mat-tien-thach-thi-thanh-quan-1-tphcm-6-phong-ngu-gia-125-ty-1dk006\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Follow listing link.\",\n    \"Inspect identifier, price, area and description.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-c53cea185200b355]]\n- [[FR-DETAIL-001]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-FILTER",
+      "type": "article",
+      "name": "FEATURE-FILTER: Listing filters",
+      "filePath": "FEATURE-FILTER.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-2ed3453878954246",
+          "FR-FILTER-001",
+          "QUESTION-FILTERS"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-FILTER: Listing filters\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-FILTER\",\n  \"name\": \"Listing filters\",\n  \"description\": \"Discover price, area, rooms, date and sorting controls.\",\n  \"evidenceIds\": [\n    \"EVID-2ed3453878954246\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"https://moso.vn/mua-ban-nha-dat\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Open listing results.\",\n    \"Inspect filter controls without asserting their behavior.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [\n    \"QUESTION-FILTERS\"\n  ],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-2ed3453878954246]]\n- [[FR-FILTER-001]]\n- [[QUESTION-FILTERS]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-MAP",
+      "type": "article",
+      "name": "FEATURE-MAP: Map entry",
+      "filePath": "FEATURE-MAP.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-bfd8734194d79384",
+          "FR-MAP-001",
+          "QUESTION-MAP"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-MAP: Map entry\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-MAP\",\n  \"name\": \"Map entry\",\n  \"description\": \"Open map/list route; map loading unverified.\",\n  \"evidenceIds\": [\n    \"EVID-bfd8734194d79384\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"https://moso.vn/mua-ban-nha-dat?xem=ban-do\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Open map link.\",\n    \"Observe map shell and listing panel.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [\n    \"QUESTION-MAP\"\n  ],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-bfd8734194d79384]]\n- [[FR-MAP-001]]\n- [[QUESTION-MAP]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-POST",
+      "type": "article",
+      "name": "FEATURE-POST: Posting entry",
+      "filePath": "FEATURE-POST.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-34527de780364f37",
+          "FR-POST-001",
+          "QUESTION-AUTH",
+          "RULE-POST-ENTRY"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-POST: Posting entry\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-POST\",\n  \"name\": \"Posting entry\",\n  \"description\": \"Observe unauthenticated posting redirect.\",\n  \"evidenceIds\": [\n    \"EVID-34527de780364f37\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"blocked\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"https://moso.vn/dang-tin\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Open Đăng tin.\",\n    \"Observe login redirect preserving callback.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"businessRuleIds\": [\n    \"RULE-POST-ENTRY\"\n  ],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [\n    \"QUESTION-AUTH\"\n  ],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-34527de780364f37]]\n- [[FR-POST-001]]\n- [[QUESTION-AUTH]]\n- [[RULE-POST-ENTRY]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-PROJECT",
+      "type": "article",
+      "name": "FEATURE-PROJECT: Project catalog",
+      "filePath": "FEATURE-PROJECT.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-PROJECT",
+          "EVID-9e2f8dc3ceced3a0",
+          "FR-PROJECT-001"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-PROJECT: Project catalog\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-PROJECT\",\n  \"name\": \"Project catalog\",\n  \"description\": \"Browse public project cards.\",\n  \"evidenceIds\": [\n    \"EVID-9e2f8dc3ceced3a0\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"https://moso.vn/tim-kiem-du-an\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Open project catalog.\",\n    \"Inspect cards and pagination text.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-PROJECT\"\n  ],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-PROJECT]]\n- [[EVID-9e2f8dc3ceced3a0]]\n- [[FR-PROJECT-001]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-SEARCH",
+      "type": "article",
+      "name": "FEATURE-SEARCH: Keyword search",
+      "filePath": "FEATURE-SEARCH.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-2ed3453878954246",
+          "EVID-d7638348983a20d4",
+          "FR-SEARCH-001",
+          "QUESTION-SEARCH",
+          "WORKFLOW-SEARCH"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-SEARCH: Keyword search\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-SEARCH\",\n  \"name\": \"Keyword search\",\n  \"description\": \"Submit public query; search semantics remain unknown.\",\n  \"evidenceIds\": [\n    \"EVID-2ed3453878954246\",\n    \"EVID-d7638348983a20d4\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"https://moso.vn/mua-ban-nha-dat\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Fill q with Quận 1.\",\n    \"Click Tìm kiếm.\",\n    \"Observe q URL and changed results.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [\n    \"QUESTION-SEARCH\"\n  ],\n  \"workflowIds\": [\n    \"WORKFLOW-SEARCH\"\n  ],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-2ed3453878954246]]\n- [[EVID-d7638348983a20d4]]\n- [[FR-SEARCH-001]]\n- [[QUESTION-SEARCH]]\n- [[WORKFLOW-SEARCH]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-WIKI",
+      "type": "article",
+      "name": "FEATURE-WIKI: Wiki BĐS catalog",
+      "filePath": "FEATURE-WIKI.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-ARTICLE",
+          "EVID-2dd9a5356fef9d2a",
+          "FR-WIKI-001"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-WIKI: Wiki BĐS catalog\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-WIKI\",\n  \"name\": \"Wiki BĐS catalog\",\n  \"description\": \"Browse editorial titles and excerpts; content truth not assessed.\",\n  \"evidenceIds\": [\n    \"EVID-2dd9a5356fef9d2a\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"https://moso.vn/wiki-bds\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Open Wiki BĐS.\",\n    \"Inspect article catalog.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-ARTICLE\"\n  ],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-ARTICLE]]\n- [[EVID-2dd9a5356fef9d2a]]\n- [[FR-WIKI-001]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-ACCOUNT-001",
+      "type": "article",
+      "name": "FR-ACCOUNT-001: The public login page shall expose phone/password inputs and a Google sign-in entry.",
+      "filePath": "FR-ACCOUNT-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-bfc607d5c14c32ab",
+          "QUESTION-AUTH"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-ACCOUNT-001: The public login page shall expose phone/password inputs and a Google sign-in entry.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-ACCOUNT-001\",\n  \"featureId\": \"FEATURE-ACCOUNT\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The public login page shall expose phone/password inputs and a Google sign-in entry.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given login route, Số điện thoại, Mật khẩu and Tiếp tục với Google are visible; successful authentication remains unverified.\"\n  ],\n  \"entityIds\": [],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-bfc607d5c14c32ab\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [\n    \"QUESTION-AUTH\"\n  ],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-bfc607d5c14c32ab]]\n- [[QUESTION-AUTH]]\n",
+        "backlinks": [
+          "article:FEATURE-ACCOUNT"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-AI-001",
+      "type": "article",
+      "name": "FR-AI-001: The homepage shall expose an AI search entry label.",
+      "filePath": "FR-AI-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-d1cff2806ca77add",
+          "QUESTION-AI"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-AI-001: The homepage shall expose an AI search entry label.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-AI-001\",\n  \"featureId\": \"FEATURE-AI\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The homepage shall expose an AI search entry label.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given homepage, Tìm với AI is visible; no result-quality claim follows.\"\n  ],\n  \"entityIds\": [],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-d1cff2806ca77add\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [\n    \"QUESTION-AI\"\n  ],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-d1cff2806ca77add]]\n- [[QUESTION-AI]]\n",
+        "backlinks": [
+          "article:FEATURE-AI"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-BROWSE-001",
+      "type": "article",
+      "name": "FR-BROWSE-001: The public sale route shall render listing cards containing title, price, area and location when those values are supplied.",
+      "filePath": "FR-BROWSE-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-2ed3453878954246"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-BROWSE-001: The public sale route shall render listing cards containing title, price, area and location when those values are supplied.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-BROWSE-001\",\n  \"featureId\": \"FEATURE-BROWSE\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The public sale route shall render listing cards containing title, price, area and location when those values are supplied.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given the sampled sale page, at least one card displays title, price, area and location.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-2ed3453878954246\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-2ed3453878954246]]\n",
+        "backlinks": [
+          "article:FEATURE-BROWSE"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-BROWSE-002",
+      "type": "article",
+      "name": "FR-BROWSE-002: The public rental route shall render rental listing cards.",
+      "filePath": "FR-BROWSE-002.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-b99f369160410cdc"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-BROWSE-002: The public rental route shall render rental listing cards.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-BROWSE-002\",\n  \"featureId\": \"FEATURE-BROWSE\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The public rental route shall render rental listing cards.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given the rental route, rental cards and displayed rental prices are visible.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-b99f369160410cdc\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-b99f369160410cdc]]\n",
+        "backlinks": [
+          "article:FEATURE-BROWSE"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-COMPARE-001",
+      "type": "article",
+      "name": "FR-COMPARE-001: Selecting a listing for comparison shall show that item in the comparison tray.",
+      "filePath": "FR-COMPARE-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-c16fccba79807428",
+          "QUESTION-COMPARE"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-COMPARE-001: Selecting a listing for comparison shall show that item in the comparison tray.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-COMPARE-001\",\n  \"featureId\": \"FEATURE-COMPARE\",\n  \"type\": \"Requirement\",\n  \"statement\": \"Selecting a listing for comparison shall show that item in the comparison tray.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given no selected items, clicking comparison on one card displays So sánh tin đăng and 1/2.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-c16fccba79807428\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [\n    \"QUESTION-COMPARE\"\n  ],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-c16fccba79807428]]\n- [[QUESTION-COMPARE]]\n",
+        "backlinks": [
+          "article:FEATURE-COMPARE"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-COMPARE-002",
+      "type": "article",
+      "name": "FR-COMPARE-002: Selecting another listing shall show two items in the comparison tray.",
+      "filePath": "FR-COMPARE-002.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-6b424827ef3bc21f",
+          "QUESTION-COMPARE"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-COMPARE-002: Selecting another listing shall show two items in the comparison tray.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-COMPARE-002\",\n  \"featureId\": \"FEATURE-COMPARE\",\n  \"type\": \"Requirement\",\n  \"statement\": \"Selecting another listing shall show two items in the comparison tray.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given one selected item, selecting another displays 2/2 and two titles in the tray.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-6b424827ef3bc21f\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [\n    \"QUESTION-COMPARE\"\n  ],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-6b424827ef3bc21f]]\n- [[QUESTION-COMPARE]]\n",
+        "backlinks": [
+          "article:FEATURE-COMPARE"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-DETAIL-001",
+      "type": "article",
+      "name": "FR-DETAIL-001: The sampled property detail shall display listing identifier, price, area and description.",
+      "filePath": "FR-DETAIL-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-LISTING",
+          "EVID-c53cea185200b355"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-DETAIL-001: The sampled property detail shall display listing identifier, price, area and description.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-DETAIL-001\",\n  \"featureId\": \"FEATURE-DETAIL\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The sampled property detail shall display listing identifier, price, area and description.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given listing 1dk006, identifier, Mức giá, Diện tích and Mô tả chi tiết are displayed.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-LISTING\"\n  ],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-c53cea185200b355\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-LISTING]]\n- [[EVID-c53cea185200b355]]\n",
+        "backlinks": [
+          "article:FEATURE-DETAIL"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-FILTER-001",
+      "type": "article",
+      "name": "FR-FILTER-001: The listing page shall expose price, area and room filter entry controls.",
+      "filePath": "FR-FILTER-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-2ed3453878954246",
+          "QUESTION-FILTERS"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-FILTER-001: The listing page shall expose price, area and room filter entry controls.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-FILTER-001\",\n  \"featureId\": \"FEATURE-FILTER\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The listing page shall expose price, area and room filter entry controls.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given sale results, Khoảng giá, Diện tích and Phòng ngủ controls are visible.\"\n  ],\n  \"entityIds\": [],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-2ed3453878954246\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [\n    \"QUESTION-FILTERS\"\n  ],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-2ed3453878954246]]\n- [[QUESTION-FILTERS]]\n",
+        "backlinks": [
+          "article:FEATURE-FILTER"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-MAP-001",
+      "type": "article",
+      "name": "FR-MAP-001: The map entry shall open a map/list shell containing a listing panel.",
+      "filePath": "FR-MAP-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-bfd8734194d79384",
+          "QUESTION-MAP"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-MAP-001: The map entry shall open a map/list shell containing a listing panel.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-MAP-001\",\n  \"featureId\": \"FEATURE-MAP\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The map entry shall open a map/list shell containing a listing panel.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given the observed map route, Danh sách, Bản đồ and listing cards are visible; tile rendering is outside this verified criterion.\"\n  ],\n  \"entityIds\": [],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-bfd8734194d79384\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [\n    \"QUESTION-MAP\"\n  ],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-bfd8734194d79384]]\n- [[QUESTION-MAP]]\n",
+        "backlinks": [
+          "article:FEATURE-MAP"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-POST-001",
+      "type": "article",
+      "name": "FR-POST-001: Opening the posting route without authentication shall redirect this visitor to login preserving the posting callback.",
+      "filePath": "FR-POST-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-34527de780364f37",
+          "QUESTION-AUTH"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-POST-001: Opening the posting route without authentication shall redirect this visitor to login preserving the posting callback.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-POST-001\",\n  \"featureId\": \"FEATURE-POST\",\n  \"type\": \"Requirement\",\n  \"statement\": \"Opening the posting route without authentication shall redirect this visitor to login preserving the posting callback.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given a fresh unauthenticated context, opening /dang-tin ends at login with callbackUrl decoding to /dang-tin.\"\n  ],\n  \"entityIds\": [],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-34527de780364f37\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [\n    \"QUESTION-AUTH\"\n  ],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-34527de780364f37]]\n- [[QUESTION-AUTH]]\n",
+        "backlinks": [
+          "article:FEATURE-POST"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-PROJECT-001",
+      "type": "article",
+      "name": "FR-PROJECT-001: The public project catalog shall show project names, locations and displayed starting prices.",
+      "filePath": "FR-PROJECT-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-PROJECT",
+          "EVID-9e2f8dc3ceced3a0"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-PROJECT-001: The public project catalog shall show project names, locations and displayed starting prices.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-PROJECT-001\",\n  \"featureId\": \"FEATURE-PROJECT\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The public project catalog shall show project names, locations and displayed starting prices.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given project catalog, at least one sampled project shows name, location and Giá từ.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-PROJECT\"\n  ],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-9e2f8dc3ceced3a0\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-PROJECT]]\n- [[EVID-9e2f8dc3ceced3a0]]\n",
+        "backlinks": [
+          "article:FEATURE-PROJECT"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-SEARCH-001",
+      "type": "article",
+      "name": "FR-SEARCH-001: Submitting the sampled keyword shall navigate to a results state with the keyword encoded in q.",
+      "filePath": "FR-SEARCH-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-d7638348983a20d4",
+          "QUESTION-SEARCH"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-SEARCH-001: Submitting the sampled keyword shall navigate to a results state with the keyword encoded in q.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-SEARCH-001\",\n  \"featureId\": \"FEATURE-SEARCH\",\n  \"type\": \"Requirement\",\n  \"statement\": \"Submitting the sampled keyword shall navigate to a results state with the keyword encoded in q.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Enter Quận 1.\",\n    \"Click Tìm kiếm.\",\n    \"Inspect URL and results.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given Quận 1 entered, when Tìm kiếm is clicked, URL q decodes to Quận 1 and result cards are rendered.\"\n  ],\n  \"entityIds\": [],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-d7638348983a20d4\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [\n    \"QUESTION-SEARCH\"\n  ],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-d7638348983a20d4]]\n- [[QUESTION-SEARCH]]\n",
+        "backlinks": [
+          "article:FEATURE-SEARCH"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-WIKI-001",
+      "type": "article",
+      "name": "FR-WIKI-001: The Wiki BĐS catalog shall display article titles, excerpts and dates.",
+      "filePath": "FR-WIKI-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-ARTICLE",
+          "EVID-2dd9a5356fef9d2a"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-WIKI-001: The Wiki BĐS catalog shall display article titles, excerpts and dates.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-WIKI-001\",\n  \"featureId\": \"FEATURE-WIKI\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The Wiki BĐS catalog shall display article titles, excerpts and dates.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given Wiki BĐS, sampled article title, excerpt and date are visible.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-ARTICLE\"\n  ],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-2dd9a5356fef9d2a\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-ARTICLE]]\n- [[EVID-2dd9a5356fef9d2a]]\n",
+        "backlinks": [
+          "article:FEATURE-WIKI"
+        ]
+      }
+    },
+    {
+      "id": "article:QUESTION-AI",
+      "type": "article",
+      "name": "QUESTION-AI: AI search",
+      "filePath": "QUESTION-AI.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-d1cff2806ca77add"
+        ],
+        "category": "Canonical records",
+        "content": "# QUESTION-AI: AI search\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"QUESTION-AI\",\n  \"name\": \"AI search\",\n  \"description\": \"What does Tìm với AI do? Entry text observed; behavior not tested.\",\n  \"evidenceIds\": [\n    \"EVID-d1cff2806ca77add\"\n  ],\n  \"status\": \"proposed\",\n  \"verificationState\": \"unverified\",\n  \"rationale\": \"Question raised by bounded public exploration; no stakeholder answer fabricated.\",\n  \"type\": \"OpenQuestion\"\n}\n```\n\n- [[EVID-d1cff2806ca77add]]\n",
+        "backlinks": [
+          "article:FEATURE-AI",
+          "article:FR-AI-001",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:QUESTION-AUTH",
+      "type": "article",
+      "name": "QUESTION-AUTH: Authenticated flows",
+      "filePath": "QUESTION-AUTH.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-34527de780364f37"
+        ],
+        "category": "Canonical records",
+        "content": "# QUESTION-AUTH: Authenticated flows\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"QUESTION-AUTH\",\n  \"name\": \"Authenticated flows\",\n  \"description\": \"What permissions, posting validation, moderation and account recovery behavior apply?\",\n  \"evidenceIds\": [\n    \"EVID-34527de780364f37\"\n  ],\n  \"status\": \"proposed\",\n  \"verificationState\": \"blocked\",\n  \"rationale\": \"Question raised by bounded public exploration; no stakeholder answer fabricated.\",\n  \"type\": \"OpenQuestion\"\n}\n```\n\n- [[EVID-34527de780364f37]]\n",
+        "backlinks": [
+          "article:FEATURE-ACCOUNT",
+          "article:FEATURE-POST",
+          "article:FR-ACCOUNT-001",
+          "article:FR-POST-001",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:QUESTION-COMPARE",
+      "type": "article",
+      "name": "QUESTION-COMPARE: Comparison result",
+      "filePath": "QUESTION-COMPARE.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-6b424827ef3bc21f"
+        ],
+        "category": "Canonical records",
+        "content": "# QUESTION-COMPARE: Comparison result\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"QUESTION-COMPARE\",\n  \"name\": \"Comparison result\",\n  \"description\": \"What columns, limits and persistence apply after opening comparison? Only selection tray tested.\",\n  \"evidenceIds\": [\n    \"EVID-6b424827ef3bc21f\"\n  ],\n  \"status\": \"proposed\",\n  \"verificationState\": \"unverified\",\n  \"rationale\": \"Question raised by bounded public exploration; no stakeholder answer fabricated.\",\n  \"type\": \"OpenQuestion\"\n}\n```\n\n- [[EVID-6b424827ef3bc21f]]\n",
+        "backlinks": [
+          "article:FEATURE-COMPARE",
+          "article:FR-COMPARE-001",
+          "article:FR-COMPARE-002",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:QUESTION-FILTERS",
+      "type": "article",
+      "name": "QUESTION-FILTERS: Filter combinations",
+      "filePath": "QUESTION-FILTERS.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-2ed3453878954246"
+        ],
+        "category": "Canonical records",
+        "content": "# QUESTION-FILTERS: Filter combinations\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"QUESTION-FILTERS\",\n  \"name\": \"Filter combinations\",\n  \"description\": \"How do price, area, rooms and sorting combine, reset and handle empty states?\",\n  \"evidenceIds\": [\n    \"EVID-2ed3453878954246\"\n  ],\n  \"status\": \"proposed\",\n  \"verificationState\": \"unverified\",\n  \"rationale\": \"Question raised by bounded public exploration; no stakeholder answer fabricated.\",\n  \"type\": \"OpenQuestion\"\n}\n```\n\n- [[EVID-2ed3453878954246]]\n",
+        "backlinks": [
+          "article:FEATURE-FILTER",
+          "article:FR-FILTER-001",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:QUESTION-MAP",
+      "type": "article",
+      "name": "QUESTION-MAP: Map loading",
+      "filePath": "QUESTION-MAP.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-bfd8734194d79384"
+        ],
+        "category": "Canonical records",
+        "content": "# QUESTION-MAP: Map loading\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"QUESTION-MAP\",\n  \"name\": \"Map loading\",\n  \"description\": \"Does the map finish loading with third-party resources allowed? Current guarded run shows Đang tải bản đồ….\",\n  \"evidenceIds\": [\n    \"EVID-bfd8734194d79384\"\n  ],\n  \"status\": \"proposed\",\n  \"verificationState\": \"blocked\",\n  \"rationale\": \"Question raised by bounded public exploration; no stakeholder answer fabricated.\",\n  \"type\": \"OpenQuestion\"\n}\n```\n\n- [[EVID-bfd8734194d79384]]\n",
+        "backlinks": [
+          "article:FEATURE-MAP",
+          "article:FR-MAP-001",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:QUESTION-SEARCH",
+      "type": "article",
+      "name": "QUESTION-SEARCH: Search semantics",
+      "filePath": "QUESTION-SEARCH.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-d7638348983a20d4"
+        ],
+        "category": "Canonical records",
+        "content": "# QUESTION-SEARCH: Search semantics\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"QUESTION-SEARCH\",\n  \"name\": \"Search semantics\",\n  \"description\": \"Does keyword matching normalize accents, tokenize, rank or constrain district? Search for Quận 1 also returned other districts.\",\n  \"evidenceIds\": [\n    \"EVID-d7638348983a20d4\"\n  ],\n  \"status\": \"proposed\",\n  \"verificationState\": \"unverified\",\n  \"rationale\": \"Question raised by bounded public exploration; no stakeholder answer fabricated.\",\n  \"type\": \"OpenQuestion\"\n}\n```\n\n- [[EVID-d7638348983a20d4]]\n",
+        "backlinks": [
+          "article:FEATURE-SEARCH",
+          "article:FR-SEARCH-001",
+          "article:SYSTEM-1",
+          "article:WORKFLOW-SEARCH"
+        ]
+      }
+    },
+    {
+      "id": "article:RULE-POST-ENTRY",
+      "type": "article",
+      "name": "RULE-POST-ENTRY: Unauthenticated posting boundary",
+      "filePath": "RULE-POST-ENTRY.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-34527de780364f37"
+        ],
+        "category": "Canonical records",
+        "content": "# RULE-POST-ENTRY: Unauthenticated posting boundary\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"RULE-POST-ENTRY\",\n  \"name\": \"Unauthenticated posting boundary\",\n  \"description\": \"This unauthenticated /dang-tin visit redirects to login with callbackUrl for posting. Backend authorization not established.\",\n  \"evidenceIds\": [\n    \"EVID-34527de780364f37\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"type\": \"BusinessRule\"\n}\n```\n\n- [[EVID-34527de780364f37]]\n",
+        "backlinks": [
+          "article:FEATURE-POST",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:STEP-COMPARE-ONE",
+      "type": "article",
+      "name": "STEP-COMPARE-ONE: Select first item",
+      "filePath": "STEP-COMPARE-ONE.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-c16fccba79807428"
+        ],
+        "category": "Canonical records",
+        "content": "# STEP-COMPARE-ONE: Select first item\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"STEP-COMPARE-ONE\",\n  \"name\": \"Select first item\",\n  \"description\": \"Tray shows 1/2.\",\n  \"evidenceIds\": [\n    \"EVID-c16fccba79807428\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"Step\"\n}\n```\n\n- [[EVID-c16fccba79807428]]\n",
+        "backlinks": [
+          "article:SYSTEM-1",
+          "article:WORKFLOW-COMPARE"
+        ]
+      }
+    },
+    {
+      "id": "article:STEP-COMPARE-TWO",
+      "type": "article",
+      "name": "STEP-COMPARE-TWO: Select second item",
+      "filePath": "STEP-COMPARE-TWO.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-6b424827ef3bc21f"
+        ],
+        "category": "Canonical records",
+        "content": "# STEP-COMPARE-TWO: Select second item\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"STEP-COMPARE-TWO\",\n  \"name\": \"Select second item\",\n  \"description\": \"Tray shows 2/2.\",\n  \"evidenceIds\": [\n    \"EVID-6b424827ef3bc21f\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"Step\"\n}\n```\n\n- [[EVID-6b424827ef3bc21f]]\n",
+        "backlinks": [
+          "article:SYSTEM-1",
+          "article:WORKFLOW-COMPARE"
+        ]
+      }
+    },
+    {
+      "id": "article:STEP-QUERY",
+      "type": "article",
+      "name": "STEP-QUERY: Enter keyword",
+      "filePath": "STEP-QUERY.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-d7638348983a20d4"
+        ],
+        "category": "Canonical records",
+        "content": "# STEP-QUERY: Enter keyword\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"STEP-QUERY\",\n  \"name\": \"Enter keyword\",\n  \"description\": \"Fill search input with Quận 1.\",\n  \"evidenceIds\": [\n    \"EVID-d7638348983a20d4\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"type\": \"Step\"\n}\n```\n\n- [[EVID-d7638348983a20d4]]\n",
+        "backlinks": [
+          "article:SYSTEM-1",
+          "article:WORKFLOW-SEARCH"
+        ]
+      }
+    },
+    {
+      "id": "article:STEP-SUBMIT",
+      "type": "article",
+      "name": "STEP-SUBMIT: Submit query",
+      "filePath": "STEP-SUBMIT.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-d7638348983a20d4"
+        ],
+        "category": "Canonical records",
+        "content": "# STEP-SUBMIT: Submit query\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"STEP-SUBMIT\",\n  \"name\": \"Submit query\",\n  \"description\": \"Search URL contains q parameter and rendered cards change.\",\n  \"evidenceIds\": [\n    \"EVID-d7638348983a20d4\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"Step\"\n}\n```\n\n- [[EVID-d7638348983a20d4]]\n",
+        "backlinks": [
+          "article:SYSTEM-1",
+          "article:WORKFLOW-SEARCH"
+        ]
+      }
+    },
+    {
+      "id": "article:SYSTEM-1",
+      "type": "article",
+      "name": "SYSTEM-1: MOSO public property website",
+      "filePath": "SYSTEM-1.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "complex",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-POSTER",
+          "ACTOR-VISITOR",
+          "ENTITY-ARTICLE",
+          "ENTITY-LISTING",
+          "ENTITY-PROJECT",
+          "EVID-2ed3453878954246",
+          "EVID-d1cff2806ca77add",
+          "FEATURE-ACCOUNT",
+          "FEATURE-AI",
+          "FEATURE-BROWSE",
+          "FEATURE-COMPARE",
+          "FEATURE-DETAIL",
+          "FEATURE-FILTER",
+          "FEATURE-MAP",
+          "FEATURE-POST",
+          "FEATURE-PROJECT",
+          "FEATURE-SEARCH",
+          "FEATURE-WIKI",
+          "QUESTION-AI",
+          "QUESTION-AUTH",
+          "QUESTION-COMPARE",
+          "QUESTION-FILTERS",
+          "QUESTION-MAP",
+          "QUESTION-SEARCH",
+          "RULE-POST-ENTRY",
+          "STEP-COMPARE-ONE",
+          "STEP-COMPARE-TWO",
+          "STEP-QUERY",
+          "STEP-SUBMIT",
+          "WORKFLOW-COMPARE",
+          "WORKFLOW-SEARCH"
+        ],
+        "category": "Canonical records",
+        "content": "# SYSTEM-1: MOSO public property website\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"SYSTEM-1\",\n  \"name\": \"MOSO public property website\",\n  \"description\": \"Evidence-limited reconstruction of public property discovery, project catalog, detail, comparison selection, editorial content and account entry.\",\n  \"evidenceIds\": [\n    \"EVID-d1cff2806ca77add\",\n    \"EVID-2ed3453878954246\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"System\"\n}\n```\n\n- [[ACTOR-POSTER]]\n- [[ACTOR-VISITOR]]\n- [[ENTITY-ARTICLE]]\n- [[ENTITY-LISTING]]\n- [[ENTITY-PROJECT]]\n- [[EVID-2ed3453878954246]]\n- [[EVID-d1cff2806ca77add]]\n- [[FEATURE-ACCOUNT]]\n- [[FEATURE-AI]]\n- [[FEATURE-BROWSE]]\n- [[FEATURE-COMPARE]]\n- [[FEATURE-DETAIL]]\n- [[FEATURE-FILTER]]\n- [[FEATURE-MAP]]\n- [[FEATURE-POST]]\n- [[FEATURE-PROJECT]]\n- [[FEATURE-SEARCH]]\n- [[FEATURE-WIKI]]\n- [[QUESTION-AI]]\n- [[QUESTION-AUTH]]\n- [[QUESTION-COMPARE]]\n- [[QUESTION-FILTERS]]\n- [[QUESTION-MAP]]\n- [[QUESTION-SEARCH]]\n- [[RULE-POST-ENTRY]]\n- [[STEP-COMPARE-ONE]]\n- [[STEP-COMPARE-TWO]]\n- [[STEP-QUERY]]\n- [[STEP-SUBMIT]]\n- [[WORKFLOW-COMPARE]]\n- [[WORKFLOW-SEARCH]]\n",
+        "backlinks": []
+      }
+    },
+    {
+      "id": "article:WORKFLOW-COMPARE",
+      "type": "article",
+      "name": "WORKFLOW-COMPARE: Select comparison items",
+      "filePath": "WORKFLOW-COMPARE.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-6b424827ef3bc21f",
+          "EVID-c16fccba79807428",
+          "STEP-COMPARE-ONE",
+          "STEP-COMPARE-TWO"
+        ],
+        "category": "Canonical records",
+        "content": "# WORKFLOW-COMPARE: Select comparison items\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"WORKFLOW-COMPARE\",\n  \"name\": \"Select comparison items\",\n  \"description\": \"Tray changes from one to two selected items; comparison table not opened.\",\n  \"evidenceIds\": [\n    \"EVID-c16fccba79807428\",\n    \"EVID-6b424827ef3bc21f\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"stepIds\": [\n    \"STEP-COMPARE-ONE\",\n    \"STEP-COMPARE-TWO\"\n  ],\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"type\": \"Workflow\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-6b424827ef3bc21f]]\n- [[EVID-c16fccba79807428]]\n- [[STEP-COMPARE-ONE]]\n- [[STEP-COMPARE-TWO]]\n",
+        "backlinks": [
+          "article:FEATURE-COMPARE",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:WORKFLOW-SEARCH",
+      "type": "article",
+      "name": "WORKFLOW-SEARCH: Keyword submission",
+      "filePath": "WORKFLOW-SEARCH.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-2ed3453878954246",
+          "EVID-d7638348983a20d4",
+          "QUESTION-SEARCH",
+          "STEP-QUERY",
+          "STEP-SUBMIT"
+        ],
+        "category": "Canonical records",
+        "content": "# WORKFLOW-SEARCH: Keyword submission\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"WORKFLOW-SEARCH\",\n  \"name\": \"Keyword submission\",\n  \"description\": \"Observed read-only query submission.\",\n  \"evidenceIds\": [\n    \"EVID-2ed3453878954246\",\n    \"EVID-d7638348983a20d4\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"stepIds\": [\n    \"STEP-QUERY\",\n    \"STEP-SUBMIT\"\n  ],\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"openQuestionIds\": [\n    \"QUESTION-SEARCH\"\n  ],\n  \"type\": \"Workflow\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-2ed3453878954246]]\n- [[EVID-d7638348983a20d4]]\n- [[QUESTION-SEARCH]]\n- [[STEP-QUERY]]\n- [[STEP-SUBMIT]]\n",
+        "backlinks": [
+          "article:FEATURE-SEARCH",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "topic:canonical-records",
+      "type": "topic",
+      "name": "Canonical records",
+      "summary": "Category from index: Canonical records (57 articles)",
+      "tags": [
+        "category"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "source:evidence",
+      "type": "source",
+      "name": "evidence.json",
+      "filePath": "raw\\evidence.json",
+      "summary": "Raw source (.json, 28 KB)",
+      "tags": [
+        "raw",
+        "json"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "article:ACTOR-POSTER",
+      "target": "article:EVID-34527de780364f37",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:ACTOR-VISITOR",
+      "target": "article:EVID-2ed3453878954246",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:ACTOR-VISITOR",
+      "target": "article:EVID-d1cff2806ca77add",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:ENTITY-ARTICLE",
+      "target": "article:EVID-2dd9a5356fef9d2a",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:ENTITY-LISTING",
+      "target": "article:EVID-2ed3453878954246",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:ENTITY-LISTING",
+      "target": "article:EVID-c53cea185200b355",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:ENTITY-PROJECT",
+      "target": "article:EVID-9e2f8dc3ceced3a0",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-ACCOUNT",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-ACCOUNT",
+      "target": "article:EVID-bfc607d5c14c32ab",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-ACCOUNT",
+      "target": "article:FR-ACCOUNT-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-ACCOUNT",
+      "target": "article:QUESTION-AUTH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-AI",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-AI",
+      "target": "article:EVID-d1cff2806ca77add",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-AI",
+      "target": "article:FR-AI-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-AI",
+      "target": "article:QUESTION-AI",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-BROWSE",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-BROWSE",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-BROWSE",
+      "target": "article:EVID-2ed3453878954246",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-BROWSE",
+      "target": "article:EVID-b99f369160410cdc",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-BROWSE",
+      "target": "article:FR-BROWSE-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-BROWSE",
+      "target": "article:FR-BROWSE-002",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-COMPARE",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-COMPARE",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-COMPARE",
+      "target": "article:EVID-6b424827ef3bc21f",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-COMPARE",
+      "target": "article:EVID-c16fccba79807428",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-COMPARE",
+      "target": "article:FR-COMPARE-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-COMPARE",
+      "target": "article:FR-COMPARE-002",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-COMPARE",
+      "target": "article:QUESTION-COMPARE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-COMPARE",
+      "target": "article:WORKFLOW-COMPARE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-DETAIL",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-DETAIL",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-DETAIL",
+      "target": "article:EVID-c53cea185200b355",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-DETAIL",
+      "target": "article:FR-DETAIL-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:EVID-2ed3453878954246",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:FR-FILTER-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:QUESTION-FILTERS",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-MAP",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-MAP",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-MAP",
+      "target": "article:EVID-bfd8734194d79384",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-MAP",
+      "target": "article:FR-MAP-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-MAP",
+      "target": "article:QUESTION-MAP",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-POST",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-POST",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-POST",
+      "target": "article:EVID-34527de780364f37",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-POST",
+      "target": "article:FR-POST-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-POST",
+      "target": "article:QUESTION-AUTH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-POST",
+      "target": "article:RULE-POST-ENTRY",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-PROJECT",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-PROJECT",
+      "target": "article:ENTITY-PROJECT",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-PROJECT",
+      "target": "article:EVID-9e2f8dc3ceced3a0",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-PROJECT",
+      "target": "article:FR-PROJECT-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-SEARCH",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-SEARCH",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-SEARCH",
+      "target": "article:EVID-2ed3453878954246",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-SEARCH",
+      "target": "article:EVID-d7638348983a20d4",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-SEARCH",
+      "target": "article:FR-SEARCH-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-SEARCH",
+      "target": "article:QUESTION-SEARCH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-SEARCH",
+      "target": "article:WORKFLOW-SEARCH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-WIKI",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-WIKI",
+      "target": "article:ENTITY-ARTICLE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-WIKI",
+      "target": "article:EVID-2dd9a5356fef9d2a",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-WIKI",
+      "target": "article:FR-WIKI-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-ACCOUNT-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-ACCOUNT-001",
+      "target": "article:EVID-bfc607d5c14c32ab",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-ACCOUNT-001",
+      "target": "article:QUESTION-AUTH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-AI-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-AI-001",
+      "target": "article:EVID-d1cff2806ca77add",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-AI-001",
+      "target": "article:QUESTION-AI",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-BROWSE-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-BROWSE-001",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-BROWSE-001",
+      "target": "article:EVID-2ed3453878954246",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-BROWSE-002",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-BROWSE-002",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-BROWSE-002",
+      "target": "article:EVID-b99f369160410cdc",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-COMPARE-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-COMPARE-001",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-COMPARE-001",
+      "target": "article:EVID-c16fccba79807428",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-COMPARE-001",
+      "target": "article:QUESTION-COMPARE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-COMPARE-002",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-COMPARE-002",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-COMPARE-002",
+      "target": "article:EVID-6b424827ef3bc21f",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-COMPARE-002",
+      "target": "article:QUESTION-COMPARE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-DETAIL-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-DETAIL-001",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-DETAIL-001",
+      "target": "article:EVID-c53cea185200b355",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-FILTER-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-FILTER-001",
+      "target": "article:EVID-2ed3453878954246",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-FILTER-001",
+      "target": "article:QUESTION-FILTERS",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-MAP-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-MAP-001",
+      "target": "article:EVID-bfd8734194d79384",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-MAP-001",
+      "target": "article:QUESTION-MAP",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-POST-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-POST-001",
+      "target": "article:EVID-34527de780364f37",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-POST-001",
+      "target": "article:QUESTION-AUTH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-PROJECT-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-PROJECT-001",
+      "target": "article:ENTITY-PROJECT",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-PROJECT-001",
+      "target": "article:EVID-9e2f8dc3ceced3a0",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-SEARCH-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-SEARCH-001",
+      "target": "article:EVID-d7638348983a20d4",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-SEARCH-001",
+      "target": "article:QUESTION-SEARCH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-WIKI-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-WIKI-001",
+      "target": "article:ENTITY-ARTICLE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-WIKI-001",
+      "target": "article:EVID-2dd9a5356fef9d2a",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:QUESTION-AI",
+      "target": "article:EVID-d1cff2806ca77add",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:QUESTION-AUTH",
+      "target": "article:EVID-34527de780364f37",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:QUESTION-COMPARE",
+      "target": "article:EVID-6b424827ef3bc21f",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:QUESTION-FILTERS",
+      "target": "article:EVID-2ed3453878954246",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:QUESTION-MAP",
+      "target": "article:EVID-bfd8734194d79384",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:QUESTION-SEARCH",
+      "target": "article:EVID-d7638348983a20d4",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:RULE-POST-ENTRY",
+      "target": "article:EVID-34527de780364f37",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:STEP-COMPARE-ONE",
+      "target": "article:EVID-c16fccba79807428",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:STEP-COMPARE-TWO",
+      "target": "article:EVID-6b424827ef3bc21f",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:STEP-QUERY",
+      "target": "article:EVID-d7638348983a20d4",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:STEP-SUBMIT",
+      "target": "article:EVID-d7638348983a20d4",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:ACTOR-POSTER",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:ENTITY-ARTICLE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:ENTITY-LISTING",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:ENTITY-PROJECT",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:EVID-2ed3453878954246",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:EVID-d1cff2806ca77add",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-ACCOUNT",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-AI",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-BROWSE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-COMPARE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-DETAIL",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-FILTER",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-MAP",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-POST",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-PROJECT",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-SEARCH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-WIKI",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:QUESTION-AI",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:QUESTION-AUTH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:QUESTION-COMPARE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:QUESTION-FILTERS",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:QUESTION-MAP",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:QUESTION-SEARCH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:RULE-POST-ENTRY",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:STEP-COMPARE-ONE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:STEP-COMPARE-TWO",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:STEP-QUERY",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:STEP-SUBMIT",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:WORKFLOW-COMPARE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:WORKFLOW-SEARCH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-COMPARE",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-COMPARE",
+      "target": "article:EVID-6b424827ef3bc21f",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-COMPARE",
+      "target": "article:EVID-c16fccba79807428",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-COMPARE",
+      "target": "article:STEP-COMPARE-ONE",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-COMPARE",
+      "target": "article:STEP-COMPARE-TWO",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-SEARCH",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-SEARCH",
+      "target": "article:EVID-2ed3453878954246",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-SEARCH",
+      "target": "article:EVID-d7638348983a20d4",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-SEARCH",
+      "target": "article:QUESTION-SEARCH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-SEARCH",
+      "target": "article:STEP-QUERY",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-SEARCH",
+      "target": "article:STEP-SUBMIT",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:ACTOR-VISITOR",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:ACTOR-POSTER",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-BROWSE",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-SEARCH",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-DETAIL",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-COMPARE",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-MAP",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-PROJECT",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-WIKI",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-ACCOUNT",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-POST",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-AI",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:WORKFLOW-SEARCH",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:WORKFLOW-COMPARE",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:STEP-QUERY",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:STEP-SUBMIT",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:STEP-COMPARE-ONE",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:STEP-COMPARE-TWO",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:ENTITY-LISTING",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:ENTITY-PROJECT",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:ENTITY-ARTICLE",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:RULE-POST-ENTRY",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:QUESTION-SEARCH",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:QUESTION-MAP",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:QUESTION-COMPARE",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:QUESTION-AUTH",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:QUESTION-FILTERS",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:QUESTION-AI",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-BROWSE-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-BROWSE-002",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-SEARCH-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-FILTER-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-DETAIL-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-COMPARE-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-COMPARE-002",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-MAP-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-PROJECT-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-WIKI-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-ACCOUNT-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-POST-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-AI-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-d1cff2806ca77add",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-2ed3453878954246",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-b99f369160410cdc",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-9e2f8dc3ceced3a0",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-34527de780364f37",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-bfc607d5c14c32ab",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-2dd9a5356fef9d2a",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-80a49be16993f01f",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-5d0c8ad364416269",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-d7638348983a20d4",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-bfd8734194d79384",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-c53cea185200b355",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-c16fccba79807428",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-6b424827ef3bc21f",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:canonical-records",
+      "name": "Canonical records",
+      "description": "Canonical records (58 nodes)",
+      "nodeIds": [
+        "article:SYSTEM-1",
+        "article:ACTOR-VISITOR",
+        "article:ACTOR-POSTER",
+        "article:FEATURE-BROWSE",
+        "article:FEATURE-SEARCH",
+        "article:FEATURE-FILTER",
+        "article:FEATURE-DETAIL",
+        "article:FEATURE-COMPARE",
+        "article:FEATURE-MAP",
+        "article:FEATURE-PROJECT",
+        "article:FEATURE-WIKI",
+        "article:FEATURE-ACCOUNT",
+        "article:FEATURE-POST",
+        "article:FEATURE-AI",
+        "article:WORKFLOW-SEARCH",
+        "article:WORKFLOW-COMPARE",
+        "article:STEP-QUERY",
+        "article:STEP-SUBMIT",
+        "article:STEP-COMPARE-ONE",
+        "article:STEP-COMPARE-TWO",
+        "article:ENTITY-LISTING",
+        "article:ENTITY-PROJECT",
+        "article:ENTITY-ARTICLE",
+        "article:RULE-POST-ENTRY",
+        "article:QUESTION-SEARCH",
+        "article:QUESTION-MAP",
+        "article:QUESTION-COMPARE",
+        "article:QUESTION-AUTH",
+        "article:QUESTION-FILTERS",
+        "article:QUESTION-AI",
+        "article:FR-BROWSE-001",
+        "article:FR-BROWSE-002",
+        "article:FR-SEARCH-001",
+        "article:FR-FILTER-001",
+        "article:FR-DETAIL-001",
+        "article:FR-COMPARE-001",
+        "article:FR-COMPARE-002",
+        "article:FR-MAP-001",
+        "article:FR-PROJECT-001",
+        "article:FR-WIKI-001",
+        "article:FR-ACCOUNT-001",
+        "article:FR-POST-001",
+        "article:FR-AI-001",
+        "article:EVID-d1cff2806ca77add",
+        "article:EVID-2ed3453878954246",
+        "article:EVID-b99f369160410cdc",
+        "article:EVID-9e2f8dc3ceced3a0",
+        "article:EVID-34527de780364f37",
+        "article:EVID-bfc607d5c14c32ab",
+        "article:EVID-2dd9a5356fef9d2a",
+        "article:EVID-80a49be16993f01f",
+        "article:EVID-5d0c8ad364416269",
+        "article:EVID-d7638348983a20d4",
+        "article:EVID-bfd8734194d79384",
+        "article:EVID-c53cea185200b355",
+        "article:EVID-c16fccba79807428",
+        "article:EVID-6b424827ef3bc21f",
+        "topic:canonical-records"
+      ]
+    },
+    {
+      "id": "layer:other",
+      "name": "Other",
+      "description": "Uncategorized nodes (1)",
+      "nodeIds": [
+        "source:evidence"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Canonical records",
+      "description": "Explore the Canonical records section (57 articles)",
+      "nodeIds": [
+        "article:SYSTEM-1",
+        "article:ACTOR-VISITOR",
+        "article:ACTOR-POSTER"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-19T07:57:25.766278+00:00",
+  "status": "partial",
+  "capabilities": {
+    "python": true,
+    "node": true,
+    "claude": false,
+    "uv": false,
+    "bmad": true,
+    "understandAnything": true,
+    "browserHelper": true
+  },
+  "blockers": [
+    "Claude CLI not discovered; native Claude skill dispatch cannot be tested by this preflight. Existing in-session Skill capability must be checked separately."
+  ],
+  "versions": {
+    "python": "Python 3.11.4",
+    "node": "v22.18.0",
+    "jsonschema": "4.23.0",
+    "playwright": "1.55.0",
+    "bmad": "bab9082c3e884e0d72c759bcd1a6d90bcc01be84",
+    "understandAnything": "f2d0164f72fe678805c34245a6df36acededfebd",
+    "chromium": "140.0.7339.16"
+  },
+  "stopReason": "Native integrations require actual Claude session; independent deterministic work can continue."
+}

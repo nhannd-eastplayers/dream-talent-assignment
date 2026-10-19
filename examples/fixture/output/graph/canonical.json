@@ -1,0 +1,1049 @@
+{
+  "nodes": [
+    {
+      "id": "SYSTEM-1",
+      "name": "Library fixture",
+      "description": "Controlled catalog with category filtering, item detail and an unavailable account flow.",
+      "evidenceIds": [
+        "EVID-9ea047ea81cbbcba"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "System"
+    },
+    {
+      "id": "ACTOR-VISITOR",
+      "name": "Visitor",
+      "description": "Anonymous reader of public catalog.",
+      "evidenceIds": [
+        "EVID-9ea047ea81cbbcba"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "Actor"
+    },
+    {
+      "id": "FEATURE-CATALOG",
+      "name": "Browse catalog",
+      "description": "Find catalog items.",
+      "evidenceIds": [
+        "EVID-9ea047ea81cbbcba"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "http://127.0.0.1:8765/"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open catalog.",
+        "Read item title."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-ITEM"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-FILTER",
+      "name": "Filter catalog",
+      "description": "Select category and inspect results.",
+      "evidenceIds": [
+        "EVID-8e992d4583300047",
+        "EVID-cdf9f41e0c909818",
+        "EVID-b0d9712c57e7036a",
+        "EVID-415943f983727a5c"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "http://127.0.0.1:8765/"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Select Science.",
+        "Click Filter.",
+        "Select Art.",
+        "Click Filter."
+      ],
+      "alternativeFlows": [
+        "Art produces No items found."
+      ],
+      "entityIds": [
+        "ENTITY-ITEM"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": [
+        "WORKFLOW-FILTER"
+      ],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-DETAIL",
+      "name": "Item detail",
+      "description": "Read item metadata.",
+      "evidenceIds": [
+        "EVID-337e164078942bbe"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "http://127.0.0.1:8765/detail.html"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Follow detail link.",
+        "Read category and format."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-ITEM"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "FEATURE-ACCOUNT",
+      "name": "Account entry",
+      "description": "Reach sign-in boundary.",
+      "evidenceIds": [
+        "EVID-ea991741f8ce8955"
+      ],
+      "status": "observed",
+      "verificationState": "blocked",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "http://127.0.0.1:8765/account.html"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Follow Account.",
+        "Observe sign-in wall."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-AUTH"
+      ],
+      "workflowIds": [],
+      "type": "Feature"
+    },
+    {
+      "id": "WORKFLOW-FILTER",
+      "name": "Category filtering",
+      "description": "Observed select-and-apply flow with nonempty and empty states.",
+      "evidenceIds": [
+        "EVID-8e992d4583300047",
+        "EVID-cdf9f41e0c909818",
+        "EVID-b0d9712c57e7036a",
+        "EVID-415943f983727a5c"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "stepIds": [
+        "STEP-SELECT",
+        "STEP-APPLY"
+      ],
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entityIds": [
+        "ENTITY-ITEM"
+      ],
+      "type": "Workflow"
+    },
+    {
+      "id": "STEP-SELECT",
+      "name": "Select category",
+      "description": "Choose category in select control.",
+      "evidenceIds": [
+        "EVID-8e992d4583300047",
+        "EVID-b0d9712c57e7036a"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "Step"
+    },
+    {
+      "id": "STEP-APPLY",
+      "name": "Apply filter",
+      "description": "Click Filter and inspect results.",
+      "evidenceIds": [
+        "EVID-cdf9f41e0c909818",
+        "EVID-415943f983727a5c"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "Step"
+    },
+    {
+      "id": "ENTITY-ITEM",
+      "name": "Catalog item",
+      "description": "Displayed title, category and format; no database model inferred.",
+      "evidenceIds": [
+        "EVID-9ea047ea81cbbcba",
+        "EVID-337e164078942bbe"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "type": "Entity"
+    },
+    {
+      "id": "QUESTION-AUTH",
+      "name": "Authentication behavior",
+      "description": "What happens after real sign-in?",
+      "evidenceIds": [
+        "EVID-ea991741f8ce8955"
+      ],
+      "status": "proposed",
+      "verificationState": "blocked",
+      "rationale": "Fixture intentionally excludes authentication.",
+      "type": "OpenQuestion"
+    },
+    {
+      "id": "FR-CATALOG-001",
+      "featureId": "FEATURE-CATALOG",
+      "type": "Requirement",
+      "statement": "The catalog shall display the River atlas item.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given the catalog page, River atlas is visible."
+      ],
+      "entityIds": [
+        "ENTITY-ITEM"
+      ],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-9ea047ea81cbbcba"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "openQuestionIds": [],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-FILTER-001",
+      "featureId": "FEATURE-FILTER",
+      "type": "Requirement",
+      "statement": "Selecting Science and applying Filter shall retain River atlas.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Select Science.",
+        "Click Filter.",
+        "Read results."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given Science selected, when Filter is clicked, River atlas — Science is displayed."
+      ],
+      "entityIds": [
+        "ENTITY-ITEM"
+      ],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-8e992d4583300047",
+        "EVID-cdf9f41e0c909818"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "openQuestionIds": [],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-FILTER-002",
+      "featureId": "FEATURE-FILTER",
+      "type": "Requirement",
+      "statement": "Selecting Art and applying Filter shall display an empty-result message.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Select Art.",
+        "Click Filter.",
+        "Read empty state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given Art selected, when Filter is clicked, No items found is displayed."
+      ],
+      "entityIds": [],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-b0d9712c57e7036a",
+        "EVID-415943f983727a5c"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "openQuestionIds": [],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-DETAIL-001",
+      "featureId": "FEATURE-DETAIL",
+      "type": "Requirement",
+      "statement": "The River atlas detail page shall display its category and format.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given detail is open, Science and Book are visible."
+      ],
+      "entityIds": [
+        "ENTITY-ITEM"
+      ],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-337e164078942bbe"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "openQuestionIds": [],
+      "requirementType": "functional"
+    },
+    {
+      "id": "FR-ACCOUNT-001",
+      "featureId": "FEATURE-ACCOUNT",
+      "type": "Requirement",
+      "statement": "The public account page shall show that sign-in is required.",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "preconditions": [
+        "The public entry page is available."
+      ],
+      "mainFlow": [
+        "Open the entry page.",
+        "Inspect the described state."
+      ],
+      "alternativeFlows": [],
+      "acceptanceCriteria": [
+        "Given Account is opened, the sign-in-required message is visible."
+      ],
+      "entityIds": [],
+      "dependsOn": [],
+      "evidenceIds": [
+        "EVID-ea991741f8ce8955"
+      ],
+      "status": "observed",
+      "verificationState": "partial",
+      "rationale": "",
+      "openQuestionIds": [
+        "QUESTION-AUTH"
+      ],
+      "requirementType": "functional"
+    },
+    {
+      "id": "EVID-9ea047ea81cbbcba",
+      "sourceType": "fixture",
+      "url": "http://127.0.0.1:8765/",
+      "capturedAt": "2026-10-19T07:46:14.425320+00:00",
+      "pageTitle": "Library fixture",
+      "excerpt": "Library catalog",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-9ea047ea81cbbcba.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"http://127.0.0.1:8765/\", \"excerpt\": \"Library catalog\"}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+      "contentHash": "55ff82f1854a80cc47145e33d9071444196f524293614debba8b468b93ef389f",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-8e992d4583300047",
+      "sourceType": "fixture",
+      "url": "http://127.0.0.1:8765/",
+      "capturedAt": "2026-10-19T07:46:14.563394+00:00",
+      "pageTitle": "Library fixture",
+      "excerpt": "Library catalog\nCatalog Account\nCategory \nAll\nScience\nArt\n Filter\nRiver atlas — Science\nRiver atlas details",
+      "locator": "#category",
+      "snapshotPath": "evidence/snapshots/EVID-8e992d4583300047.txt",
+      "action": "{\"type\": \"select\", \"selector\": \"#category\", \"value\": \"science\", \"readOnly\": true}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+      "contentHash": "99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-cdf9f41e0c909818",
+      "sourceType": "fixture",
+      "url": "http://127.0.0.1:8765/",
+      "capturedAt": "2026-10-19T07:46:14.718389+00:00",
+      "pageTitle": "Library fixture",
+      "excerpt": "River atlas — Science",
+      "locator": "#filter",
+      "snapshotPath": "evidence/snapshots/EVID-cdf9f41e0c909818.txt",
+      "action": "{\"type\": \"click\", \"selector\": \"#filter\", \"readOnly\": true, \"excerpt\": \"River atlas — Science\"}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+      "contentHash": "9fb953d9ecca18d2f8608c56f2252fb29de63f2f989ae3178e0ac90871560ae9",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-b0d9712c57e7036a",
+      "sourceType": "fixture",
+      "url": "http://127.0.0.1:8765/",
+      "capturedAt": "2026-10-19T07:46:14.842333+00:00",
+      "pageTitle": "Library fixture",
+      "excerpt": "Library catalog\nCatalog Account\nCategory \nAll\nScience\nArt\n Filter\nRiver atlas — Science\nRiver atlas details",
+      "locator": "#category",
+      "snapshotPath": "evidence/snapshots/EVID-b0d9712c57e7036a.txt",
+      "action": "{\"type\": \"select\", \"selector\": \"#category\", \"value\": \"art\", \"readOnly\": true}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+      "contentHash": "99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-415943f983727a5c",
+      "sourceType": "fixture",
+      "url": "http://127.0.0.1:8765/",
+      "capturedAt": "2026-10-19T07:46:14.985739+00:00",
+      "pageTitle": "Library fixture",
+      "excerpt": "No items found",
+      "locator": "#filter",
+      "snapshotPath": "evidence/snapshots/EVID-415943f983727a5c.txt",
+      "action": "{\"type\": \"click\", \"selector\": \"#filter\", \"readOnly\": true, \"excerpt\": \"No items found\"}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 8626f3dfa10f29caada9fab2870d40a960b0f109f4f5d99ac1c7231b9f2a1a92",
+      "contentHash": "949da6a3278e2d66078bda0e06f569110d872e46548e354c508af456e3c18715",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-337e164078942bbe",
+      "sourceType": "fixture",
+      "url": "http://127.0.0.1:8765/detail.html",
+      "capturedAt": "2026-10-19T07:46:15.143877+00:00",
+      "pageTitle": "River atlas",
+      "excerpt": "Format: Book",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-337e164078942bbe.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"http://127.0.0.1:8765/detail.html\", \"depth\": 1, \"excerpt\": \"Format: Book\"}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 de2ead413201282735adfcdea2f09e14114c1a2b4b47d2cca03b8f14002413df",
+      "contentHash": "b36bd111e53b3bbf36a282bd4b53f65ae31277df09a6e4be9bdc239cab7be6ad",
+      "type": "Evidence"
+    },
+    {
+      "id": "EVID-ea991741f8ce8955",
+      "sourceType": "fixture",
+      "url": "http://127.0.0.1:8765/account.html",
+      "capturedAt": "2026-10-19T07:46:15.296936+00:00",
+      "pageTitle": "Account blocked",
+      "excerpt": "Sign in required. Authentication intentionally unavailable in fixture.",
+      "locator": "body",
+      "snapshotPath": "evidence/snapshots/EVID-ea991741f8ce8955.txt",
+      "action": "{\"type\": \"goto\", \"url\": \"http://127.0.0.1:8765/account.html\", \"depth\": 1, \"excerpt\": \"Sign in required. Authentication intentionally unavailable in fixture.\"}",
+      "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 861eb970d8e80843e3b77fbf3cbc8aa15d86a0f2b08ff1af235f5d2a4571f0ef",
+      "contentHash": "c924ce4f305640b6d2be4a82e1fb0e6aeb243c015be9f2adf2a2bcba71721c88",
+      "type": "Evidence"
+    }
+  ],
+  "edges": [
+    {
+      "source": "SYSTEM-1",
+      "target": "ACTOR-VISITOR",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-6849bc64de97b2f8d21f"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-CATALOG",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-aacd7228747e17090be6"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-FILTER",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-2926a1e8f91bd91afd98"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-DETAIL",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-02c909d70a81f3c55196"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "FEATURE-ACCOUNT",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-ec8c55e49a832713145d"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "WORKFLOW-FILTER",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-c995b6b68d5106ddf520"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "STEP-SELECT",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-029526a529f659b47a77"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "STEP-APPLY",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-8ba9ef06aca6cbbae18c"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "ENTITY-ITEM",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-5553a0e8a554a1fc1d44"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "QUESTION-AUTH",
+      "type": "CONTAINS",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-d5f460aa5821ea23b6ec"
+    },
+    {
+      "source": "SYSTEM-1",
+      "target": "EVID-9ea047ea81cbbcba",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-12b53372a630aae42fa5"
+    },
+    {
+      "source": "ACTOR-VISITOR",
+      "target": "EVID-9ea047ea81cbbcba",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-40aa4da1bcc296bc18b0"
+    },
+    {
+      "source": "FEATURE-CATALOG",
+      "target": "EVID-9ea047ea81cbbcba",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-469536c68c9024b83521"
+    },
+    {
+      "source": "FEATURE-CATALOG",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-514e183b9b4df1af4ca2"
+    },
+    {
+      "source": "FEATURE-CATALOG",
+      "target": "ENTITY-ITEM",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-072529a8c26225b75cb2"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "EVID-8e992d4583300047",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-4bf578537d3e65f89be3"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "EVID-cdf9f41e0c909818",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-279781918c8cdac193a4"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "EVID-b0d9712c57e7036a",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-e7537b0a2be0f12066c8"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "EVID-415943f983727a5c",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-ecfb967aa7fa4949a43b"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-cc6962a720a7a8529cfa"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "ENTITY-ITEM",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-808ef3f5bc4ac43f9ac2"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "WORKFLOW-FILTER",
+      "type": "INCLUDES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-fe6f0710dbe9c34de073"
+    },
+    {
+      "source": "FEATURE-DETAIL",
+      "target": "EVID-337e164078942bbe",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-2e01734380ae9ef30988"
+    },
+    {
+      "source": "FEATURE-DETAIL",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-f91334b6ea801b3c09df"
+    },
+    {
+      "source": "FEATURE-DETAIL",
+      "target": "ENTITY-ITEM",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-018541ff1d01d830eff6"
+    },
+    {
+      "source": "FEATURE-ACCOUNT",
+      "target": "EVID-ea991741f8ce8955",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-50bea16205424c5a8e10"
+    },
+    {
+      "source": "FEATURE-ACCOUNT",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-3ad8f9b71853963dabe7"
+    },
+    {
+      "source": "FEATURE-ACCOUNT",
+      "target": "QUESTION-AUTH",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-2aa3e3eb40260def99aa"
+    },
+    {
+      "source": "WORKFLOW-FILTER",
+      "target": "EVID-8e992d4583300047",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-4ad8c9a4554cc9cdf5f4"
+    },
+    {
+      "source": "WORKFLOW-FILTER",
+      "target": "EVID-cdf9f41e0c909818",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-8f67839f9d96cc934c36"
+    },
+    {
+      "source": "WORKFLOW-FILTER",
+      "target": "EVID-b0d9712c57e7036a",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-7279903997be4bb1c52c"
+    },
+    {
+      "source": "WORKFLOW-FILTER",
+      "target": "EVID-415943f983727a5c",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-fa21f42710b5e8448d12"
+    },
+    {
+      "source": "WORKFLOW-FILTER",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-236096efb233ef705118"
+    },
+    {
+      "source": "WORKFLOW-FILTER",
+      "target": "ENTITY-ITEM",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-636f25726d7a266d5183"
+    },
+    {
+      "source": "WORKFLOW-FILTER",
+      "target": "STEP-SELECT",
+      "type": "INCLUDES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-5dead44e3105dfcdc2d8"
+    },
+    {
+      "source": "WORKFLOW-FILTER",
+      "target": "STEP-APPLY",
+      "type": "INCLUDES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-4f0acd97ac1bd49be664"
+    },
+    {
+      "source": "STEP-SELECT",
+      "target": "EVID-8e992d4583300047",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-70d426e3c826d221def5"
+    },
+    {
+      "source": "STEP-SELECT",
+      "target": "EVID-b0d9712c57e7036a",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-21d75ee7a515874c1762"
+    },
+    {
+      "source": "STEP-APPLY",
+      "target": "EVID-cdf9f41e0c909818",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-1dc58ba96f8b7a5ee39f"
+    },
+    {
+      "source": "STEP-APPLY",
+      "target": "EVID-415943f983727a5c",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-15aec29e901d2a99082e"
+    },
+    {
+      "source": "ENTITY-ITEM",
+      "target": "EVID-9ea047ea81cbbcba",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-fbef343800dcb2cf987b"
+    },
+    {
+      "source": "ENTITY-ITEM",
+      "target": "EVID-337e164078942bbe",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-610001520f43c15c11d6"
+    },
+    {
+      "source": "QUESTION-AUTH",
+      "target": "EVID-ea991741f8ce8955",
+      "type": "SUPPORTED_BY",
+      "status": "proposed",
+      "rationale": "Fixture intentionally excludes authentication.",
+      "id": "EDGE-7ff0396367aa8b0c961d"
+    },
+    {
+      "source": "FEATURE-CATALOG",
+      "target": "FR-CATALOG-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-bece44b29334fc738cb9"
+    },
+    {
+      "source": "FR-CATALOG-001",
+      "target": "EVID-9ea047ea81cbbcba",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-5535964b8f7fac54af0a"
+    },
+    {
+      "source": "FR-CATALOG-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-1361a1106f88b43aae55"
+    },
+    {
+      "source": "FR-CATALOG-001",
+      "target": "ENTITY-ITEM",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-11de42bf50b330c1c0ae"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "FR-FILTER-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-24f19947ef0d3009a116"
+    },
+    {
+      "source": "FR-FILTER-001",
+      "target": "EVID-8e992d4583300047",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-9ce3610dd48b8dca9f3c"
+    },
+    {
+      "source": "FR-FILTER-001",
+      "target": "EVID-cdf9f41e0c909818",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-50c793424a1e0f12551f"
+    },
+    {
+      "source": "FR-FILTER-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-053589fdb9497c84c6a4"
+    },
+    {
+      "source": "FR-FILTER-001",
+      "target": "ENTITY-ITEM",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-c87f5bede01225e964c6"
+    },
+    {
+      "source": "FEATURE-FILTER",
+      "target": "FR-FILTER-002",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-7b6a48901e527a65696b"
+    },
+    {
+      "source": "FR-FILTER-002",
+      "target": "EVID-b0d9712c57e7036a",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-da7807c771b6a3284b49"
+    },
+    {
+      "source": "FR-FILTER-002",
+      "target": "EVID-415943f983727a5c",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-a004f0f9fdfd4b87597f"
+    },
+    {
+      "source": "FR-FILTER-002",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-fcf5d60ddd47e06bdf92"
+    },
+    {
+      "source": "FEATURE-DETAIL",
+      "target": "FR-DETAIL-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-6d2b61f88cf16ab3a68c"
+    },
+    {
+      "source": "FR-DETAIL-001",
+      "target": "EVID-337e164078942bbe",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-b93cb79e9e731867dad2"
+    },
+    {
+      "source": "FR-DETAIL-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-1f7852d153acab9a331b"
+    },
+    {
+      "source": "FR-DETAIL-001",
+      "target": "ENTITY-ITEM",
+      "type": "USES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-8dd0253df7775c624d08"
+    },
+    {
+      "source": "FEATURE-ACCOUNT",
+      "target": "FR-ACCOUNT-001",
+      "type": "HAS_REQUIREMENT",
+      "status": "observed",
+      "rationale": "Derived from validated canonical reference",
+      "id": "EDGE-8494e6ca5a3a757f71a4"
+    },
+    {
+      "source": "FR-ACCOUNT-001",
+      "target": "EVID-ea991741f8ce8955",
+      "type": "SUPPORTED_BY",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-66575d3bae36b7c4fb37"
+    },
+    {
+      "source": "FR-ACCOUNT-001",
+      "target": "ACTOR-VISITOR",
+      "type": "INVOLVES",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-b05c768f5f4c44821a41"
+    },
+    {
+      "source": "FR-ACCOUNT-001",
+      "target": "QUESTION-AUTH",
+      "type": "RELATES_TO",
+      "status": "observed",
+      "rationale": "Explicit canonical reference",
+      "id": "EDGE-3a7158497e92bac3357b"
+    }
+  ]
+}

@@ -1,0 +1,1261 @@
+{
+  "version": "1.0.0",
+  "kind": "knowledge",
+  "project": {
+    "name": "System knowledge",
+    "languages": [
+      "markdown"
+    ],
+    "frameworks": [
+      "karpathy-wiki"
+    ],
+    "description": "Knowledge graph for System knowledge",
+    "analyzedAt": "2026-10-19T08:02:25.963715+00:00",
+    "gitCommitHash": ""
+  },
+  "nodes": [
+    {
+      "id": "article:ACTOR-VISITOR",
+      "type": "article",
+      "name": "ACTOR-VISITOR: Visitor",
+      "filePath": "ACTOR-VISITOR.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-9ea047ea81cbbcba"
+        ],
+        "category": "Canonical records",
+        "content": "# ACTOR-VISITOR: Visitor\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"ACTOR-VISITOR\",\n  \"name\": \"Visitor\",\n  \"description\": \"Anonymous reader of public catalog.\",\n  \"evidenceIds\": [\n    \"EVID-9ea047ea81cbbcba\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"Actor\"\n}\n```\n\n- [[EVID-9ea047ea81cbbcba]]\n",
+        "backlinks": [
+          "article:FEATURE-ACCOUNT",
+          "article:FEATURE-CATALOG",
+          "article:FEATURE-DETAIL",
+          "article:FEATURE-FILTER",
+          "article:FR-ACCOUNT-001",
+          "article:FR-CATALOG-001",
+          "article:FR-DETAIL-001",
+          "article:FR-FILTER-001",
+          "article:FR-FILTER-002",
+          "article:SYSTEM-1",
+          "article:WORKFLOW-FILTER"
+        ]
+      }
+    },
+    {
+      "id": "article:ENTITY-ITEM",
+      "type": "article",
+      "name": "ENTITY-ITEM: Catalog item",
+      "filePath": "ENTITY-ITEM.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-337e164078942bbe",
+          "EVID-9ea047ea81cbbcba"
+        ],
+        "category": "Canonical records",
+        "content": "# ENTITY-ITEM: Catalog item\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"ENTITY-ITEM\",\n  \"name\": \"Catalog item\",\n  \"description\": \"Displayed title, category and format; no database model inferred.\",\n  \"evidenceIds\": [\n    \"EVID-9ea047ea81cbbcba\",\n    \"EVID-337e164078942bbe\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"Entity\"\n}\n```\n\n- [[EVID-337e164078942bbe]]\n- [[EVID-9ea047ea81cbbcba]]\n",
+        "backlinks": [
+          "article:FEATURE-CATALOG",
+          "article:FEATURE-DETAIL",
+          "article:FEATURE-FILTER",
+          "article:FR-CATALOG-001",
+          "article:FR-DETAIL-001",
+          "article:FR-FILTER-001",
+          "article:SYSTEM-1",
+          "article:WORKFLOW-FILTER"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-337e164078942bbe",
+      "type": "article",
+      "name": "EVID-337e164078942bbe: River atlas",
+      "filePath": "EVID-337e164078942bbe.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-337e164078942bbe: River atlas\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-337e164078942bbe\",\n  \"sourceType\": \"fixture\",\n  \"url\": \"http://127.0.0.1:8765/detail.html\",\n  \"capturedAt\": \"2026-10-19T07:46:15.143877+00:00\",\n  \"pageTitle\": \"River atlas\",\n  \"excerpt\": \"Format: Book\",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-337e164078942bbe.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"http://127.0.0.1:8765/detail.html\\\", \\\"depth\\\": 1, \\\"excerpt\\\": \\\"Format: Book\\\"}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 de2ead413201282735adfcdea2f09e14114c1a2b4b47d2cca03b8f14002413df\",\n  \"contentHash\": \"b36bd111e53b3bbf36a282bd4b53f65ae31277df09a6e4be9bdc239cab7be6ad\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:ENTITY-ITEM",
+          "article:FEATURE-DETAIL",
+          "article:FR-DETAIL-001"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-415943f983727a5c",
+      "type": "article",
+      "name": "EVID-415943f983727a5c: Library fixture",
+      "filePath": "EVID-415943f983727a5c.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-415943f983727a5c: Library fixture\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-415943f983727a5c\",\n  \"sourceType\": \"fixture\",\n  \"url\": \"http://127.0.0.1:8765/\",\n  \"capturedAt\": \"2026-10-19T07:46:14.985739+00:00\",\n  \"pageTitle\": \"Library fixture\",\n  \"excerpt\": \"No items found\",\n  \"locator\": \"#filter\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-415943f983727a5c.txt\",\n  \"action\": \"{\\\"type\\\": \\\"click\\\", \\\"selector\\\": \\\"#filter\\\", \\\"readOnly\\\": true, \\\"excerpt\\\": \\\"No items found\\\"}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 8626f3dfa10f29caada9fab2870d40a960b0f109f4f5d99ac1c7231b9f2a1a92\",\n  \"contentHash\": \"949da6a3278e2d66078bda0e06f569110d872e46548e354c508af456e3c18715\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:FEATURE-FILTER",
+          "article:FR-FILTER-002",
+          "article:STEP-APPLY",
+          "article:WORKFLOW-FILTER"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-8e992d4583300047",
+      "type": "article",
+      "name": "EVID-8e992d4583300047: Library fixture",
+      "filePath": "EVID-8e992d4583300047.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-8e992d4583300047: Library fixture\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-8e992d4583300047\",\n  \"sourceType\": \"fixture\",\n  \"url\": \"http://127.0.0.1:8765/\",\n  \"capturedAt\": \"2026-10-19T07:46:14.563394+00:00\",\n  \"pageTitle\": \"Library fixture\",\n  \"excerpt\": \"Library catalog\\nCatalog Account\\nCategory \\nAll\\nScience\\nArt\\n Filter\\nRiver atlas \u2014 Science\\nRiver atlas details\",\n  \"locator\": \"#category\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-8e992d4583300047.txt\",\n  \"action\": \"{\\\"type\\\": \\\"select\\\", \\\"selector\\\": \\\"#category\\\", \\\"value\\\": \\\"science\\\", \\\"readOnly\\\": true}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a\",\n  \"contentHash\": \"99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:FEATURE-FILTER",
+          "article:FR-FILTER-001",
+          "article:STEP-SELECT",
+          "article:WORKFLOW-FILTER"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-9ea047ea81cbbcba",
+      "type": "article",
+      "name": "EVID-9ea047ea81cbbcba: Library fixture",
+      "filePath": "EVID-9ea047ea81cbbcba.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-9ea047ea81cbbcba: Library fixture\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-9ea047ea81cbbcba\",\n  \"sourceType\": \"fixture\",\n  \"url\": \"http://127.0.0.1:8765/\",\n  \"capturedAt\": \"2026-10-19T07:46:14.425320+00:00\",\n  \"pageTitle\": \"Library fixture\",\n  \"excerpt\": \"Library catalog\",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-9ea047ea81cbbcba.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"http://127.0.0.1:8765/\\\", \\\"excerpt\\\": \\\"Library catalog\\\"}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a\",\n  \"contentHash\": \"55ff82f1854a80cc47145e33d9071444196f524293614debba8b468b93ef389f\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:ACTOR-VISITOR",
+          "article:ENTITY-ITEM",
+          "article:FEATURE-CATALOG",
+          "article:FR-CATALOG-001",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-b0d9712c57e7036a",
+      "type": "article",
+      "name": "EVID-b0d9712c57e7036a: Library fixture",
+      "filePath": "EVID-b0d9712c57e7036a.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-b0d9712c57e7036a: Library fixture\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-b0d9712c57e7036a\",\n  \"sourceType\": \"fixture\",\n  \"url\": \"http://127.0.0.1:8765/\",\n  \"capturedAt\": \"2026-10-19T07:46:14.842333+00:00\",\n  \"pageTitle\": \"Library fixture\",\n  \"excerpt\": \"Library catalog\\nCatalog Account\\nCategory \\nAll\\nScience\\nArt\\n Filter\\nRiver atlas \u2014 Science\\nRiver atlas details\",\n  \"locator\": \"#category\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-b0d9712c57e7036a.txt\",\n  \"action\": \"{\\\"type\\\": \\\"select\\\", \\\"selector\\\": \\\"#category\\\", \\\"value\\\": \\\"art\\\", \\\"readOnly\\\": true}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a\",\n  \"contentHash\": \"99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:FEATURE-FILTER",
+          "article:FR-FILTER-002",
+          "article:STEP-SELECT",
+          "article:WORKFLOW-FILTER"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-cdf9f41e0c909818",
+      "type": "article",
+      "name": "EVID-cdf9f41e0c909818: Library fixture",
+      "filePath": "EVID-cdf9f41e0c909818.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-cdf9f41e0c909818: Library fixture\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-cdf9f41e0c909818\",\n  \"sourceType\": \"fixture\",\n  \"url\": \"http://127.0.0.1:8765/\",\n  \"capturedAt\": \"2026-10-19T07:46:14.718389+00:00\",\n  \"pageTitle\": \"Library fixture\",\n  \"excerpt\": \"River atlas \u2014 Science\",\n  \"locator\": \"#filter\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-cdf9f41e0c909818.txt\",\n  \"action\": \"{\\\"type\\\": \\\"click\\\", \\\"selector\\\": \\\"#filter\\\", \\\"readOnly\\\": true, \\\"excerpt\\\": \\\"River atlas \u2014 Science\\\"}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a\",\n  \"contentHash\": \"9fb953d9ecca18d2f8608c56f2252fb29de63f2f989ae3178e0ac90871560ae9\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:FEATURE-FILTER",
+          "article:FR-FILTER-001",
+          "article:STEP-APPLY",
+          "article:WORKFLOW-FILTER"
+        ]
+      }
+    },
+    {
+      "id": "article:EVID-ea991741f8ce8955",
+      "type": "article",
+      "name": "EVID-ea991741f8ce8955: Account blocked",
+      "filePath": "EVID-ea991741f8ce8955.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [],
+        "category": "Canonical records",
+        "content": "# EVID-ea991741f8ce8955: Account blocked\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"EVID-ea991741f8ce8955\",\n  \"sourceType\": \"fixture\",\n  \"url\": \"http://127.0.0.1:8765/account.html\",\n  \"capturedAt\": \"2026-10-19T07:46:15.296936+00:00\",\n  \"pageTitle\": \"Account blocked\",\n  \"excerpt\": \"Sign in required. Authentication intentionally unavailable in fixture.\",\n  \"locator\": \"body\",\n  \"snapshotPath\": \"evidence/snapshots/EVID-ea991741f8ce8955.txt\",\n  \"action\": \"{\\\"type\\\": \\\"goto\\\", \\\"url\\\": \\\"http://127.0.0.1:8765/account.html\\\", \\\"depth\\\": 1, \\\"excerpt\\\": \\\"Sign in required. Authentication intentionally unavailable in fixture.\\\"}\",\n  \"result\": \"Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 861eb970d8e80843e3b77fbf3cbc8aa15d86a0f2b08ff1af235f5d2a4571f0ef\",\n  \"contentHash\": \"c924ce4f305640b6d2be4a82e1fb0e6aeb243c015be9f2adf2a2bcba71721c88\",\n  \"type\": \"Evidence\"\n}\n```\n\n\n",
+        "backlinks": [
+          "article:FEATURE-ACCOUNT",
+          "article:FR-ACCOUNT-001",
+          "article:QUESTION-AUTH"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-ACCOUNT",
+      "type": "article",
+      "name": "FEATURE-ACCOUNT: Account entry",
+      "filePath": "FEATURE-ACCOUNT.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-ea991741f8ce8955",
+          "FR-ACCOUNT-001",
+          "QUESTION-AUTH"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-ACCOUNT: Account entry\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-ACCOUNT\",\n  \"name\": \"Account entry\",\n  \"description\": \"Reach sign-in boundary.\",\n  \"evidenceIds\": [\n    \"EVID-ea991741f8ce8955\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"blocked\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"http://127.0.0.1:8765/account.html\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Follow Account.\",\n    \"Observe sign-in wall.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [\n    \"QUESTION-AUTH\"\n  ],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-ea991741f8ce8955]]\n- [[FR-ACCOUNT-001]]\n- [[QUESTION-AUTH]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-CATALOG",
+      "type": "article",
+      "name": "FEATURE-CATALOG: Browse catalog",
+      "filePath": "FEATURE-CATALOG.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-ITEM",
+          "EVID-9ea047ea81cbbcba",
+          "FR-CATALOG-001"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-CATALOG: Browse catalog\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-CATALOG\",\n  \"name\": \"Browse catalog\",\n  \"description\": \"Find catalog items.\",\n  \"evidenceIds\": [\n    \"EVID-9ea047ea81cbbcba\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"http://127.0.0.1:8765/\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Open catalog.\",\n    \"Read item title.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-ITEM\"\n  ],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-ITEM]]\n- [[EVID-9ea047ea81cbbcba]]\n- [[FR-CATALOG-001]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-DETAIL",
+      "type": "article",
+      "name": "FEATURE-DETAIL: Item detail",
+      "filePath": "FEATURE-DETAIL.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-ITEM",
+          "EVID-337e164078942bbe",
+          "FR-DETAIL-001"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-DETAIL: Item detail\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-DETAIL\",\n  \"name\": \"Item detail\",\n  \"description\": \"Read item metadata.\",\n  \"evidenceIds\": [\n    \"EVID-337e164078942bbe\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"http://127.0.0.1:8765/detail.html\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Follow detail link.\",\n    \"Read category and format.\"\n  ],\n  \"alternativeFlows\": [\n    \"Other states not tested.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-ITEM\"\n  ],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [],\n  \"workflowIds\": [],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-ITEM]]\n- [[EVID-337e164078942bbe]]\n- [[FR-DETAIL-001]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FEATURE-FILTER",
+      "type": "article",
+      "name": "FEATURE-FILTER: Filter catalog",
+      "filePath": "FEATURE-FILTER.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-ITEM",
+          "EVID-415943f983727a5c",
+          "EVID-8e992d4583300047",
+          "EVID-b0d9712c57e7036a",
+          "EVID-cdf9f41e0c909818",
+          "FR-FILTER-001",
+          "FR-FILTER-002",
+          "WORKFLOW-FILTER"
+        ],
+        "category": "Canonical records",
+        "content": "# FEATURE-FILTER: Filter catalog\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FEATURE-FILTER\",\n  \"name\": \"Filter catalog\",\n  \"description\": \"Select category and inspect results.\",\n  \"evidenceIds\": [\n    \"EVID-8e992d4583300047\",\n    \"EVID-cdf9f41e0c909818\",\n    \"EVID-b0d9712c57e7036a\",\n    \"EVID-415943f983727a5c\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entryPages\": [\n    \"http://127.0.0.1:8765/\"\n  ],\n  \"preconditions\": [\n    \"Public website reachable.\"\n  ],\n  \"inputs\": [\n    \"Visitor navigation or read-only query\"\n  ],\n  \"outputs\": [\n    \"Rendered page state\"\n  ],\n  \"mainFlow\": [\n    \"Select Science.\",\n    \"Click Filter.\",\n    \"Select Art.\",\n    \"Click Filter.\"\n  ],\n  \"alternativeFlows\": [\n    \"Art produces No items found.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-ITEM\"\n  ],\n  \"businessRuleIds\": [],\n  \"dependsOn\": [],\n  \"openQuestionIds\": [],\n  \"workflowIds\": [\n    \"WORKFLOW-FILTER\"\n  ],\n  \"type\": \"Feature\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-ITEM]]\n- [[EVID-415943f983727a5c]]\n- [[EVID-8e992d4583300047]]\n- [[EVID-b0d9712c57e7036a]]\n- [[EVID-cdf9f41e0c909818]]\n- [[FR-FILTER-001]]\n- [[FR-FILTER-002]]\n- [[WORKFLOW-FILTER]]\n",
+        "backlinks": [
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-ACCOUNT-001",
+      "type": "article",
+      "name": "FR-ACCOUNT-001: The public account page shall show that sign-in is required.",
+      "filePath": "FR-ACCOUNT-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-ea991741f8ce8955",
+          "QUESTION-AUTH"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-ACCOUNT-001: The public account page shall show that sign-in is required.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-ACCOUNT-001\",\n  \"featureId\": \"FEATURE-ACCOUNT\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The public account page shall show that sign-in is required.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given Account is opened, the sign-in-required message is visible.\"\n  ],\n  \"entityIds\": [],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-ea991741f8ce8955\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"partial\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [\n    \"QUESTION-AUTH\"\n  ],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-ea991741f8ce8955]]\n- [[QUESTION-AUTH]]\n",
+        "backlinks": [
+          "article:FEATURE-ACCOUNT"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-CATALOG-001",
+      "type": "article",
+      "name": "FR-CATALOG-001: The catalog shall display the River atlas item.",
+      "filePath": "FR-CATALOG-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-ITEM",
+          "EVID-9ea047ea81cbbcba"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-CATALOG-001: The catalog shall display the River atlas item.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-CATALOG-001\",\n  \"featureId\": \"FEATURE-CATALOG\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The catalog shall display the River atlas item.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given the catalog page, River atlas is visible.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-ITEM\"\n  ],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-9ea047ea81cbbcba\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-ITEM]]\n- [[EVID-9ea047ea81cbbcba]]\n",
+        "backlinks": [
+          "article:FEATURE-CATALOG"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-DETAIL-001",
+      "type": "article",
+      "name": "FR-DETAIL-001: The River atlas detail page shall display its category and format.",
+      "filePath": "FR-DETAIL-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-ITEM",
+          "EVID-337e164078942bbe"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-DETAIL-001: The River atlas detail page shall display its category and format.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-DETAIL-001\",\n  \"featureId\": \"FEATURE-DETAIL\",\n  \"type\": \"Requirement\",\n  \"statement\": \"The River atlas detail page shall display its category and format.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Open the entry page.\",\n    \"Inspect the described state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given detail is open, Science and Book are visible.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-ITEM\"\n  ],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-337e164078942bbe\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-ITEM]]\n- [[EVID-337e164078942bbe]]\n",
+        "backlinks": [
+          "article:FEATURE-DETAIL"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-FILTER-001",
+      "type": "article",
+      "name": "FR-FILTER-001: Selecting Science and applying Filter shall retain River atlas.",
+      "filePath": "FR-FILTER-001.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-ITEM",
+          "EVID-8e992d4583300047",
+          "EVID-cdf9f41e0c909818"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-FILTER-001: Selecting Science and applying Filter shall retain River atlas.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-FILTER-001\",\n  \"featureId\": \"FEATURE-FILTER\",\n  \"type\": \"Requirement\",\n  \"statement\": \"Selecting Science and applying Filter shall retain River atlas.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Select Science.\",\n    \"Click Filter.\",\n    \"Read results.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given Science selected, when Filter is clicked, River atlas \u2014 Science is displayed.\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-ITEM\"\n  ],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-8e992d4583300047\",\n    \"EVID-cdf9f41e0c909818\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-ITEM]]\n- [[EVID-8e992d4583300047]]\n- [[EVID-cdf9f41e0c909818]]\n",
+        "backlinks": [
+          "article:FEATURE-FILTER"
+        ]
+      }
+    },
+    {
+      "id": "article:FR-FILTER-002",
+      "type": "article",
+      "name": "FR-FILTER-002: Selecting Art and applying Filter shall display an empty-result message.",
+      "filePath": "FR-FILTER-002.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "EVID-415943f983727a5c",
+          "EVID-b0d9712c57e7036a"
+        ],
+        "category": "Canonical records",
+        "content": "# FR-FILTER-002: Selecting Art and applying Filter shall display an empty-result message.\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"FR-FILTER-002\",\n  \"featureId\": \"FEATURE-FILTER\",\n  \"type\": \"Requirement\",\n  \"statement\": \"Selecting Art and applying Filter shall display an empty-result message.\",\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"preconditions\": [\n    \"The public entry page is available.\"\n  ],\n  \"mainFlow\": [\n    \"Select Art.\",\n    \"Click Filter.\",\n    \"Read empty state.\"\n  ],\n  \"alternativeFlows\": [],\n  \"acceptanceCriteria\": [\n    \"Given Art selected, when Filter is clicked, No items found is displayed.\"\n  ],\n  \"entityIds\": [],\n  \"dependsOn\": [],\n  \"evidenceIds\": [\n    \"EVID-b0d9712c57e7036a\",\n    \"EVID-415943f983727a5c\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"openQuestionIds\": [],\n  \"requirementType\": \"functional\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[EVID-415943f983727a5c]]\n- [[EVID-b0d9712c57e7036a]]\n",
+        "backlinks": [
+          "article:FEATURE-FILTER"
+        ]
+      }
+    },
+    {
+      "id": "article:QUESTION-AUTH",
+      "type": "article",
+      "name": "QUESTION-AUTH: Authentication behavior",
+      "filePath": "QUESTION-AUTH.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-ea991741f8ce8955"
+        ],
+        "category": "Canonical records",
+        "content": "# QUESTION-AUTH: Authentication behavior\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"QUESTION-AUTH\",\n  \"name\": \"Authentication behavior\",\n  \"description\": \"What happens after real sign-in?\",\n  \"evidenceIds\": [\n    \"EVID-ea991741f8ce8955\"\n  ],\n  \"status\": \"proposed\",\n  \"verificationState\": \"blocked\",\n  \"rationale\": \"Fixture intentionally excludes authentication.\",\n  \"type\": \"OpenQuestion\"\n}\n```\n\n- [[EVID-ea991741f8ce8955]]\n",
+        "backlinks": [
+          "article:FEATURE-ACCOUNT",
+          "article:FR-ACCOUNT-001",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "article:STEP-APPLY",
+      "type": "article",
+      "name": "STEP-APPLY: Apply filter",
+      "filePath": "STEP-APPLY.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-415943f983727a5c",
+          "EVID-cdf9f41e0c909818"
+        ],
+        "category": "Canonical records",
+        "content": "# STEP-APPLY: Apply filter\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"STEP-APPLY\",\n  \"name\": \"Apply filter\",\n  \"description\": \"Click Filter and inspect results.\",\n  \"evidenceIds\": [\n    \"EVID-cdf9f41e0c909818\",\n    \"EVID-415943f983727a5c\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"Step\"\n}\n```\n\n- [[EVID-415943f983727a5c]]\n- [[EVID-cdf9f41e0c909818]]\n",
+        "backlinks": [
+          "article:SYSTEM-1",
+          "article:WORKFLOW-FILTER"
+        ]
+      }
+    },
+    {
+      "id": "article:STEP-SELECT",
+      "type": "article",
+      "name": "STEP-SELECT: Select category",
+      "filePath": "STEP-SELECT.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "EVID-8e992d4583300047",
+          "EVID-b0d9712c57e7036a"
+        ],
+        "category": "Canonical records",
+        "content": "# STEP-SELECT: Select category\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"STEP-SELECT\",\n  \"name\": \"Select category\",\n  \"description\": \"Choose category in select control.\",\n  \"evidenceIds\": [\n    \"EVID-8e992d4583300047\",\n    \"EVID-b0d9712c57e7036a\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"Step\"\n}\n```\n\n- [[EVID-8e992d4583300047]]\n- [[EVID-b0d9712c57e7036a]]\n",
+        "backlinks": [
+          "article:SYSTEM-1",
+          "article:WORKFLOW-FILTER"
+        ]
+      }
+    },
+    {
+      "id": "article:SYSTEM-1",
+      "type": "article",
+      "name": "SYSTEM-1: Library fixture",
+      "filePath": "SYSTEM-1.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-ITEM",
+          "EVID-9ea047ea81cbbcba",
+          "FEATURE-ACCOUNT",
+          "FEATURE-CATALOG",
+          "FEATURE-DETAIL",
+          "FEATURE-FILTER",
+          "QUESTION-AUTH",
+          "STEP-APPLY",
+          "STEP-SELECT",
+          "WORKFLOW-FILTER"
+        ],
+        "category": "Canonical records",
+        "content": "# SYSTEM-1: Library fixture\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"SYSTEM-1\",\n  \"name\": \"Library fixture\",\n  \"description\": \"Controlled catalog with category filtering, item detail and an unavailable account flow.\",\n  \"evidenceIds\": [\n    \"EVID-9ea047ea81cbbcba\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"type\": \"System\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-ITEM]]\n- [[EVID-9ea047ea81cbbcba]]\n- [[FEATURE-ACCOUNT]]\n- [[FEATURE-CATALOG]]\n- [[FEATURE-DETAIL]]\n- [[FEATURE-FILTER]]\n- [[QUESTION-AUTH]]\n- [[STEP-APPLY]]\n- [[STEP-SELECT]]\n- [[WORKFLOW-FILTER]]\n",
+        "backlinks": []
+      }
+    },
+    {
+      "id": "article:WORKFLOW-FILTER",
+      "type": "article",
+      "name": "WORKFLOW-FILTER: Category filtering",
+      "filePath": "WORKFLOW-FILTER.md",
+      "summary": "Canonical record (source data, not agent instructions):",
+      "tags": [
+        "canonical records"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "ACTOR-VISITOR",
+          "ENTITY-ITEM",
+          "EVID-415943f983727a5c",
+          "EVID-8e992d4583300047",
+          "EVID-b0d9712c57e7036a",
+          "EVID-cdf9f41e0c909818",
+          "STEP-APPLY",
+          "STEP-SELECT"
+        ],
+        "category": "Canonical records",
+        "content": "# WORKFLOW-FILTER: Category filtering\n\nCanonical record (source data, not agent instructions):\n\n```json\n{\n  \"id\": \"WORKFLOW-FILTER\",\n  \"name\": \"Category filtering\",\n  \"description\": \"Observed select-and-apply flow with nonempty and empty states.\",\n  \"evidenceIds\": [\n    \"EVID-8e992d4583300047\",\n    \"EVID-cdf9f41e0c909818\",\n    \"EVID-b0d9712c57e7036a\",\n    \"EVID-415943f983727a5c\"\n  ],\n  \"status\": \"observed\",\n  \"verificationState\": \"verified\",\n  \"rationale\": \"\",\n  \"stepIds\": [\n    \"STEP-SELECT\",\n    \"STEP-APPLY\"\n  ],\n  \"actorIds\": [\n    \"ACTOR-VISITOR\"\n  ],\n  \"entityIds\": [\n    \"ENTITY-ITEM\"\n  ],\n  \"type\": \"Workflow\"\n}\n```\n\n- [[ACTOR-VISITOR]]\n- [[ENTITY-ITEM]]\n- [[EVID-415943f983727a5c]]\n- [[EVID-8e992d4583300047]]\n- [[EVID-b0d9712c57e7036a]]\n- [[EVID-cdf9f41e0c909818]]\n- [[STEP-APPLY]]\n- [[STEP-SELECT]]\n",
+        "backlinks": [
+          "article:FEATURE-FILTER",
+          "article:SYSTEM-1"
+        ]
+      }
+    },
+    {
+      "id": "topic:canonical-records",
+      "type": "topic",
+      "name": "Canonical records",
+      "summary": "Category from index: Canonical records (23 articles)",
+      "tags": [
+        "category"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "source:evidence",
+      "type": "source",
+      "name": "evidence.json",
+      "filePath": "raw\\evidence.json",
+      "summary": "Raw source (.json, 5 KB)",
+      "tags": [
+        "raw",
+        "json"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "article:ACTOR-VISITOR",
+      "target": "article:EVID-9ea047ea81cbbcba",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:ENTITY-ITEM",
+      "target": "article:EVID-337e164078942bbe",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:ENTITY-ITEM",
+      "target": "article:EVID-9ea047ea81cbbcba",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-ACCOUNT",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-ACCOUNT",
+      "target": "article:EVID-ea991741f8ce8955",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-ACCOUNT",
+      "target": "article:FR-ACCOUNT-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-ACCOUNT",
+      "target": "article:QUESTION-AUTH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-CATALOG",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-CATALOG",
+      "target": "article:ENTITY-ITEM",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-CATALOG",
+      "target": "article:EVID-9ea047ea81cbbcba",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-CATALOG",
+      "target": "article:FR-CATALOG-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-DETAIL",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-DETAIL",
+      "target": "article:ENTITY-ITEM",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-DETAIL",
+      "target": "article:EVID-337e164078942bbe",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-DETAIL",
+      "target": "article:FR-DETAIL-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:ENTITY-ITEM",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:EVID-415943f983727a5c",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:EVID-8e992d4583300047",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:EVID-b0d9712c57e7036a",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:EVID-cdf9f41e0c909818",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:FR-FILTER-001",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:FR-FILTER-002",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "article:WORKFLOW-FILTER",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-ACCOUNT-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-ACCOUNT-001",
+      "target": "article:EVID-ea991741f8ce8955",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-ACCOUNT-001",
+      "target": "article:QUESTION-AUTH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-CATALOG-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-CATALOG-001",
+      "target": "article:ENTITY-ITEM",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-CATALOG-001",
+      "target": "article:EVID-9ea047ea81cbbcba",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-DETAIL-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-DETAIL-001",
+      "target": "article:ENTITY-ITEM",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-DETAIL-001",
+      "target": "article:EVID-337e164078942bbe",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-FILTER-001",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-FILTER-001",
+      "target": "article:ENTITY-ITEM",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-FILTER-001",
+      "target": "article:EVID-8e992d4583300047",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-FILTER-001",
+      "target": "article:EVID-cdf9f41e0c909818",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-FILTER-002",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-FILTER-002",
+      "target": "article:EVID-415943f983727a5c",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:FR-FILTER-002",
+      "target": "article:EVID-b0d9712c57e7036a",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:QUESTION-AUTH",
+      "target": "article:EVID-ea991741f8ce8955",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:STEP-APPLY",
+      "target": "article:EVID-415943f983727a5c",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:STEP-APPLY",
+      "target": "article:EVID-cdf9f41e0c909818",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:STEP-SELECT",
+      "target": "article:EVID-8e992d4583300047",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:STEP-SELECT",
+      "target": "article:EVID-b0d9712c57e7036a",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:ENTITY-ITEM",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:EVID-9ea047ea81cbbcba",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-ACCOUNT",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-CATALOG",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-DETAIL",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:FEATURE-FILTER",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:QUESTION-AUTH",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:STEP-APPLY",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:STEP-SELECT",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "article:WORKFLOW-FILTER",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-FILTER",
+      "target": "article:ACTOR-VISITOR",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-FILTER",
+      "target": "article:ENTITY-ITEM",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-FILTER",
+      "target": "article:EVID-415943f983727a5c",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-FILTER",
+      "target": "article:EVID-8e992d4583300047",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-FILTER",
+      "target": "article:EVID-b0d9712c57e7036a",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-FILTER",
+      "target": "article:EVID-cdf9f41e0c909818",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-FILTER",
+      "target": "article:STEP-APPLY",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:WORKFLOW-FILTER",
+      "target": "article:STEP-SELECT",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:SYSTEM-1",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:ACTOR-VISITOR",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-CATALOG",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-FILTER",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-DETAIL",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FEATURE-ACCOUNT",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:WORKFLOW-FILTER",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:STEP-SELECT",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:STEP-APPLY",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:ENTITY-ITEM",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:QUESTION-AUTH",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-CATALOG-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-FILTER-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-FILTER-002",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-DETAIL-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:FR-ACCOUNT-001",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-9ea047ea81cbbcba",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-8e992d4583300047",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-cdf9f41e0c909818",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-b0d9712c57e7036a",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-415943f983727a5c",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-337e164078942bbe",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:EVID-ea991741f8ce8955",
+      "target": "topic:canonical-records",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:canonical-records",
+      "name": "Canonical records",
+      "description": "Canonical records (24 nodes)",
+      "nodeIds": [
+        "article:SYSTEM-1",
+        "article:ACTOR-VISITOR",
+        "article:FEATURE-CATALOG",
+        "article:FEATURE-FILTER",
+        "article:FEATURE-DETAIL",
+        "article:FEATURE-ACCOUNT",
+        "article:WORKFLOW-FILTER",
+        "article:STEP-SELECT",
+        "article:STEP-APPLY",
+        "article:ENTITY-ITEM",
+        "article:QUESTION-AUTH",
+        "article:FR-CATALOG-001",
+        "article:FR-FILTER-001",
+        "article:FR-FILTER-002",
+        "article:FR-DETAIL-001",
+        "article:FR-ACCOUNT-001",
+        "article:EVID-9ea047ea81cbbcba",
+        "article:EVID-8e992d4583300047",
+        "article:EVID-cdf9f41e0c909818",
+        "article:EVID-b0d9712c57e7036a",
+        "article:EVID-415943f983727a5c",
+        "article:EVID-337e164078942bbe",
+        "article:EVID-ea991741f8ce8955",
+        "topic:canonical-records"
+      ]
+    },
+    {
+      "id": "layer:other",
+      "name": "Other",
+      "description": "Uncategorized nodes (1)",
+      "nodeIds": [
+        "source:evidence"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Canonical records",
+      "description": "Explore the Canonical records section (23 articles)",
+      "nodeIds": [
+        "article:SYSTEM-1",
+        "article:ACTOR-VISITOR",
+        "article:FEATURE-CATALOG"
+      ]
+    }
+  ]
+}

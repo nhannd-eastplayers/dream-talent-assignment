@@ -1,0 +1,50 @@
+Executed at 2026-10-19T08:07:07.571682+00:00
+Browser acceptance enabled: True; exact upstream schema enabled: True
+
+ARGV: ['D:\\projects\\assignment\\.venv\\Scripts\\python.exe', '-m', 'unittest', 'discover', '-s', 'tests', '-v']
+EXIT: 0
+
+test_broken_graph (test_artifacts.Artifacts.test_broken_graph) ... ok
+test_duplicate_id (test_artifacts.Artifacts.test_duplicate_id) ... ok
+test_explicit_fixture_url (test_artifacts.Artifacts.test_explicit_fixture_url) ... ok
+test_export_actual_upstream (test_artifacts.Artifacts.test_export_actual_upstream) ... ok
+test_fixture_reference_and_exports (test_artifacts.Artifacts.test_fixture_reference_and_exports) ... ok
+test_inference_without_rationale (test_artifacts.Artifacts.test_inference_without_rationale) ... ok
+test_invalid_config (test_artifacts.Artifacts.test_invalid_config) ... ok
+test_malformed_artifact (test_artifacts.Artifacts.test_malformed_artifact) ... ok
+test_missing_evidence (test_artifacts.Artifacts.test_missing_evidence) ... ok
+test_resume_changed_dependency (test_artifacts.Artifacts.test_resume_changed_dependency) ... ok
+test_snapshot_tamper (test_artifacts.Artifacts.test_snapshot_tamper) ... ok
+test_unsafe_urls (test_artifacts.Artifacts.test_unsafe_urls) ... ok
+test_wrong_reference_type (test_artifacts.Artifacts.test_wrong_reference_type) ... ok
+test_filter_empty_and_account_boundary (test_browser.BrowserAcceptance.test_filter_empty_and_account_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 6.024s
+
+OK
+
+
+ARGV: ['D:\\projects\\assignment\\.venv\\Scripts\\python.exe', 'scripts/planning.py', 'validate-artifacts', 'examples/fixture/output', '--derived']
+EXIT: 0
+{'status': 'passed', 'records': 23, 'requirements': 5, 'derived': True}
+
+
+
+ARGV: ['D:\\projects\\assignment\\.venv\\Scripts\\python.exe', 'scripts/check_upstream_schema.py', 'examples/fixture/output']
+EXIT: 0
+Pinned upstream schema: passed
+
+
+
+ARGV: ['D:\\projects\\assignment\\.venv\\Scripts\\python.exe', 'scripts/planning.py', 'validate-artifacts', 'examples/moso/output', '--derived']
+EXIT: 0
+{'status': 'passed', 'records': 57, 'requirements': 13, 'derived': True}
+
+
+
+ARGV: ['D:\\projects\\assignment\\.venv\\Scripts\\python.exe', 'scripts/check_upstream_schema.py', 'examples/moso/output']
+EXIT: 0
+Pinned upstream schema: passed
+
+

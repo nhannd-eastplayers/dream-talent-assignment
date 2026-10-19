@@ -1,0 +1,6 @@
+{
+  "referenceSet": "Manually authored fixture behavior, not generated from exports",
+  "features": ["FEATURE-CATALOG", "FEATURE-FILTER", "FEATURE-DETAIL", "FEATURE-ACCOUNT"],
+  "requirements": ["FR-CATALOG-001", "FR-FILTER-001", "FR-FILTER-002", "FR-DETAIL-001", "FR-ACCOUNT-001"],
+  "behavior": ["Catalog contains River atlas", "Science filter retains item", "Art filter produces No items found", "Detail shows category and format", "Account route shows sign-in wall; authentication unverified"]
+}

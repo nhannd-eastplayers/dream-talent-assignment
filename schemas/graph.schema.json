@@ -1,0 +1,95 @@
+{
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "enum": [
+              "System",
+              "Module",
+              "Actor",
+              "Feature",
+              "Requirement",
+              "Workflow",
+              "Step",
+              "Entity",
+              "BusinessRule",
+              "Evidence",
+              "OpenQuestion"
+            ]
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "enum": [
+              "CONTAINS",
+              "USES",
+              "HAS_REQUIREMENT",
+              "INCLUDES",
+              "INVOLVES",
+              "SUPPORTED_BY",
+              "DEPENDS_ON",
+              "GOVERNED_BY",
+              "RELATES_TO"
+            ]
+          },
+          "status": {
+            "enum": [
+              "observed",
+              "inferred",
+              "proposed"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "source",
+          "target",
+          "type",
+          "status",
+          "rationale"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "nodes",
+    "edges"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,353 @@
+System knowledge
+Overview
+Learn
+Deep Dive
+Diff OFF
+ALL
+Canonical records
+Canonical records(58)
+Other(1)
+Filter
+Export
+Path
+Theme
+Fuzzy
+Semantic
+5 results (fuzzy)
+Knowledge graph freshness could not be verified
+The knowledge graph does not include a Git commit hash to compare with HEAD.
+Run /understand to refresh it before relying on impact or onboarding answers.
+ARTICLE
+simple
+ACTOR-POSTER: Người đă...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+ACTOR-VISITOR: Khách t...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+ENTITY-ARTICLE: Bài viết
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+ENTITY-LISTING: Tin bấ...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+ENTITY-PROJECT: Dự án
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-2dd9a5356fef9d2a:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-2ed3453878954246:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-34527de780364f37:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-5d0c8ad364416269:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-6b424827ef3bc21f:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-80a49be16993f01f:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-9e2f8dc3ceced3a0:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-b99f369160410cdc:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-bfc607d5c14c32ab:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-bfd8734194d79384:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-c16fccba79807428:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-c53cea185200b355:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-d1cff2806ca77add:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+EVID-d7638348983a20d4:...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-ACCOUNT: Accou...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-AI: AI search ...
+Canonical record (source data, not agent instructions):
+ARTICLE
+moderate
+FEATURE-BROWSE: Sale/r...
+Canonical record (source data, not agent instructions):
+ARTICLE
+moderate
+FEATURE-COMPARE: Compa...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-DETAIL: Proper...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-FILTER: Listin...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-MAP: Map entry
+Canonical record (source data, not agent instructions):
+ARTICLE
+moderate
+FEATURE-POST: Posting ...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-PROJECT: Proje...
+Canonical record (source data, not agent instructions):
+ARTICLE
+moderate
+FEATURE-SEARCH: Keywor...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FEATURE-WIKI: Wiki BĐS...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-ACCOUNT-001: The pu...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-AI-001: The homepag...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-BROWSE-001: The pub...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-BROWSE-002: The pub...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-COMPARE-001: Select...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-COMPARE-002: Select...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-DETAIL-001: The sam...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-FILTER-001: The lis...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-MAP-001: The map en...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-POST-001: Opening t...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-PROJECT-001: The pu...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-SEARCH-001: Submitt...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+FR-WIKI-001: The Wiki ...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+QUESTION-AI: AI search
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+QUESTION-AUTH: Authent...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+QUESTION-COMPARE: Comp...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+QUESTION-FILTERS: Filt...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+QUESTION-MAP: Map load...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+QUESTION-SEARCH: Searc...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+RULE-POST-ENTRY: Unaut...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+STEP-COMPARE-ONE: Sele...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+STEP-COMPARE-TWO: Sele...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+STEP-QUERY: Enter keyw...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+STEP-SUBMIT: Submit qu...
+Canonical record (source data, not agent instructions):
+ARTICLE
+complex
+SYSTEM-1: MOSO public ...
+Canonical record (source data, not agent instructions):
+ARTICLE
+simple
+WORKFLOW-COMPARE: Sele...
+Canonical record (source data, not agent instructions):
+ARTICLE
+moderate
+WORKFLOW-SEARCH: Keywo...
+Canonical record (source data, not agent instructions):
+TOPIC
+simple
+Canonical records
+Category from index: Canonical records (57 articles)
+SOURCE
+simple
+evidence.json
+Raw source (.json, 28 KB)
+Press ? for keyboard shortcuts
+INFO
+FILES
+ARTICLE
+simple
+FR-COMPARE-001: Selecting a listing for comparison shall show that item in the comparison tray.
+FOCUS
+
+Canonical record (source data, not agent instructions):
+
+File
+FR-COMPARE-001.md
+OPEN CODE
+TAGS
+canonical records
+CATEGORY
+Canonical records
+WIKILINKS (4)
+ACTOR-VISITOR: Khách truy cập
+ENTITY-LISTING: Tin bất động sản
+EVID-c16fccba79807428: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech
+QUESTION-COMPARE: Comparison result
+BACKLINKS (1)
+FEATURE-COMPARE: Comparison selection
+PREVIEW
+# FR-COMPARE-001: Selecting a listing for comparison shall show that item in the comparison tray.
+
+Canonical record (source data, not agent instructions):
+
+```json
+{
+  "id": "FR-COMPARE-001",
+  "featureId": "FEATURE-COMPARE",
+  "type": "Requirement",
+  "statement": "Selecting a listing for comparison shall show that item in the comparison tray.",
+  "actorIds": [
+    "ACTOR-VISITOR"
+  ],
+  "preconditions": [
+    "The public entry page is available."
+  ],
+  "mainFlow": [
+    "Open the entry page.",
+    "Inspect the described state."
+  ],
+  "alternativeFlows": [],
+  "acceptanceCriteria": [
+    "Given no selected items, clicking comparison on one card displays So sánh tin đăng and 1/2."
+  ],
+  "entityIds": [
+    "ENTITY-LISTING"
+  ],
+  "dependsOn": [],
+  "evidenceIds": [
+    "EVID-c16fccba79807428"
+  ],
+  "status": "observed",
+  "verificationState": "partial",
+  "rationale": "",
+  "openQuestionIds": [
+    "QUESTION-COMPARE"
+  ],
+  "requirementType": "functional"
+}
+```
+
+- [[ACTOR-VISITOR]]
+- [[ENTITY-LISTING]]
+- [[EVID-c16fccba79807428]]
+- [[QUESTION-COMPARE]]
+
+CONNECTIONS (6)
+←
+related to
+FEATURE-COMPARE: Comparison selection
+→
+related to
+ACTOR-VISITOR: Khách truy cập
+→
+related to
+ENTITY-LISTING: Tin bất động sản
+→
+related to
+EVID-c16fccba79807428: Mua Bán Nhà Đất, Bất Động Sản Giá Tốt | MOSO VN AI Proptech
+→
+related to
+QUESTION-COMPARE: Comparison result
+→
+categorized under
+Canonical records
+Project Tour
+
+1 steps · Guided walkthrough of the codebase
+
+Start Tour
+STEPS
+1.
+Canonical records

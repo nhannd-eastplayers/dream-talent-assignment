@@ -1,0 +1,10 @@
+[
+ {"type":"goto","url":"https://moso.vn/mua-ban-nha-dat","depth":1},
+ {"type":"fill","selector":"input[name=q]","value":"Quận 1","readOnly":true},
+ {"type":"click","selector":"button[type=submit]:has-text('Tìm kiếm')","readOnly":true},
+ {"type":"goto","url":"https://moso.vn/mua-ban-nha-dat?xem=ban-do","depth":1},
+ {"type":"goto","url":"https://moso.vn/ban-nha-mat-tien-thach-thi-thanh-quan-1-tphcm-6-phong-ngu-gia-125-ty-1dk006","depth":1},
+ {"type":"goto","url":"https://moso.vn/mua-ban-nha-dat","depth":1},
+ {"type":"click","selector":"button[aria-label='So sánh tin này'] >> nth=0","readOnly":true},
+ {"type":"click","selector":"button[aria-label='So sánh tin này'] >> nth=1","readOnly":true}
+]

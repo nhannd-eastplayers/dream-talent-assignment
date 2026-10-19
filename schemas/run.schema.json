@@ -1,0 +1,542 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "running",
+        "completed",
+        "partial",
+        "failed",
+        "blocked"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "inputHash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "upstreamVersions": {
+      "type": "object"
+    },
+    "stopReason": {
+      "type": "string"
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "stages": {
+      "type": "object",
+      "properties": {
+        "preflight": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "running",
+                "completed",
+                "partial",
+                "failed",
+                "blocked"
+              ]
+            },
+            "inputHash": {
+              "type": "string"
+            },
+            "inputFiles": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "artifacts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "state",
+            "inputHash",
+            "inputFiles",
+            "artifacts",
+            "updatedAt",
+            "errors"
+          ],
+          "additionalProperties": false
+        },
+        "discover": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "running",
+                "completed",
+                "partial",
+                "failed",
+                "blocked"
+              ]
+            },
+            "inputHash": {
+              "type": "string"
+            },
+            "inputFiles": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "artifacts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "state",
+            "inputHash",
+            "inputFiles",
+            "artifacts",
+            "updatedAt",
+            "errors"
+          ],
+          "additionalProperties": false
+        },
+        "explore": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "running",
+                "completed",
+                "partial",
+                "failed",
+                "blocked"
+              ]
+            },
+            "inputHash": {
+              "type": "string"
+            },
+            "inputFiles": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "artifacts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "state",
+            "inputHash",
+            "inputFiles",
+            "artifacts",
+            "updatedAt",
+            "errors"
+          ],
+          "additionalProperties": false
+        },
+        "analyze": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "running",
+                "completed",
+                "partial",
+                "failed",
+                "blocked"
+              ]
+            },
+            "inputHash": {
+              "type": "string"
+            },
+            "inputFiles": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "artifacts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "state",
+            "inputHash",
+            "inputFiles",
+            "artifacts",
+            "updatedAt",
+            "errors"
+          ],
+          "additionalProperties": false
+        },
+        "bmad": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "running",
+                "completed",
+                "partial",
+                "failed",
+                "blocked"
+              ]
+            },
+            "inputHash": {
+              "type": "string"
+            },
+            "inputFiles": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "artifacts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "state",
+            "inputHash",
+            "inputFiles",
+            "artifacts",
+            "updatedAt",
+            "errors"
+          ],
+          "additionalProperties": false
+        },
+        "srs": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "running",
+                "completed",
+                "partial",
+                "failed",
+                "blocked"
+              ]
+            },
+            "inputHash": {
+              "type": "string"
+            },
+            "inputFiles": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "artifacts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "state",
+            "inputHash",
+            "inputFiles",
+            "artifacts",
+            "updatedAt",
+            "errors"
+          ],
+          "additionalProperties": false
+        },
+        "graph": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "running",
+                "completed",
+                "partial",
+                "failed",
+                "blocked"
+              ]
+            },
+            "inputHash": {
+              "type": "string"
+            },
+            "inputFiles": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "artifacts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "state",
+            "inputHash",
+            "inputFiles",
+            "artifacts",
+            "updatedAt",
+            "errors"
+          ],
+          "additionalProperties": false
+        },
+        "validate": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "running",
+                "completed",
+                "partial",
+                "failed",
+                "blocked"
+              ]
+            },
+            "inputHash": {
+              "type": "string"
+            },
+            "inputFiles": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "artifacts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "state",
+            "inputHash",
+            "inputFiles",
+            "artifacts",
+            "updatedAt",
+            "errors"
+          ],
+          "additionalProperties": false
+        },
+        "package": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "running",
+                "completed",
+                "partial",
+                "failed",
+                "blocked"
+              ]
+            },
+            "inputHash": {
+              "type": "string"
+            },
+            "inputFiles": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "artifacts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "state",
+            "inputHash",
+            "inputFiles",
+            "artifacts",
+            "updatedAt",
+            "errors"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "preflight",
+        "discover",
+        "explore",
+        "analyze",
+        "bmad",
+        "srs",
+        "graph",
+        "validate",
+        "package"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "status",
+    "createdAt",
+    "updatedAt",
+    "inputHash",
+    "upstreamVersions",
+    "stopReason",
+    "errors",
+    "stages"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

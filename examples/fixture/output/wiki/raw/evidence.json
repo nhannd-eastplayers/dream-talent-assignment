@@ -1,0 +1,93 @@
+[
+  {
+    "id": "EVID-9ea047ea81cbbcba",
+    "sourceType": "fixture",
+    "url": "http://127.0.0.1:8765/",
+    "capturedAt": "2026-10-19T07:46:14.425320+00:00",
+    "pageTitle": "Library fixture",
+    "excerpt": "Library catalog",
+    "locator": "body",
+    "snapshotPath": "evidence/snapshots/EVID-9ea047ea81cbbcba.txt",
+    "action": "{\"type\": \"goto\", \"url\": \"http://127.0.0.1:8765/\", \"excerpt\": \"Library catalog\"}",
+    "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+    "contentHash": "55ff82f1854a80cc47145e33d9071444196f524293614debba8b468b93ef389f"
+  },
+  {
+    "id": "EVID-8e992d4583300047",
+    "sourceType": "fixture",
+    "url": "http://127.0.0.1:8765/",
+    "capturedAt": "2026-10-19T07:46:14.563394+00:00",
+    "pageTitle": "Library fixture",
+    "excerpt": "Library catalog\nCatalog Account\nCategory \nAll\nScience\nArt\n Filter\nRiver atlas — Science\nRiver atlas details",
+    "locator": "#category",
+    "snapshotPath": "evidence/snapshots/EVID-8e992d4583300047.txt",
+    "action": "{\"type\": \"select\", \"selector\": \"#category\", \"value\": \"science\", \"readOnly\": true}",
+    "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+    "contentHash": "99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a"
+  },
+  {
+    "id": "EVID-cdf9f41e0c909818",
+    "sourceType": "fixture",
+    "url": "http://127.0.0.1:8765/",
+    "capturedAt": "2026-10-19T07:46:14.718389+00:00",
+    "pageTitle": "Library fixture",
+    "excerpt": "River atlas — Science",
+    "locator": "#filter",
+    "snapshotPath": "evidence/snapshots/EVID-cdf9f41e0c909818.txt",
+    "action": "{\"type\": \"click\", \"selector\": \"#filter\", \"readOnly\": true, \"excerpt\": \"River atlas — Science\"}",
+    "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+    "contentHash": "9fb953d9ecca18d2f8608c56f2252fb29de63f2f989ae3178e0ac90871560ae9"
+  },
+  {
+    "id": "EVID-b0d9712c57e7036a",
+    "sourceType": "fixture",
+    "url": "http://127.0.0.1:8765/",
+    "capturedAt": "2026-10-19T07:46:14.842333+00:00",
+    "pageTitle": "Library fixture",
+    "excerpt": "Library catalog\nCatalog Account\nCategory \nAll\nScience\nArt\n Filter\nRiver atlas — Science\nRiver atlas details",
+    "locator": "#category",
+    "snapshotPath": "evidence/snapshots/EVID-b0d9712c57e7036a.txt",
+    "action": "{\"type\": \"select\", \"selector\": \"#category\", \"value\": \"art\", \"readOnly\": true}",
+    "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a",
+    "contentHash": "99a36649abfd1ad8cc4940c27448ffd6812c751de313981a52301fb5f58bca3a"
+  },
+  {
+    "id": "EVID-415943f983727a5c",
+    "sourceType": "fixture",
+    "url": "http://127.0.0.1:8765/",
+    "capturedAt": "2026-10-19T07:46:14.985739+00:00",
+    "pageTitle": "Library fixture",
+    "excerpt": "No items found",
+    "locator": "#filter",
+    "snapshotPath": "evidence/snapshots/EVID-415943f983727a5c.txt",
+    "action": "{\"type\": \"click\", \"selector\": \"#filter\", \"readOnly\": true, \"excerpt\": \"No items found\"}",
+    "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 8626f3dfa10f29caada9fab2870d40a960b0f109f4f5d99ac1c7231b9f2a1a92",
+    "contentHash": "949da6a3278e2d66078bda0e06f569110d872e46548e354c508af456e3c18715"
+  },
+  {
+    "id": "EVID-337e164078942bbe",
+    "sourceType": "fixture",
+    "url": "http://127.0.0.1:8765/detail.html",
+    "capturedAt": "2026-10-19T07:46:15.143877+00:00",
+    "pageTitle": "River atlas",
+    "excerpt": "Format: Book",
+    "locator": "body",
+    "snapshotPath": "evidence/snapshots/EVID-337e164078942bbe.txt",
+    "action": "{\"type\": \"goto\", \"url\": \"http://127.0.0.1:8765/detail.html\", \"depth\": 1, \"excerpt\": \"Format: Book\"}",
+    "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 de2ead413201282735adfcdea2f09e14114c1a2b4b47d2cca03b8f14002413df",
+    "contentHash": "b36bd111e53b3bbf36a282bd4b53f65ae31277df09a6e4be9bdc239cab7be6ad"
+  },
+  {
+    "id": "EVID-ea991741f8ce8955",
+    "sourceType": "fixture",
+    "url": "http://127.0.0.1:8765/account.html",
+    "capturedAt": "2026-10-19T07:46:15.296936+00:00",
+    "pageTitle": "Account blocked",
+    "excerpt": "Sign in required. Authentication intentionally unavailable in fixture.",
+    "locator": "body",
+    "snapshotPath": "evidence/snapshots/EVID-ea991741f8ce8955.txt",
+    "action": "{\"type\": \"goto\", \"url\": \"http://127.0.0.1:8765/account.html\", \"depth\": 1, \"excerpt\": \"Sign in required. Authentication intentionally unavailable in fixture.\"}",
+    "result": "Rendered text captured; behavior limited to this action; curated exact excerpt; unrelated text removed; raw capture SHA-256 861eb970d8e80843e3b77fbf3cbc8aa15d86a0f2b08ff1af235f5d2a4571f0ef",
+    "contentHash": "c924ce4f305640b6d2be4a82e1fb0e6aeb243c015be9f2adf2a2bcba71721c88"
+  }
+]

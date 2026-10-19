@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-19T08:05:25.060183+00:00",
+  "pageTitle": "Understand Anything",
+  "screenshot": "viewer.png",
+  "status": "opened",
+  "searchRequested": "FR-COMPARE-001",
+  "controls": [
+    {
+      "placeholder": "Search nodes by name, summary, or tags...",
+      "ariaLabel": null,
+      "type": "text"
+    }
+  ]
+}

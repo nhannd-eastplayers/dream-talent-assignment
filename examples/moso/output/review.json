@@ -1,0 +1,20 @@
+{
+  "reviewer": "Codex reasoning agent; no independent human sign-off",
+  "date": "2026-10-19",
+  "findings": [
+    {"id":"FR-BROWSE-001","support":"Sale snapshot contains title, price, area and location.","limitation":"Sample fields only; optional values and every card not tested."},
+    {"id":"FR-BROWSE-002","support":"Rental route displays rental cards and prices.","limitation":"No rental search or detail workflow tested."},
+    {"id":"FR-SEARCH-001","support":"Browser submission yields encoded q=Quận 1 and changed cards.","limitation":"Results include other districts; query must not be described as strict location filtering."},
+    {"id":"FR-FILTER-001","support":"Visible Khoảng giá, Diện tích and Phòng ngủ controls.","limitation":"Entry visibility only; no filter behavior or combinations established."},
+    {"id":"FR-DETAIL-001","support":"Listing 1dk006 detail displays identifier, price, area, description.","limitation":"Sample seller description is not verified property truth. No contact reveal."},
+    {"id":"FR-COMPARE-001","support":"First comparison click changes card label and opens 1/2 tray.","limitation":"Local selection observed; persistence and comparison table unverified."},
+    {"id":"FR-COMPARE-002","support":"Second click displays 2/2 tray containing two titles.","limitation":"Two slots observed, not proof of universal cross-context limit."},
+    {"id":"FR-MAP-001","support":"Map route shows Danh sách/Bản đồ shell and cards.","limitation":"Đang tải bản đồ… remains. Third-party blocking may cause this; no map failure attributed to product."},
+    {"id":"FR-PROJECT-001","support":"Project catalog has project names, locations and Giá từ.","limitation":"Pagination count is sampled text; no claims about complete catalog or project filtering."},
+    {"id":"FR-WIKI-001","support":"Wiki catalog shows article titles, excerpts and dates.","limitation":"Editorial legal claims not assessed or adopted as system rules."},
+    {"id":"FR-ACCOUNT-001","support":"Login page exposes phone/password labels and Google entry.","limitation":"No credentials submitted. Authentication, recovery and permission behavior unknown."},
+    {"id":"FR-POST-001","support":"Fresh /dang-tin navigation ends at login with posting callback.","limitation":"Observed unauthenticated route guard; backend authorization and posting validation unverified."},
+    {"id":"FR-AI-001","support":"Homepage includes Tìm với AI text.","limitation":"Entry only. AI behavior, algorithms, accuracy and availability unverified."}
+  ],
+  "unresolved": ["Native Claude skill dispatch not executed.","UA Phase 3 article-analyzer not executed.","Moso config requests Vietnamese; authored analysis is English with original Vietnamese UI evidence. Vietnamese narrative localization remains pending.","Independent human acceptance review pending."]
+}

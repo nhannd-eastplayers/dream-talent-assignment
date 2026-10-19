@@ -1,0 +1,276 @@
+{
+  "system": {
+    "id": "SYSTEM-1",
+    "name": "Library fixture",
+    "description": "Controlled catalog with category filtering, item detail and an unavailable account flow.",
+    "evidenceIds": [
+      "EVID-9ea047ea81cbbcba"
+    ],
+    "status": "observed",
+    "verificationState": "verified",
+    "rationale": ""
+  },
+  "modules": [],
+  "actors": [
+    {
+      "id": "ACTOR-VISITOR",
+      "name": "Visitor",
+      "description": "Anonymous reader of public catalog.",
+      "evidenceIds": [
+        "EVID-9ea047ea81cbbcba"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": ""
+    }
+  ],
+  "features": [
+    {
+      "id": "FEATURE-CATALOG",
+      "name": "Browse catalog",
+      "description": "Find catalog items.",
+      "evidenceIds": [
+        "EVID-9ea047ea81cbbcba"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "http://127.0.0.1:8765/"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Open catalog.",
+        "Read item title."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-ITEM"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": []
+    },
+    {
+      "id": "FEATURE-FILTER",
+      "name": "Filter catalog",
+      "description": "Select category and inspect results.",
+      "evidenceIds": [
+        "EVID-8e992d4583300047",
+        "EVID-cdf9f41e0c909818",
+        "EVID-b0d9712c57e7036a",
+        "EVID-415943f983727a5c"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "http://127.0.0.1:8765/"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Select Science.",
+        "Click Filter.",
+        "Select Art.",
+        "Click Filter."
+      ],
+      "alternativeFlows": [
+        "Art produces No items found."
+      ],
+      "entityIds": [
+        "ENTITY-ITEM"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": [
+        "WORKFLOW-FILTER"
+      ]
+    },
+    {
+      "id": "FEATURE-DETAIL",
+      "name": "Item detail",
+      "description": "Read item metadata.",
+      "evidenceIds": [
+        "EVID-337e164078942bbe"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "http://127.0.0.1:8765/detail.html"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Follow detail link.",
+        "Read category and format."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [
+        "ENTITY-ITEM"
+      ],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [],
+      "workflowIds": []
+    },
+    {
+      "id": "FEATURE-ACCOUNT",
+      "name": "Account entry",
+      "description": "Reach sign-in boundary.",
+      "evidenceIds": [
+        "EVID-ea991741f8ce8955"
+      ],
+      "status": "observed",
+      "verificationState": "blocked",
+      "rationale": "",
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entryPages": [
+        "http://127.0.0.1:8765/account.html"
+      ],
+      "preconditions": [
+        "Public website reachable."
+      ],
+      "inputs": [
+        "Visitor navigation or read-only query"
+      ],
+      "outputs": [
+        "Rendered page state"
+      ],
+      "mainFlow": [
+        "Follow Account.",
+        "Observe sign-in wall."
+      ],
+      "alternativeFlows": [
+        "Other states not tested."
+      ],
+      "entityIds": [],
+      "businessRuleIds": [],
+      "dependsOn": [],
+      "openQuestionIds": [
+        "QUESTION-AUTH"
+      ],
+      "workflowIds": []
+    }
+  ],
+  "workflows": [
+    {
+      "id": "WORKFLOW-FILTER",
+      "name": "Category filtering",
+      "description": "Observed select-and-apply flow with nonempty and empty states.",
+      "evidenceIds": [
+        "EVID-8e992d4583300047",
+        "EVID-cdf9f41e0c909818",
+        "EVID-b0d9712c57e7036a",
+        "EVID-415943f983727a5c"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": "",
+      "stepIds": [
+        "STEP-SELECT",
+        "STEP-APPLY"
+      ],
+      "actorIds": [
+        "ACTOR-VISITOR"
+      ],
+      "entityIds": [
+        "ENTITY-ITEM"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "STEP-SELECT",
+      "name": "Select category",
+      "description": "Choose category in select control.",
+      "evidenceIds": [
+        "EVID-8e992d4583300047",
+        "EVID-b0d9712c57e7036a"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": ""
+    },
+    {
+      "id": "STEP-APPLY",
+      "name": "Apply filter",
+      "description": "Click Filter and inspect results.",
+      "evidenceIds": [
+        "EVID-cdf9f41e0c909818",
+        "EVID-415943f983727a5c"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": ""
+    }
+  ],
+  "entities": [
+    {
+      "id": "ENTITY-ITEM",
+      "name": "Catalog item",
+      "description": "Displayed title, category and format; no database model inferred.",
+      "evidenceIds": [
+        "EVID-9ea047ea81cbbcba",
+        "EVID-337e164078942bbe"
+      ],
+      "status": "observed",
+      "verificationState": "verified",
+      "rationale": ""
+    }
+  ],
+  "businessRules": [],
+  "openQuestions": [
+    {
+      "id": "QUESTION-AUTH",
+      "name": "Authentication behavior",
+      "description": "What happens after real sign-in?",
+      "evidenceIds": [
+        "EVID-ea991741f8ce8955"
+      ],
+      "status": "proposed",
+      "verificationState": "blocked",
+      "rationale": "Fixture intentionally excludes authentication."
+    }
+  ]
+}

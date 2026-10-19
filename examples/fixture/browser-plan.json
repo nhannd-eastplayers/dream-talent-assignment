@@ -1,0 +1,9 @@
+[
+  {"type":"goto","url":"http://127.0.0.1:8765/","excerpt":"Library catalog"},
+  {"type":"select","selector":"#category","value":"science","readOnly":true},
+  {"type":"click","selector":"#filter","readOnly":true,"excerpt":"River atlas — Science"},
+  {"type":"select","selector":"#category","value":"art","readOnly":true},
+  {"type":"click","selector":"#filter","readOnly":true,"excerpt":"No items found"},
+  {"type":"goto","url":"http://127.0.0.1:8765/detail.html","depth":1,"excerpt":"Format: Book"},
+  {"type":"goto","url":"http://127.0.0.1:8765/account.html","depth":1,"excerpt":"Sign in required. Authentication intentionally unavailable in fixture."}
+]

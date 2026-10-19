@@ -1,0 +1,7 @@
+{
+  "captured": 8,
+  "errors": [],
+  "finishedAt": "2026-10-19T07:48:23.209101+00:00",
+  "stopReason": "plan exhausted",
+  "limitations": "Third-party origins and non-read network methods blocked. Overall agent deadline advisory; helper operations individually bounded."
+}

@@ -1,0 +1,126 @@
+[
+  {
+    "url": "http://127.0.0.1:8765/",
+    "title": "Library fixture",
+    "depth": 0,
+    "evidenceId": "EVID-9ea047ea81cbbcba",
+    "links": [
+      {
+        "text": "Catalog",
+        "href": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Account",
+        "href": "http://127.0.0.1:8765/account.html"
+      },
+      {
+        "text": "River atlas details",
+        "href": "http://127.0.0.1:8765/detail.html"
+      }
+    ]
+  },
+  {
+    "url": "http://127.0.0.1:8765/",
+    "title": "Library fixture",
+    "depth": 0,
+    "evidenceId": "EVID-8e992d4583300047",
+    "links": [
+      {
+        "text": "Catalog",
+        "href": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Account",
+        "href": "http://127.0.0.1:8765/account.html"
+      },
+      {
+        "text": "River atlas details",
+        "href": "http://127.0.0.1:8765/detail.html"
+      }
+    ]
+  },
+  {
+    "url": "http://127.0.0.1:8765/",
+    "title": "Library fixture",
+    "depth": 0,
+    "evidenceId": "EVID-cdf9f41e0c909818",
+    "links": [
+      {
+        "text": "Catalog",
+        "href": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Account",
+        "href": "http://127.0.0.1:8765/account.html"
+      },
+      {
+        "text": "River atlas details",
+        "href": "http://127.0.0.1:8765/detail.html"
+      }
+    ]
+  },
+  {
+    "url": "http://127.0.0.1:8765/",
+    "title": "Library fixture",
+    "depth": 0,
+    "evidenceId": "EVID-b0d9712c57e7036a",
+    "links": [
+      {
+        "text": "Catalog",
+        "href": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Account",
+        "href": "http://127.0.0.1:8765/account.html"
+      },
+      {
+        "text": "River atlas details",
+        "href": "http://127.0.0.1:8765/detail.html"
+      }
+    ]
+  },
+  {
+    "url": "http://127.0.0.1:8765/",
+    "title": "Library fixture",
+    "depth": 0,
+    "evidenceId": "EVID-415943f983727a5c",
+    "links": [
+      {
+        "text": "Catalog",
+        "href": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Account",
+        "href": "http://127.0.0.1:8765/account.html"
+      },
+      {
+        "text": "River atlas details",
+        "href": "http://127.0.0.1:8765/detail.html"
+      }
+    ]
+  },
+  {
+    "url": "http://127.0.0.1:8765/detail.html",
+    "title": "River atlas",
+    "depth": 1,
+    "evidenceId": "EVID-337e164078942bbe",
+    "links": [
+      {
+        "text": "Back to catalog",
+        "href": "http://127.0.0.1:8765/"
+      }
+    ]
+  },
+  {
+    "url": "http://127.0.0.1:8765/account.html",
+    "title": "Account blocked",
+    "depth": 1,
+    "evidenceId": "EVID-ea991741f8ce8955",
+    "links": [
+      {
+        "text": "Catalog",
+        "href": "http://127.0.0.1:8765/"
+      }
+    ]
+  }
+]

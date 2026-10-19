@@ -1,0 +1,135 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+      },
+      "status": {
+        "enum": [
+          "observed",
+          "inferred",
+          "proposed"
+        ]
+      },
+      "verificationState": {
+        "enum": [
+          "verified",
+          "partial",
+          "blocked",
+          "unverified"
+        ]
+      },
+      "evidenceIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "rationale": {
+        "type": "string"
+      },
+      "featureId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "type": {
+        "enum": [
+          "functional",
+          "nonfunctional",
+          "data",
+          "constraint"
+        ]
+      },
+      "statement": {
+        "type": "string",
+        "minLength": 1
+      },
+      "actorIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "entityIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "dependsOn": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "openQuestionIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "preconditions": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "mainFlow": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "alternativeFlows": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "acceptanceCriteria": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 1
+      }
+    },
+    "required": [
+      "id",
+      "status",
+      "verificationState",
+      "evidenceIds",
+      "rationale",
+      "featureId",
+      "type",
+      "statement",
+      "actorIds",
+      "entityIds",
+      "dependsOn",
+      "openQuestionIds",
+      "preconditions",
+      "mainFlow",
+      "alternativeFlows",
+      "acceptanceCriteria"
+    ],
+    "additionalProperties": false
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

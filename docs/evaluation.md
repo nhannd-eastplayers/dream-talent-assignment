@@ -1,0 +1,15 @@
+# Evaluation
+
+Deterministic checks cover real artifact contracts and failure modes: malformed config/model, duplicate canonical IDs, wrong-type references, observed requirements without evidence, inference without rationale, unsafe/private/local URLs, snapshot tampering, broken graph, cross-artifact consistency and resume invalidation. Export test runs the actual pinned UA parser and merger. Opt-in browser test launches real Chromium against a temporary fixture server and asserts the empty-result/account states and page-budget rejection. Exact upstream Zod checks run separately against both persisted graphs. See test-results.txt for actual output.
+
+Fixture reference set in examples/fixture/expected.json was manually authored: four features and five requirements, plus Science filtering, Art empty results and account wall. Exact ID set matches the canonical output. This checks controlled scope; it does not establish open-world discovery recall or general semantic accuracy.
+
+Moso evidence was collected through real public-browser navigation and safe search/comparison interactions. Search for Quận 1 changed q/results but included other districts; requirements therefore do not assert strict district filtering or an internal matching algorithm. Comparison tray selection was observed at 1/2 and 2/2; comparison-table behavior and persistence are unknown. Posting entry redirected to login; authenticated posting and authorization enforcement are unknown. Map shell loaded but tiles remained loading while third-party resources were blocked. Site legal/marketing/property content was not adopted as verified business truth.
+
+Agent review inspected all 13 Moso requirements across browsing, search, filter entries, detail, comparison, map, projects, wiki and account/posting/AI entries. Each review record identifies supporting evidence and a specific coverage/ambiguity limitation. Five fixture requirements received the same review. Reports are in examples/*/output/review.json and quality-report.md. This is agent self-review, not an independent human review. No measured accuracy percentage or calibrated confidence is claimed.
+
+Graph acceptance: official upstream viewer opened; FR-COMPARE-001 selected; feature backlink and evidence relation visible; evidence node resolved to URL, action, excerpt and hash. Typed canonical semantics can be found in canonical.json when the upstream viewer uses generic article/related types. Screenshot/text artifacts retain actual evidence of this path. The wiki freshness warning remains visible because generated wiki metadata has no Git commit hash.
+
+Fixture graph was also opened in the same official viewer: FR-FILTER-002 selected and its empty-result evidence resolved; screenshots/text are retained in the fixture's graph/inspection/ directory.
+
+Acceptance still pending: actual custom skill dispatch inside Claude Code, native upstream reasoning stages, independent human sign-off and Vietnamese narrative localization. Structural validation is not a claim that these were completed.

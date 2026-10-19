@@ -1,0 +1,16 @@
+{
+  "url": "https://moso.vn/",
+  "language": "vi",
+  "maxPages": 30,
+  "maxDepth": 3,
+  "maxActionsPerPage": 8,
+  "maxRuntimeMinutes": 30,
+  "maxRepairIterations": 2,
+  "allowedOrigins": [
+    "https://moso.vn"
+  ],
+  "requestDelayMs": 800,
+  "allowMutations": false,
+  "allowLocalFixture": false,
+  "outputDirectory": "runs"
+}
